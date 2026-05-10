@@ -1,141 +1,247 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+/* =============================================================================
+ * src/styles/global.css
+ * Rhymes & Poetry — global stylesheet
+ *
+ * Loaded once via the BaseHead component, applied to every page.
+ *
+ * Compared to the Wix Custom Element version this replaces:
+ *   - No !important needed (we own the cascade now)
+ *   - No Wix chrome hide rules (we have no Wix chrome)
+ *   - No Custom Element wrapper (we have a real .css file)
+ *   - No FOUC (loaded in <head>, applied before first paint)
+ *
+ * That's the value of owning your stack vs. fighting a hosted platform's.
+ * ========================================================================== */
+
+
+/* -----------------------------------------------------------------------------
+ * 1. WEB FONTS
+ *
+ * Loaded from Google Fonts via @import. Two trade-offs to know about:
+ *
+ * (a) Google Fonts hosts these on fonts.gstatic.com — that's a third-party
+ *     request from your visitor's browser to Google. In the EU, this has
+ *     been ruled a GDPR violation in some jurisdictions because it leaks
+ *     visitor IPs to Google without consent. Mitigation: self-host the
+ *     .woff2 files in /public/fonts/ and reference via @font-face. We can
+ *     do that as a follow-up; @import is faster to ship.
+ *
+ * (b) display=swap means the browser shows a fallback (Georgia, here) until
+ *     the webfont loads, then swaps in. Briefly ugly but never invisible.
+ *     The alternative (display=block) hides the text until the webfont
+ *     loads, which is worse UX for slow connections.
+ * -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Pro:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+/* -----------------------------------------------------------------------------
+ * 2. DESIGN TOKENS
+ *
+ * Single source of truth on :root. Every component references these via
+ * var(--rp-*). Change a value here, the brand updates everywhere.
+ * -------------------------------------------------------------------------- */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+	/* Color palette */
+	--rp-sage: #4a6741;
+	--rp-sage-dark: #3b5434;
+	--rp-sage-soft: rgba(74, 103, 65, 0.08);
+	--rp-sage-line: rgba(74, 103, 65, 0.35);
+
+	--rp-cream: #faf9f6;
+	--rp-cream-warm: #f0eee6;
+
+	--rp-ink: #2a2a2a;
+	--rp-muted: #6b6b6b;
+	--rp-faint: #b0b0b0;
+	--rp-white: #ffffff;
+
+	/* Typography stack */
+	--rp-font-display: 'Playfair Display', 'Didot', Georgia, serif;
+	--rp-font-body: 'Crimson Pro', 'Crimson Text', Georgia, serif;
+	--rp-font-mono: 'SF Mono', 'Menlo', 'Monaco', monospace;
+
+	/* Type sizing */
+	--rp-size-h1: 48px;
+	--rp-size-h2: 32px;
+	--rp-size-h3: 22px;
+	--rp-size-body: 18px;
+	--rp-size-small: 14px;
+	--rp-size-tiny: 11px;
+
+	/* Letter-spacing */
+	--rp-track-eyebrow: 0.18em;
+	--rp-track-cta: 0.08em;
+
+	/* Layout primitives */
+	--rp-content-max: 680px;
+	--rp-page-max: 1200px;
+	--rp-radius-pill: 999px;
 }
+
+
+/* -----------------------------------------------------------------------------
+ * 3. RESET & BODY BASELINE
+ *
+ * Light reset — not a full normalize.css. Just the defaults that bother me.
+ * -------------------------------------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: var(--font-atkinson);
 	margin: 0;
-	padding: 0;
-	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+	background: var(--rp-cream);
+	color: var(--rp-ink);
+	font-family: var(--rp-font-body);
+	font-size: var(--rp-size-body);
+	line-height: 1.65;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+
+img,
+picture,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
+
+
+/* -----------------------------------------------------------------------------
+ * 4. TYPOGRAPHY DEFAULTS
+ *
+ * Applied to bare HTML tags so any unstyled prose (Markdown post content,
+ * etc.) inherits the editorial system without per-component work.
+ * -------------------------------------------------------------------------- */
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	font-family: var(--rp-font-display);
+	font-weight: 400;
+	color: var(--rp-ink);
+	margin: 0;
 	line-height: 1.2;
+	letter-spacing: -0.01em;
 }
+
 h1 {
-	font-size: 3.052em;
+	font-size: var(--rp-size-h1);
 }
+
 h2 {
-	font-size: 2.441em;
+	font-size: var(--rp-size-h2);
 }
+
 h3 {
-	font-size: 1.953em;
+	font-size: var(--rp-size-h3);
 }
-h4 {
-	font-size: 1.563em;
+
+p {
+	margin: 0 0 1.2em;
 }
-h5 {
-	font-size: 1.25em;
+
+blockquote {
+	border-left: 3px solid var(--rp-sage);
+	margin: 2em 0;
+	padding: 0.4em 0 0.4em 1.4em;
+	font-style: italic;
+	color: var(--rp-muted);
 }
+
+em,
+i {
+	font-style: italic;
+}
+
 strong,
 b {
-	font-weight: 700;
+	font-weight: 600;
 }
+
+
+/* -----------------------------------------------------------------------------
+ * 5. LINKS + FOCUS
+ * -------------------------------------------------------------------------- */
+
 a {
-	color: var(--accent);
+	color: var(--rp-sage);
+	text-decoration: none;
+	transition: color 0.15s ease;
 }
+
 a:hover {
-	color: var(--accent);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
 }
-p {
-	margin-bottom: 1em;
-}
-.prose p {
-	margin-bottom: 2em;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-table {
-	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
-}
-code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+
+a:focus-visible {
+	outline: 2px solid var(--rp-sage);
+	outline-offset: 2px;
 	border-radius: 2px;
 }
-pre {
-	padding: 1.5em;
-	border-radius: 8px;
+
+
+/* -----------------------------------------------------------------------------
+ * 6. UTILITY CLASSES
+ *
+ * Editorial primitives reused across components — eyebrows, display text.
+ * -------------------------------------------------------------------------- */
+
+.eyebrow {
+	font-family: var(--rp-font-body);
+	font-size: var(--rp-size-tiny);
+	letter-spacing: var(--rp-track-eyebrow);
+	text-transform: uppercase;
+	color: var(--rp-muted);
 }
-pre > code {
-	all: unset;
+
+.display {
+	font-family: var(--rp-font-display);
+	font-weight: 400;
+	color: var(--rp-ink);
 }
-blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0;
-	font-size: 1.333em;
+
+.container {
+	max-width: var(--rp-page-max);
+	margin: 0 auto;
+	padding: 0 24px;
 }
-hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+
+.prose {
+	max-width: var(--rp-content-max);
+	margin: 0 auto;
 }
-@media (max-width: 720px) {
+
+
+/* -----------------------------------------------------------------------------
+ * 7. RESPONSIVE
+ * -------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
 	body {
-		font-size: 18px;
+		font-size: 17px;
+		line-height: 1.55;
 	}
-	main {
-		padding: 1em;
+
+	:root {
+		--rp-size-h1: 36px;
+		--rp-size-h2: 26px;
+		--rp-size-h3: 20px;
 	}
 }
 
-.sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
-}
+
+/* End of global.css ======================================================== */
