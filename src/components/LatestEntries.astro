@@ -1,0 +1,248 @@
+---
+/* ===========================================================================
+ * src/components/LatestEntries.astro
+ * Rhymes & Poetry — "Latest entries" section (3 most recent posts)
+ *
+ * KEY ARCHITECTURAL CONCEPT: Build-time data fetching
+ * ----------------------------------------------------
+ * The getCollection() call below runs ONCE, at build time, on the server.
+ * It reads your Markdown files in src/content/blog/, returns their parsed
+ * frontmatter as a typed array, and inlines the result into the rendered
+ * HTML. By the time a visitor's browser sees this page, there's no
+ * JavaScript fetching anything — just static HTML with the post titles,
+ * dates, and excerpts already filled in.
+ *
+ * This has three meaningful properties:
+ *   1. NO LOADING STATE NEEDED. Posts appear in the first paint.
+ *   2. NO RUNTIME API. Nothing to attack, nothing to rate-limit, nothing
+ *      to secure. The "API" was your filesystem at build time.
+ *   3. PERFECT SEO. Search crawlers see the post titles in raw HTML,
+ *      no JS execution required to discover the content.
+ *
+ * Compare to a typical SPA blog: home page loads → JS runs → fetches
+ * /api/posts → receives JSON → renders cards → only THEN does the user
+ * (or crawler) see content. Three+ network round trips, hundreds of KB
+ * of JS, and an exposed API surface. Astro's static generation collapses
+ * all that to: HTML arrives → done.
+ *
+ * Push tie-in: this is the "no API surface, no problem" pattern. The
+ * fewer runtime endpoints your site exposes, the smaller your
+ * attack surface. Many static sites have effectively zero runtime
+ * security concerns because there's literally nothing to attack
+ * beyond the CDN serving HTML.
+ * ========================================================================= */
+
+import { getCollection } from "astro:content";
+
+// Pull all blog posts from the content collection. The shape is determined
+// by the schema in src/content.config.ts (Astro starter sets this up).
+const allPosts = await getCollection("blog");
+
+// Sort by date descending and take the 3 most recent.
+// .valueOf() converts Date → number for arithmetic comparison.
+const latest = allPosts
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 3);
+
+// Format date for display: "Jul 08, 2022" → "Jul 8" style for cards
+const fmtDate = (d: Date) =>
+    d.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+    });
+---
+
+<section class="latest">
+    <div class="container">
+        <header class="section-header">
+            <div>
+                <p class="eyebrow">From the journal</p>
+                <h2 class="section-title">Latest entries</h2>
+            </div>
+            <a href="/blog" class="see-all">All posts &rarr;</a>
+        </header>
+
+        <div class="grid">
+            {
+                latest.map((post) => (
+                    <article class="card">
+                        <a href={`/blog/${post.id}`} class="card-link">
+                            <div class="card-image" aria-hidden="true" />
+                            <div class="card-body">
+                                <p class="card-meta">
+                                    {fmtDate(post.data.pubDate)}
+                                </p>
+                                <h3 class="card-title">{post.data.title}</h3>
+                                <p class="card-excerpt">
+                                    {post.data.description}
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .latest {
+        background: var(--rp-white);
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .container {
+        max-width: var(--rp-page-max);
+        margin: 0 auto;
+        padding: 64px 24px 72px;
+    }
+
+    /* ===== Section header (eyebrow + title + see-all link) ===== */
+
+    .section-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        gap: 24px;
+    }
+
+    .eyebrow {
+        font-family: var(--rp-font-body);
+        font-size: var(--rp-size-tiny);
+        letter-spacing: var(--rp-track-eyebrow);
+        text-transform: uppercase;
+        color: var(--rp-muted);
+        margin: 0 0 6px;
+    }
+
+    .section-title {
+        font-family: var(--rp-font-display);
+        font-weight: 400;
+        font-size: 28px;
+        color: var(--rp-ink);
+        margin: 0;
+    }
+
+    .see-all {
+        font-family: var(--rp-font-body);
+        font-size: 14px;
+        color: var(--rp-sage);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .see-all:hover {
+        text-decoration: underline;
+    }
+
+    /* ===== Card grid ===== */
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    .card {
+        /* Article wrapper — semantic, no own styling; the link inside is the
+       full clickable area */
+    }
+
+    .card-link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+    .card-link:hover {
+        text-decoration: none;
+    }
+
+    /* Sage-tinted abstract placeholder block (no real images yet — the
+     mockup design uses atmospheric blocks rather than photographs).
+     Larger aspect ratio than typical cards because user requested
+     "abstract images a little larger." */
+    .card-image {
+        aspect-ratio: 4 / 3;
+        background: var(--rp-sage-soft);
+        margin-bottom: 18px;
+        transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    /* Alternating subtle tint on every other card adds visual rhythm
+     without requiring distinct images. CSS :nth-child is doing real
+     editorial work here. */
+    .card:nth-child(2n) .card-image {
+        background: var(--rp-cream-warm);
+    }
+
+    .card-link:hover .card-image {
+        transform: translateY(-3px);
+        background: var(--rp-sage-line);
+    }
+
+    .card-body {
+        /* No padding — the card-image margin-bottom handles spacing */
+    }
+
+    .card-meta {
+        font-family: var(--rp-font-body);
+        font-size: var(--rp-size-tiny);
+        letter-spacing: var(--rp-track-eyebrow);
+        text-transform: uppercase;
+        color: var(--rp-muted);
+        margin: 0 0 8px;
+    }
+
+    .card-title {
+        font-family: var(--rp-font-display);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.25;
+        color: var(--rp-ink);
+        margin: 0 0 10px;
+        transition: color 0.15s ease;
+    }
+    .card-link:hover .card-title {
+        color: var(--rp-sage);
+    }
+
+    .card-excerpt {
+        font-family: var(--rp-font-body);
+        font-size: 15px;
+        line-height: 1.55;
+        color: var(--rp-muted);
+        margin: 0;
+        /* Limit to 2 lines with ellipsis — keeps cards visually balanced
+       even when descriptions vary in length */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ===== Mobile: stack vertically, slightly smaller type ===== */
+
+    @media (max-width: 800px) {
+        .grid {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        .container {
+            padding: 48px 18px 56px;
+        }
+        .section-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .section-title {
+            font-size: 24px;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+    }
+</style>
