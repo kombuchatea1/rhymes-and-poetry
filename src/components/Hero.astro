@@ -1,0 +1,225 @@
+---
+/* ===========================================================================
+ * src/components/Hero.astro
+ * Rhymes & Poetry — homepage hero
+ *
+ * Two-column layout: editorial intro on the left, featured-quote card on
+ * the right. Stacks vertically on mobile.
+ *
+ * The featured quote is hardcoded for now. Later we'll either pull it from
+ * a content collection (so you can edit quotes in Markdown frontmatter) or
+ * randomize from a small array on each visit. For MVP, one good quote is
+ * better than a system without content.
+ * ========================================================================= */
+
+const featured = {
+    quote: "Poetry is the shadow cast by our streetlight imaginations.",
+    author: "Lawrence Ferlinghetti",
+};
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="intro">
+            <p class="eyebrow">A space for verse &amp; reflection</p>
+
+            <h1 class="headline">
+                Words that <em>linger</em> with you
+            </h1>
+
+            <p class="lead">
+                Rap lines, poetry, and original verse — written to be felt.
+                Explore new work and revisit favorites in a space built for
+                readers.
+            </p>
+
+            <div class="ctas">
+                <a href="/blog" class="cta cta-primary">Start reading</a>
+                <a href="/topics" class="cta cta-secondary">Browse topics</a>
+            </div>
+        </div>
+
+        <aside class="featured" aria-label="Featured quote">
+            <p class="featured-eyebrow">Featured today</p>
+            <blockquote class="featured-quote">
+                &ldquo;{featured.quote}&rdquo;
+            </blockquote>
+            <div class="featured-attribution">
+                <span class="rule" aria-hidden="true"></span>
+                <cite>{featured.author}</cite>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<style>
+    .hero {
+        background: var(--rp-cream);
+    }
+
+    .container {
+        max-width: var(--rp-page-max);
+        margin: 0 auto;
+        padding: 72px 24px 88px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 56px;
+        align-items: center;
+    }
+
+    /* ===== Left column: intro ===== */
+
+    .intro {
+        /* No special styles — children handle their own spacing */
+    }
+
+    .eyebrow {
+        font-family: var(--rp-font-body);
+        font-size: var(--rp-size-tiny);
+        letter-spacing: var(--rp-track-eyebrow);
+        text-transform: uppercase;
+        color: var(--rp-muted);
+        margin: 0 0 18px;
+    }
+
+    /* The headline uses Playfair, with the <em> inheriting italic naturally.
+     We set the size carefully — 56px is just below H1 default to feel less
+     shouty, more "magazine cover" than "press release." */
+    .headline {
+        font-family: var(--rp-font-display);
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 1.05;
+        letter-spacing: -0.015em;
+        margin: 0 0 18px;
+        color: var(--rp-ink);
+    }
+    .headline em {
+        /* <em> is already italic by browser default — this is just to be
+       explicit and to color the italic word slightly differently if we
+       ever want to. Right now we keep the same color for restraint. */
+        font-style: italic;
+    }
+
+    .lead {
+        font-family: var(--rp-font-body);
+        font-size: 18px;
+        line-height: 1.6;
+        color: var(--rp-muted);
+        margin: 0 0 28px;
+        max-width: 36em; /* keeps line length readable even on wide screens */
+    }
+
+    .ctas {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .cta {
+        display: inline-block;
+        padding: 11px 22px;
+        border-radius: var(--rp-radius-pill);
+        font-family: var(--rp-font-body);
+        font-size: 13px;
+        letter-spacing: var(--rp-track-cta);
+        text-decoration: none;
+        transition: background 0.15s ease, color 0.15s ease,
+            border-color 0.15s ease;
+    }
+    .cta:hover {
+        text-decoration: none;
+    }
+
+    /* Primary: dark filled pill — most prominent action */
+    .cta-primary {
+        background: var(--rp-ink);
+        color: var(--rp-cream);
+    }
+    .cta-primary:hover {
+        background: var(--rp-sage-dark);
+    }
+
+    /* Secondary: sage outlined pill — visually equivalent weight, less
+     saturated, signals "this is the alternate path" */
+    .cta-secondary {
+        background: transparent;
+        color: var(--rp-sage);
+        border: 1px solid var(--rp-sage);
+    }
+    .cta-secondary:hover {
+        background: var(--rp-sage);
+        color: var(--rp-cream);
+    }
+
+    /* ===== Right column: featured quote card ===== */
+
+    .featured {
+        background: var(--rp-cream-warm);
+        padding: 32px 28px;
+        /* No border-radius on purpose — editorial design tends to use sharp
+       corners for "premium" feel. Rounded corners read more "app." */
+    }
+
+    .featured-eyebrow {
+        font-family: var(--rp-font-body);
+        font-size: var(--rp-size-tiny);
+        letter-spacing: var(--rp-track-eyebrow);
+        text-transform: uppercase;
+        color: var(--rp-muted);
+        margin: 0 0 16px;
+    }
+
+    .featured-quote {
+        font-family: var(--rp-font-display);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.4;
+        color: var(--rp-ink);
+        margin: 0 0 22px;
+        /* Browser default for <blockquote> adds left margin we don't want */
+        padding: 0;
+    }
+
+    .featured-attribution {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--rp-font-body);
+        font-size: 13px;
+        color: var(--rp-muted);
+    }
+    .featured-attribution cite {
+        font-style: normal;
+    }
+    .rule {
+        display: block;
+        width: 28px;
+        height: 1px;
+        background: var(--rp-sage);
+    }
+
+    /* ===== Mobile: stack vertically ===== */
+
+    @media (max-width: 800px) {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 36px;
+            padding: 48px 18px 60px;
+        }
+        .headline {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+        .lead {
+            font-size: 17px;
+        }
+        .featured {
+            padding: 28px 22px;
+        }
+        .featured-quote {
+            font-size: 20px;
+        }
+    }
+</style>
