@@ -1,86 +1,371 @@
 ---
-import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import Header from '../components/Header.astro';
+/* ===========================================================================
+ * src/layouts/BlogPost.astro
+ * Rhymes & Poetry — editorial post layout
+ *
+ * Wraps every blog post (Markdown file in src/content/blog/). Renders:
+ *   - Site header
+ *   - Optional hero image
+ *   - Editorial post header (date + title + optional deck)
+ *   - Markdown body in editorial prose styling
+ *   - Optional Instagram source pill (when post has ig_shortcode frontmatter)
+ *   - Subscribe block (every post is a conversion opportunity)
+ *   - Site footer
+ *
+ * COMPARED TO THE WIX EDITORIAL-POST.JS CUSTOM ELEMENT
+ * ----------------------------------------------------
+ * The Wix version had to scrape rendered DOM at runtime — read Wix-rendered
+ * post elements via [data-hook="..."] selectors, then re-render into a
+ * Shadow DOM. Lots of ceremony to escape the platform.
+ *
+ * Here, we have the Markdown content directly via Astro's content collection
+ * at build time. We compose it through a layout. Server-side, statically
+ * generated, no client-side DOM walking. Same visual result, fraction of
+ * the complexity.
+ *
+ * This is the value of owning the rendering pipeline. Every workaround
+ * we wrote for Wix is now unnecessary.
+ *
+ * POEM-BLOCK PATTERN
+ * ------------------
+ * For poems, wrap them in markdown like this:
+ *
+ *   <div class="poem-block">
+ *
+ *   *Line one*
+ *
+ *   *Line two*
+ *
+ *   *Line three*
+ *
+ *   </div>
+ *
+ * The italic stanza inside renders as a centered Playfair italic block on
+ * a white card with sage hairlines above and below. Manual wrapping (vs
+ * auto-detect) keeps you in control: not every italic paragraph is a poem.
+ *
+ * IG SOURCE PILL
+ * --------------
+ * Add `ig_shortcode: "DL2rYpSsyQT"` to a post's frontmatter and the pill
+ * appears at the bottom linking to the IG post. Requires the schema in
+ * src/content.config.ts to include `ig_shortcode: z.string().optional()`
+ * — see the deployment notes below the file.
+ * ========================================================================= */
 
-type Props = CollectionEntry<'blog'>['data'];
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Subscribe from "../components/Subscribe.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, ig_shortcode } =
+	Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
 	</head>
-
 	<body>
 		<Header />
+
 		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
+			<article class="post">
+				{
+					heroImage && (
+						<div class="post-hero">
+							<img src={heroImage.src || heroImage} alt="" />
 						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
+					)
+				}
+
+				<header class="post-header">
+					<p class="post-eyebrow">
+						<FormattedDate date={pubDate} />
+						{
+							updatedDate && (
+								<span class="updated">
+									{" "}
+									· Updated{" "}
+									<FormattedDate date={updatedDate} />
+								</span>
+							)
+						}
+					</p>
+					<h1 class="post-title">{title}</h1>
+					{description && <p class="post-deck">{description}</p>}
+				</header>
+
+				<div class="post-body">
 					<slot />
 				</div>
+
+				{
+					ig_shortcode && (
+						<div class="ig-source">
+							<a
+								href={`https://www.instagram.com/p/${ig_shortcode}/`}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Originally posted on Instagram
+							</a>
+						</div>
+					)
+				}
 			</article>
 		</main>
+
+		<Subscribe />
 		<Footer />
+		<style>
+			/* ===== Layout — scoped to this component ===== */
+
+			.post {
+				max-width: var(--rp-content-max);
+				margin: 0 auto;
+				padding: 64px 24px 80px;
+			}
+
+			.post-hero {
+				margin-bottom: 40px;
+			}
+			.post-hero img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+
+			.post-header {
+				text-align: center;
+				margin-bottom: 48px;
+			}
+
+			.post-eyebrow {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 18px;
+			}
+			.updated {
+				font-style: italic;
+			}
+
+			.post-title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 44px;
+				line-height: 1.1;
+				color: var(--rp-ink);
+				margin: 0;
+				letter-spacing: -0.015em;
+			}
+
+			.post-deck {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 20px;
+				color: var(--rp-muted);
+				margin: 16px auto 0;
+				max-width: 520px;
+				line-height: 1.4;
+			}
+
+			.post-body {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-body);
+				line-height: 1.75;
+				color: var(--rp-ink);
+			}
+
+			/* ===== IG source pill ===== */
+
+			.ig-source {
+				text-align: center;
+				margin: 64px 0 0;
+			}
+			.ig-source a {
+				display: inline-block;
+				padding: 9px 20px;
+				border: 1px solid var(--rp-sage);
+				border-radius: var(--rp-radius-pill);
+				font-family: var(--rp-font-body);
+				font-size: 12px;
+				letter-spacing: 0.14em;
+				text-transform: uppercase;
+				color: var(--rp-sage);
+				text-decoration: none;
+				transition: background 0.2s ease, color 0.2s ease;
+			}
+			.ig-source a:hover {
+				background: var(--rp-sage);
+				color: var(--rp-cream);
+				text-decoration: none;
+			}
+
+			/* ===== Mobile ===== */
+
+			@media (max-width: 700px) {
+				.post {
+					padding: 48px 18px 64px;
+				}
+				.post-title {
+					font-size: 32px;
+				}
+				.post-deck {
+					font-size: 17px;
+				}
+				.post-body {
+					font-size: 17px;
+				}
+			}
+		</style>
+
+		<style is:global>
+			/* ===== Prose styles — global so they reach Markdown-rendered content =====
+     Astro's scoped CSS doesn't apply to elements rendered via <slot />
+     because the slot content has different scoping hashes. We use
+     `is:global` here to opt the prose rules out of scoping, then key
+     them on .post-body so they only apply within posts. */
+
+			.post-body p {
+				margin: 0 0 1.4em;
+			}
+
+			/* Drop cap on first paragraph (not on paragraphs inside .poem-block).
+     Browser ::first-letter selects the first character of the first line —
+     editorial typography classic. */
+			.post-body > p:first-of-type::first-letter {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 64px;
+				line-height: 0.9;
+				float: left;
+				padding: 6px 12px 0 0;
+				color: var(--rp-sage);
+			}
+
+			/* Headings inside body */
+			.post-body h2 {
+				font-family: var(--rp-font-display);
+				font-size: 28px;
+				font-weight: 400;
+				margin: 1.8em 0 0.6em;
+				color: var(--rp-ink);
+				line-height: 1.25;
+			}
+			.post-body h3 {
+				font-family: var(--rp-font-display);
+				font-size: 22px;
+				font-weight: 400;
+				margin: 1.4em 0 0.5em;
+				color: var(--rp-ink);
+			}
+
+			/* Sage-rule blockquote */
+			.post-body blockquote {
+				border-left: 3px solid var(--rp-sage);
+				margin: 2em 0;
+				padding: 0.4em 0 0.4em 1.4em;
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 20px;
+				line-height: 1.45;
+				color: var(--rp-muted);
+			}
+			.post-body blockquote p {
+				margin: 0 0 0.5em;
+			}
+			.post-body blockquote p:last-child {
+				margin-bottom: 0;
+			}
+
+			/* Inline emphasis */
+			.post-body em,
+			.post-body i {
+				font-style: italic;
+			}
+			.post-body strong,
+			.post-body b {
+				font-weight: 600;
+			}
+
+			/* Code (inline) */
+			.post-body code {
+				font-family: var(--rp-font-mono);
+				font-size: 0.9em;
+				background: var(--rp-cream-warm);
+				padding: 1px 6px;
+				border-radius: 3px;
+			}
+
+			/* ===== POEM BLOCK =====
+     Wrap a poem in markdown with:
+       <div class="poem-block">
+       *line one*
+       *line two*
+       </div>
+ 
+     The wrapper renders as a white card with sage hairlines above and
+     below; italic stanza inside renders as centered Playfair italic. */
+
+			.post-body .poem-block {
+				background: var(--rp-white);
+				padding: 44px 32px;
+				margin: 44px 0;
+				text-align: center;
+				border: 1px solid rgba(0, 0, 0, 0.04);
+			}
+			.post-body .poem-block::before,
+			.post-body .poem-block::after {
+				content: "";
+				display: block;
+				height: 1px;
+				background: var(--rp-sage);
+				width: 96px;
+				margin: 0 auto;
+			}
+			.post-body .poem-block::before {
+				margin-bottom: 28px;
+			}
+			.post-body .poem-block::after {
+				margin-top: 28px;
+			}
+
+			.post-body .poem-block p {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 1.65;
+				margin: 0 0 0.5em;
+				color: var(--rp-ink);
+			}
+			.post-body .poem-block p:last-child {
+				margin-bottom: 0;
+			}
+			.post-body .poem-block em {
+				font-style: italic;
+			}
+
+			/* Mobile drop cap + poem block adjustments */
+			@media (max-width: 700px) {
+				.post-body > p:first-of-type::first-letter {
+					font-size: 52px;
+				}
+				.post-body .poem-block {
+					padding: 32px 22px;
+					margin: 32px 0;
+				}
+				.post-body .poem-block p {
+					font-size: 20px;
+				}
+				.post-body blockquote {
+					font-size: 18px;
+				}
+			}
+		</style>
 	</body>
 </html>
