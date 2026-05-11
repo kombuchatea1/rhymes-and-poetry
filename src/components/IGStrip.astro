@@ -1,0 +1,190 @@
+---
+/* ===========================================================================
+ * src/components/IGStrip.astro
+ * Rhymes & Poetry — Instagram strip (6 tiles + handle link)
+ *
+ * The whole point of this section: the brand strategy includes growing
+ * @rhymesandpoetry_jtc, and the website should be a two-way amplifier —
+ * IG followers see "this is also a real site, go check it out," and site
+ * visitors see "there's an active feed I should follow."
+ *
+ * MVP: 6 placeholder tiles in alternating sage/cream tints.
+ * V2: real IG content via one of:
+ *
+ *   Option A — Instagram Basic Display API
+ *     Pros: official, real-time, controllable.
+ *     Cons: requires Meta app registration, OAuth flow with token refresh,
+ *           backend logic to handle expiry. Three-step setup, ongoing
+ *           token management. Real Push tie-in: the long-lived access
+ *           token becomes a secret to manage.
+ *
+ *   Option B — Manual export to /public/instagram/
+ *     Pros: no API, no tokens, no third-party scripts in page.
+ *     Cons: manual sync; you have to remember to refresh.
+ *
+ *   Option C — Third-party embed (LightWidget, SnapWidget, etc.)
+ *     Pros: zero setup.
+ *     Cons: their script runs in your page with full DOM access; their
+ *           service has read access to IG via your account; another
+ *           third-party in the supply chain. Generally bad call for a
+ *           brand you care about.
+ *
+ * Recommendation when we get there: Option B. Most boring, fewest moving
+ * parts, no token management, no third-party script. Sync via a small
+ * script we run when we publish a new IG post. Same tradeoff space as
+ * "manual SCIM provisioning vs OAuth-driven directory sync" in the SaaS
+ * world — automated is convenient, manual is auditable and contained.
+ *
+ * For now, placeholders. Visual proof of concept; real content later.
+ * ========================================================================= */
+
+const IG_HANDLE = "rhymesandpoetry_jtc";
+const IG_URL = `https://www.instagram.com/${IG_HANDLE}/`;
+
+// Placeholder tiles — alternating tint classes for visual rhythm
+const tiles = Array.from({ length: 6 }, (_, i) => ({
+    id: i,
+    tint: i % 2 === 0 ? "tile-sage" : "tile-cream",
+}));
+---
+
+<section class="ig" aria-labelledby="ig-heading">
+    <div class="container">
+        <header class="section-header">
+            <div>
+                <p class="eyebrow">From the feed</p>
+                <h2 id="ig-heading" class="section-title">On Instagram</h2>
+            </div>
+            <a
+                href={IG_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="handle"
+            >
+                <span class="ig-icon" aria-hidden="true">◉</span>
+                @{IG_HANDLE}
+            </a>
+        </header>
+
+        <div class="grid">
+            {
+                tiles.map((tile) => (
+                    <a
+                        href={IG_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class={`tile ${tile.tint}`}
+                        aria-label={`View @${IG_HANDLE} on Instagram`}
+                    />
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .ig {
+        background: var(--rp-cream);
+    }
+
+    .container {
+        max-width: var(--rp-page-max);
+        margin: 0 auto;
+        padding: 64px 24px 64px;
+    }
+
+    /* ===== Section header ===== */
+
+    .section-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .eyebrow {
+        font-family: var(--rp-font-body);
+        font-size: var(--rp-size-tiny);
+        letter-spacing: var(--rp-track-eyebrow);
+        text-transform: uppercase;
+        color: var(--rp-muted);
+        margin: 0 0 6px;
+    }
+
+    .section-title {
+        font-family: var(--rp-font-display);
+        font-weight: 400;
+        font-size: 28px;
+        color: var(--rp-ink);
+        margin: 0;
+    }
+
+    .handle {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--rp-font-body);
+        font-size: 14px;
+        color: var(--rp-sage);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .handle:hover {
+        text-decoration: underline;
+    }
+    .ig-icon {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    /* ===== Tile grid =====
+     6 columns desktop, 3 columns tablet/mobile. Square aspect ratio
+     keeps the visual rhythm consistent regardless of column count. */
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+    }
+
+    .tile {
+        aspect-ratio: 1 / 1;
+        display: block;
+        transition: filter 0.2s ease, transform 0.2s ease;
+    }
+    .tile:hover {
+        filter: brightness(0.92);
+        transform: scale(1.02);
+    }
+
+    /* Alternating tints — same pattern as LatestEntries cards.
+     Subtle variation gives the grid editorial rhythm without
+     requiring distinct images per tile. */
+    .tile-sage {
+        background: var(--rp-sage-soft);
+    }
+    .tile-cream {
+        background: var(--rp-cream-warm);
+    }
+
+    /* ===== Mobile ===== */
+
+    @media (max-width: 800px) {
+        .container {
+            padding: 48px 18px 48px;
+        }
+        .section-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .section-title {
+            font-size: 24px;
+        }
+    }
+</style>
