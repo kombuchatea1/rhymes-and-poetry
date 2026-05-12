@@ -9,14 +9,7 @@
  * ========================================================================= */
 
 import { getCollection } from "astro:content";
-
-const TOPIC_DEFS = [
-    { slug: "reflections" as const, label: "Reflections" },
-    { slug: "rap-and-bars" as const, label: "Rap & Bars" },
-    { slug: "nature" as const, label: "Nature" },
-    { slug: "love-loss" as const, label: "Love & Loss" },
-    { slug: "community" as const, label: "Community" },
-];
+import { TOPIC_DEFS } from "../consts/topics";
 
 const posts = await getCollection("blog");
 const topics = TOPIC_DEFS.map((t) => ({

@@ -13,37 +13,7 @@ import { getCollection } from "astro:content";
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-
-// Canonical topic definitions. Slugs match the enum in content.config.ts —
-// changing one here without changing the schema (or vice versa) will
-// produce zero-count topics that link to 404s, so keep them in sync.
-const TOPIC_DEFS = [
-	{
-		slug: "reflections",
-		label: "Reflections",
-		desc: "Personal observations, meditations on character and growth — the quiet pieces.",
-	},
-	{
-		slug: "rap-and-bars",
-		label: "Rap & Bars",
-		desc: "Lyrics and bars built for cadence, force, and timing.",
-	},
-	{
-		slug: "nature",
-		label: "Nature",
-		desc: "The natural world as mirror and metaphor.",
-	},
-	{
-		slug: "love-loss",
-		label: "Love & Loss",
-		desc: "What we hold, what we give up, what stays after.",
-	},
-	{
-		slug: "community",
-		label: "Community",
-		desc: "Stories from the people, places, and moments that shape us.",
-	},
-] as const;
+import { TOPIC_DEFS } from "../../consts/topics";
 
 const posts = await getCollection("blog");
 const topics = TOPIC_DEFS.map((t) => ({
