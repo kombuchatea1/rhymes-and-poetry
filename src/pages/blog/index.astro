@@ -1,114 +1,254 @@
 ---
-import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+/* ===========================================================================
+ * src/pages/blog/index.astro
+ * Rhymes & Poetry — full blog archive page
+ *
+ * Lists every post in reverse chronological order. Each card has a
+ * preview image (smaller than the post hero), date, title, and excerpt.
+ * Same card pattern as the home page Latest Entries, but showing ALL
+ * posts and slightly larger.
+ *
+ * Cards intentionally do NOT have the torn-paper mask treatment —
+ * that's reserved for the post hero (cinematic, the moment you arrive
+ * at a single piece). Index is utilitarian: clean grid for browsing.
+ * ========================================================================= */
 
-const posts = (await getCollection('blog')).sort(
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Header from "../../components/Header.astro";
+
+const posts = (await getCollection("blog")).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+const PAGE_TITLE = "All posts — Rhymes & Poetry";
+const PAGE_DESC = "Every poem, every reflection. The complete archive.";
+
+const fmtCount = (n: number) => String(n).padStart(2, "0");
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
+		<BaseHead title={PAGE_TITLE} description={PAGE_DESC} />
 	</head>
 	<body>
 		<Header />
+
 		<main>
-			<section>
-				<ul>
+			<section class="archive">
+				<header class="archive-header">
+					<p class="eyebrow">The journal</p>
+					<h1 class="title">Every poem, in order</h1>
+					<p class="intro">
+						{fmtCount(posts.length)} pieces. Most recent first.
+						New work appears at the top.
+					</p>
+				</header>
+
+				<div class="grid">
 					{
 						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
+							<article class="card">
+								<a href={`/blog/${post.id}/`} class="card-link">
+									<div class="card-image">
+										{post.data.heroImage ? (
+											<Image
+												src={post.data.heroImage}
+												alt=""
+												width={800}
+												height={400}
+												loading="lazy"
+											/>
+										) : (
+											<div class="card-placeholder" />
+										)}
+									</div>
+									<div class="card-body">
+										<p class="card-meta">
+											<FormattedDate
+												date={post.data.pubDate}
+											/>
+										</p>
+										<h2 class="card-title">
+											{post.data.title}
+										</h2>
+										{post.data.description && (
+											<p class="card-excerpt">
+												{post.data.description}
+											</p>
+										)}
+									</div>
 								</a>
-							</li>
+							</article>
 						))
 					}
-				</ul>
+				</div>
 			</section>
 		</main>
+
 		<Footer />
+
+		<style>
+			/* ===== Page container ===== */
+
+			.archive {
+				max-width: var(--rp-page-max);
+				margin: 0 auto;
+				padding: 64px 24px 96px;
+			}
+
+			/* ===== Page header ===== */
+
+			.archive-header {
+				text-align: center;
+				margin-bottom: 56px;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.eyebrow {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 14px;
+			}
+
+			.title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 44px;
+				line-height: 1.1;
+				color: var(--rp-ink);
+				margin: 0 0 16px;
+				letter-spacing: -0.015em;
+			}
+
+			.intro {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 18px;
+				color: var(--rp-muted);
+				line-height: 1.5;
+				margin: 0;
+			}
+
+			/* ===== Card grid ===== */
+
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 40px 28px;
+			}
+
+			.card {
+				/* Article wrapper — link inside is the full clickable area */
+			}
+
+			.card-link {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
+			.card-link:hover {
+				text-decoration: none;
+			}
+
+			/* Card images are clean rectangles here (no tear mask) — that
+			   treatment is reserved for the post hero. */
+			.card-image {
+				aspect-ratio: 16 / 9;
+				margin-bottom: 18px;
+				overflow: hidden;
+				background: var(--rp-sage-soft);
+				transition: transform 0.25s ease;
+			}
+			.card-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+				transition: transform 0.4s ease;
+			}
+			.card-link:hover .card-image img {
+				transform: scale(1.03);
+			}
+
+			.card-placeholder {
+				width: 100%;
+				height: 100%;
+				background: var(--rp-sage-soft);
+			}
+			.card:nth-child(2n) .card-placeholder {
+				background: var(--rp-cream-warm);
+			}
+
+			.card-meta {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 8px;
+			}
+
+			.card-title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 1.2;
+				color: var(--rp-ink);
+				margin: 0 0 10px;
+				transition: color 0.15s ease;
+			}
+			.card-link:hover .card-title {
+				color: var(--rp-sage);
+			}
+
+			.card-excerpt {
+				font-family: var(--rp-font-body);
+				font-size: 15px;
+				line-height: 1.55;
+				color: var(--rp-muted);
+				margin: 0;
+				/* Cap at 3 lines so cards stay visually balanced even when
+				   descriptions vary in length. */
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				line-clamp: 3;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+
+			/* ===== Mobile ===== */
+
+			@media (max-width: 800px) {
+				.archive {
+					padding: 48px 18px 72px;
+				}
+				.archive-header {
+					margin-bottom: 36px;
+				}
+				.title {
+					font-size: 32px;
+				}
+				.intro {
+					font-size: 16px;
+				}
+				.grid {
+					grid-template-columns: 1fr;
+					gap: 32px;
+				}
+				.card-title {
+					font-size: 22px;
+				}
+			}
+		</style>
 	</body>
 </html>
