@@ -42,9 +42,14 @@
  *     `type=email` are UX, not security — easily bypassed).
  *   - Honeypot or CAPTCHA needed to prevent spam signups via bots.
  *
- * For MVP, the form is decorative. When we wire a real handler, every
- * one of the above becomes a real engineering decision.
+ * Provider: Buttondown (configured in src/consts/newsletter.ts).
+ * Until NEWSLETTER_USERNAME is set there, form action="#" (no-op).
  * ========================================================================= */
+
+import {
+	NEWSLETTER_ACTION_URL,
+	NEWSLETTER_SUBMIT_TARGET,
+} from "../consts/newsletter";
 ---
 
 <section class="subscribe" aria-labelledby="subscribe-heading">
@@ -55,7 +60,15 @@
             linger.
         </p>
 
-        <form class="form" action="#" method="post">
+        <form
+            class="form"
+            action={NEWSLETTER_ACTION_URL}
+            method="post"
+            target={NEWSLETTER_SUBMIT_TARGET}
+        >
+            {/* Buttondown's required hidden field — tells their endpoint
+                that this is an embed-style submission */}
+            <input type="hidden" name="embed" value="1" />
             <label for="subscribe-email" class="visually-hidden"
                 >Email address</label
             >

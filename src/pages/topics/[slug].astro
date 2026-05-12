@@ -76,9 +76,9 @@ const PAGE_DESC = desc;
 												<Image
 													src={post.data.heroImage}
 													alt=""
-													width={800}
-													height={400}
-													loading="lazy"
+													widths={[400, 600, 800]}
+													sizes="(max-width: 600px) 95vw, (max-width: 1000px) 45vw, 600px"
+													decoding="async"
 												/>
 											) : (
 												<div class="card-placeholder" />

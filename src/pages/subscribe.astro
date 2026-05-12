@@ -20,6 +20,10 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import {
+	NEWSLETTER_ACTION_URL,
+	NEWSLETTER_SUBMIT_TARGET,
+} from "../consts/newsletter";
 
 const PAGE_TITLE = "Subscribe — Rhymes & Poetry";
 const PAGE_DESC =
@@ -55,7 +59,14 @@ const PAGE_DESC =
 					<h2 id="form-heading" class="visually-hidden">
 						Subscribe form
 					</h2>
-					<form class="form" action="#" method="post">
+					<form
+						class="form"
+						action={NEWSLETTER_ACTION_URL}
+						method="post"
+						target={NEWSLETTER_SUBMIT_TARGET}
+					>
+						{/* Buttondown embed marker */}
+						<input type="hidden" name="embed" value="1" />
 						<label for="subscribe-email" class="visually-hidden">
 							Email address
 						</label>

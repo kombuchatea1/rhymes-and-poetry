@@ -74,9 +74,9 @@ const fmtDate = (d: Date) =>
                                     <Image
                                         src={post.data.heroImage}
                                         alt=""
-                                        width={600}
-                                        height={450}
-                                        loading="lazy"
+                                        widths={[400, 600, 800]}
+                                        sizes="(max-width: 600px) 95vw, (max-width: 1000px) 45vw, 400px"
+                                        decoding="async"
                                     />
                                 )}
                             </div>
