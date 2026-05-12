@@ -32,6 +32,7 @@
  * beyond the CDN serving HTML.
  * ========================================================================= */
 
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 // Pull all blog posts from the content collection. The shape is determined
@@ -68,7 +69,17 @@ const fmtDate = (d: Date) =>
                 latest.map((post) => (
                     <article class="card">
                         <a href={`/blog/${post.id}`} class="card-link">
-                            <div class="card-image" aria-hidden="true" />
+                            <div class="card-image">
+                                {post.data.heroImage && (
+                                    <Image
+                                        src={post.data.heroImage}
+                                        alt=""
+                                        width={600}
+                                        height={450}
+                                        loading="lazy"
+                                    />
+                                )}
+                            </div>
                             <div class="card-body">
                                 <p class="card-meta">
                                     {fmtDate(post.data.pubDate)}
@@ -159,27 +170,36 @@ const fmtDate = (d: Date) =>
         text-decoration: none;
     }
 
-    /* Sage-tinted abstract placeholder block (no real images yet — the
-     mockup design uses atmospheric blocks rather than photographs).
-     Larger aspect ratio than typical cards because user requested
-     "abstract images a little larger." */
+    /* Card image — padding-bottom hack for 4:3 aspect ratio.
+       More reliable across browsers than aspect-ratio property
+       (which has cross-browser quirks, especially on mobile Safari
+       in some versions). The image positions absolutely inside. */
     .card-image {
-        aspect-ratio: 4 / 3;
-        background: var(--rp-sage-soft);
+        position: relative;
+        width: 100%;
+        padding-bottom: 75%; /* 4:3 aspect ratio = (3/4) × 100% */
         margin-bottom: 18px;
-        transition: transform 0.25s ease, background 0.25s ease;
+        overflow: hidden;
+        background: var(--rp-sage-soft);
+    }
+    .card-image :global(img) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
     }
 
-    /* Alternating subtle tint on every other card adds visual rhythm
-     without requiring distinct images. CSS :nth-child is doing real
-     editorial work here. */
+    /* Fallback tint for cards without hero images (alternating). */
     .card:nth-child(2n) .card-image {
         background: var(--rp-cream-warm);
     }
 
-    .card-link:hover .card-image {
-        transform: translateY(-3px);
-        background: var(--rp-sage-line);
+    .card-link:hover .card-image :global(img) {
+        transform: scale(1.04);
     }
 
     .card-body {

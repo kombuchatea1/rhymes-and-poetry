@@ -1,190 +1,279 @@
 ---
 /* ===========================================================================
  * src/components/IGStrip.astro
- * Rhymes & Poetry — Instagram strip (6 tiles + handle link)
+ * Rhymes & Poetry — Instagram strip
  *
- * The whole point of this section: the brand strategy includes growing
- * @rhymesandpoetry_jtc, and the website should be a two-way amplifier —
- * IG followers see "this is also a real site, go check it out," and site
- * visitors see "there's an active feed I should follow."
+ * Shows the actual IG feed using locally-stored copies of recent posts.
+ * Each filename in src/assets/instagram/ is the original Instagram media
+ * ID (which encodes chronology — higher numeric ID = newer post). We
+ * glob the directory at build time, sort descending, take the most
+ * recent 6, and render each with elegant hover treatment.
  *
- * MVP: 6 placeholder tiles in alternating sage/cream tints.
- * V2: real IG content via one of:
+ * Tile click → opens the Instagram profile in a new tab. Each individual
+ * post URL would require knowing the post's shortcode (different from the
+ * media ID); without API access to derive that, we link to the profile.
+ * Visitors can find the post they clicked from the feed there.
  *
- *   Option A — Instagram Basic Display API
- *     Pros: official, real-time, controllable.
- *     Cons: requires Meta app registration, OAuth flow with token refresh,
- *           backend logic to handle expiry. Three-step setup, ongoing
- *           token management. Real Push tie-in: the long-lived access
- *           token becomes a secret to manage.
+ * UPDATING THE FEED
+ * -----------------
+ * Drop new IG-export JPGs into src/assets/instagram/ — Astro picks them
+ * up automatically. The 6 most recent (by filename / media ID) display.
+ * Old ones can stay in the folder; only the top 6 surface here.
  *
- *   Option B — Manual export to /public/instagram/
- *     Pros: no API, no tokens, no third-party scripts in page.
- *     Cons: manual sync; you have to remember to refresh.
- *
- *   Option C — Third-party embed (LightWidget, SnapWidget, etc.)
- *     Pros: zero setup.
- *     Cons: their script runs in your page with full DOM access; their
- *           service has read access to IG via your account; another
- *           third-party in the supply chain. Generally bad call for a
- *           brand you care about.
- *
- * Recommendation when we get there: Option B. Most boring, fewest moving
- * parts, no token management, no third-party script. Sync via a small
- * script we run when we publish a new IG post. Same tradeoff space as
- * "manual SCIM provisioning vs OAuth-driven directory sync" in the SaaS
- * world — automated is convenient, manual is auditable and contained.
- *
- * For now, placeholders. Visual proof of concept; real content later.
+ * Future enhancement: media ID → shortcode mapping table OR Instagram
+ * Graph API integration for live feed + direct post links + caption
+ * hover-overlays. For now, this is true-content / zero-third-party-cost.
  * ========================================================================= */
+
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 
 const IG_HANDLE = "rhymesandpoetry_jtc";
 const IG_URL = `https://www.instagram.com/${IG_HANDLE}/`;
 
-// Placeholder tiles — alternating tint classes for visual rhythm
-const tiles = Array.from({ length: 6 }, (_, i) => ({
-    id: i,
-    tint: i % 2 === 0 ? "tile-sage" : "tile-cream",
-}));
+// Glob all IG images from src/assets at build time. eager:true loads
+// them synchronously so we have ImageMetadata available immediately
+// (rather than promises to resolve).
+const igImages = import.meta.glob<{ default: ImageMetadata }>(
+	"../assets/instagram/*.jpg",
+	{ eager: true },
+);
+
+// Sort by IG media ID (filename, numeric portion) descending — newest first.
+// IG media IDs are not strictly chronological but correlate strongly enough
+// for our "recent posts" purpose.
+const tiles = Object.entries(igImages)
+	.sort(([a], [b]) => {
+		const numA = Number(a.match(/(\d+)\.jpg$/)?.[1] ?? 0);
+		const numB = Number(b.match(/(\d+)\.jpg$/)?.[1] ?? 0);
+		return numB - numA;
+	})
+	.slice(0, 6)
+	.map(([path, mod]) => ({ path, image: mod.default }));
 ---
 
 <section class="ig" aria-labelledby="ig-heading">
-    <div class="container">
-        <header class="section-header">
-            <div>
-                <p class="eyebrow">From the feed</p>
-                <h2 id="ig-heading" class="section-title">On Instagram</h2>
-            </div>
-            <a
-                href={IG_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="handle"
-            >
-                <span class="ig-icon" aria-hidden="true">◉</span>
-                @{IG_HANDLE}
-            </a>
-        </header>
+	<div class="container">
+		<header class="section-header">
+			<div>
+				<p class="eyebrow">From the feed</p>
+				<h2 id="ig-heading" class="section-title">On Instagram</h2>
+			</div>
+			<a
+				href={IG_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="handle"
+			>
+				<span class="ig-icon" aria-hidden="true">◉</span>
+				@{IG_HANDLE}
+			</a>
+		</header>
 
-        <div class="grid">
-            {
-                tiles.map((tile) => (
-                    <a
-                        href={IG_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class={`tile ${tile.tint}`}
-                        aria-label={`View @${IG_HANDLE} on Instagram`}
-                    />
-                ))
-            }
-        </div>
-    </div>
+		<div class="grid">
+			{
+				tiles.map((tile) => (
+					<a
+						href={IG_URL}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="tile"
+						aria-label={`View @${IG_HANDLE} on Instagram`}
+					>
+						<Image
+							src={tile.image}
+							alt=""
+							width={400}
+							height={400}
+							loading="lazy"
+						/>
+						{/* Subtle overlay surfaces the IG glyph on hover —
+						    indicates "click goes to Instagram" without
+						    cluttering the resting state. */}
+						<div class="tile-overlay" aria-hidden="true">
+							<span class="overlay-icon">◉</span>
+						</div>
+					</a>
+				))
+			}
+		</div>
+
+		<p class="footnote">
+			A glimpse of the most recent posts. The full feed lives on
+			<a
+				href={IG_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="footnote-link">@{IG_HANDLE}</a
+			>.
+		</p>
+	</div>
 </section>
 
 <style>
-    .ig {
-        background: var(--rp-cream);
-    }
+	.ig {
+		background: var(--rp-cream);
+	}
 
-    .container {
-        max-width: var(--rp-page-max);
-        margin: 0 auto;
-        padding: 64px 24px 64px;
-    }
+	.container {
+		max-width: var(--rp-page-max);
+		margin: 0 auto;
+		padding: 64px 24px 64px;
+	}
 
-    /* ===== Section header ===== */
+	/* ===== Section header ===== */
 
-    .section-header {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 24px;
-        margin-bottom: 24px;
-    }
+	.section-header {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 24px;
+		margin-bottom: 24px;
+	}
 
-    .eyebrow {
-        font-family: var(--rp-font-body);
-        font-size: var(--rp-size-tiny);
-        letter-spacing: var(--rp-track-eyebrow);
-        text-transform: uppercase;
-        color: var(--rp-muted);
-        margin: 0 0 6px;
-    }
+	.eyebrow {
+		font-family: var(--rp-font-body);
+		font-size: var(--rp-size-tiny);
+		letter-spacing: var(--rp-track-eyebrow);
+		text-transform: uppercase;
+		color: var(--rp-muted);
+		margin: 0 0 6px;
+	}
 
-    .section-title {
-        font-family: var(--rp-font-display);
-        font-weight: 400;
-        font-size: 28px;
-        color: var(--rp-ink);
-        margin: 0;
-    }
+	.section-title {
+		font-family: var(--rp-font-display);
+		font-weight: 400;
+		font-size: 28px;
+		color: var(--rp-ink);
+		margin: 0;
+	}
 
-    .handle {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        font-family: var(--rp-font-body);
-        font-size: 14px;
-        color: var(--rp-sage);
-        text-decoration: none;
-        white-space: nowrap;
-    }
-    .handle:hover {
-        text-decoration: underline;
-    }
-    .ig-icon {
-        font-size: 16px;
-        line-height: 1;
-    }
+	.handle {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		font-family: var(--rp-font-body);
+		font-size: 14px;
+		color: var(--rp-sage);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.handle:hover {
+		text-decoration: underline;
+	}
+	.ig-icon {
+		font-size: 16px;
+		line-height: 1;
+	}
 
-    /* ===== Tile grid =====
-     6 columns desktop, 3 columns tablet/mobile. Square aspect ratio
-     keeps the visual rhythm consistent regardless of column count. */
+	/* ===== Tile grid =====
+	   6 columns desktop, 3 columns tablet/mobile. Square aspect via
+	   padding-bottom hack (more reliable than aspect-ratio on mobile
+	   Safari). */
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 8px;
-    }
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 8px;
+	}
 
-    .tile {
-        aspect-ratio: 1 / 1;
-        display: block;
-        transition: filter 0.2s ease, transform 0.2s ease;
-    }
-    .tile:hover {
-        filter: brightness(0.92);
-        transform: scale(1.02);
-    }
+	.tile {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding-bottom: 100%; /* square */
+		overflow: hidden;
+		background: var(--rp-sage-soft);
+		text-decoration: none;
+	}
+	.tile :global(img) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+		transition:
+			transform 0.5s ease,
+			filter 0.4s ease;
+	}
 
-    /* Alternating tints — same pattern as LatestEntries cards.
-     Subtle variation gives the grid editorial rhythm without
-     requiring distinct images per tile. */
-    .tile-sage {
-        background: var(--rp-sage-soft);
-    }
-    .tile-cream {
-        background: var(--rp-cream-warm);
-    }
+	/* Soft hover overlay — sage-tinted with IG glyph centered. The
+	   overlay fades in on hover, suggesting interactivity without
+	   shouting. The image scales subtly behind it. */
+	.tile-overlay {
+		position: absolute;
+		inset: 0;
+		background: rgba(74, 103, 65, 0);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transition:
+			background 0.3s ease,
+			opacity 0.3s ease;
+		pointer-events: none;
+	}
+	.overlay-icon {
+		color: var(--rp-cream);
+		font-size: 28px;
+		line-height: 1;
+		filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+	}
 
-    /* ===== Mobile ===== */
+	.tile:hover :global(img) {
+		transform: scale(1.06);
+		filter: brightness(0.78);
+	}
+	.tile:hover .tile-overlay {
+		opacity: 1;
+		background: rgba(74, 103, 65, 0.25);
+	}
+	.tile:focus-visible {
+		outline: 2px solid var(--rp-sage);
+		outline-offset: 2px;
+	}
 
-    @media (max-width: 800px) {
-        .container {
-            padding: 48px 18px 48px;
-        }
-        .section-header {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-        .grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        .section-title {
-            font-size: 24px;
-        }
-    }
+	/* ===== Footnote ===== */
+
+	.footnote {
+		font-family: var(--rp-font-body);
+		font-size: 13px;
+		color: var(--rp-muted);
+		text-align: center;
+		margin: 28px 0 0;
+		font-style: italic;
+	}
+	.footnote-link {
+		color: var(--rp-sage);
+		font-style: normal;
+		text-decoration: none;
+	}
+	.footnote-link:hover {
+		text-decoration: underline;
+	}
+
+	/* ===== Mobile ===== */
+
+	@media (max-width: 800px) {
+		.container {
+			padding: 48px 18px 48px;
+		}
+		.section-header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+			margin-bottom: 20px;
+		}
+		.grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.section-title {
+			font-size: 24px;
+		}
+		.overlay-icon {
+			font-size: 24px;
+		}
+	}
 </style>

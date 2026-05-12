@@ -160,16 +160,22 @@ const fmtCount = (n: number) => String(n).padStart(2, "0");
 				text-decoration: none;
 			}
 
-			/* Card images are clean rectangles here (no tear mask) — that
-			   treatment is reserved for the post hero. */
+			/* Card image — padding-bottom hack for 16:9 aspect ratio.
+			   More reliable across browsers (especially mobile Safari)
+			   than the aspect-ratio CSS property, which had inconsistent
+			   rendering at small viewports. */
 			.card-image {
-				aspect-ratio: 16 / 9;
+				position: relative;
+				width: 100%;
+				padding-bottom: 56.25%; /* 16:9 = 9/16 × 100% */
 				margin-bottom: 18px;
 				overflow: hidden;
 				background: var(--rp-sage-soft);
-				transition: transform 0.25s ease;
 			}
 			.card-image img {
+				position: absolute;
+				top: 0;
+				left: 0;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
@@ -181,6 +187,9 @@ const fmtCount = (n: number) => String(n).padStart(2, "0");
 			}
 
 			.card-placeholder {
+				position: absolute;
+				top: 0;
+				left: 0;
 				width: 100%;
 				height: 100%;
 				background: var(--rp-sage-soft);
