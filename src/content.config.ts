@@ -13,7 +13,14 @@ const blog = defineCollection({
 			// Transform string to Date object
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
-			heroImage: z.optional(image()),
+			// heroImage is now a string path under /public (e.g.
+			// "/images/blog/foo.jpg"). Switched from image() to z.string()
+			// because the Cloudflare Workers adapter's image transformation
+			// pipeline is gated behind paid Cloudflare Image Transformations.
+			// Public folder paths are served directly by the Workers static
+			// asset handler — no transformation, no /_image URL wrapping,
+			// guaranteed to work.
+			heroImage: z.string().optional(),
 			ig_shortcode: z.string().optional(),
 			// Category — one of the five canonical topics. z.enum gives
 			// us compile-time validation: a typo in a post's frontmatter

@@ -8,7 +8,6 @@
  * If a category has no posts yet, shows a graceful empty state.
  * ========================================================================= */
 
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
@@ -73,12 +72,11 @@ const PAGE_DESC = desc;
 									>
 										<div class="card-image">
 											{post.data.heroImage ? (
-												<Image
+												<img
 													src={post.data.heroImage}
 													alt=""
-													widths={[400, 600, 800]}
-													sizes="(max-width: 600px) 95vw, (max-width: 1000px) 45vw, 600px"
 													decoding="async"
+													loading="lazy"
 												/>
 											) : (
 												<div class="card-placeholder" />

@@ -15,12 +15,14 @@
  * with an <img> referencing src/assets/about/portrait.jpg).
  * ========================================================================= */
 
-import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Subscribe from "../components/Subscribe.astro";
-import portraitImage from "../assets/about/portrait.jpg";
+
+// Portrait served as a raw static asset from /public — bypasses Astro's
+// image pipeline entirely (which had Workers compatibility issues).
+const PORTRAIT_SRC = "/images/about/portrait.jpg";
 
 const PAGE_TITLE = "About — Rhymes & Poetry";
 const PAGE_DESC =
@@ -51,11 +53,11 @@ const PAGE_DESC =
 				<!-- Portrait -->
 				<div class="portrait-frame">
 					<div class="portrait">
-						<Image
-							src={portraitImage}
+						<img
+							src={PORTRAIT_SRC}
 							alt="Jake Cohn (JTC)"
-							width={360}
-							height={360}
+							width="360"
+							height="360"
 						/>
 					</div>
 				</div>

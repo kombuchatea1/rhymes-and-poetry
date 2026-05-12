@@ -2,7 +2,7 @@
 title: "Courage to Be Kind"
 description: "On legacy, kindness, and a mother's wisdom — that what people remember isn't what you said or did, but how you made them feel."
 pubDate: 2026-05-10
-heroImage: ../../assets/blog/courage-to-be-kind.jpg
+heroImage: /images/blog/courage-to-be-kind.jpg
 category: reflections
 ---
 

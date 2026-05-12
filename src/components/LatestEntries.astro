@@ -32,7 +32,6 @@
  * beyond the CDN serving HTML.
  * ========================================================================= */
 
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 // Pull all blog posts from the content collection. The shape is determined
@@ -71,11 +70,9 @@ const fmtDate = (d: Date) =>
                         <a href={`/blog/${post.id}`} class="card-link">
                             <div class="card-image">
                                 {post.data.heroImage && (
-                                    <Image
+                                    <img
                                         src={post.data.heroImage}
                                         alt=""
-                                        widths={[400, 600, 800]}
-                                        sizes="(max-width: 600px) 95vw, (max-width: 1000px) 45vw, 400px"
                                         decoding="async"
                                     />
                                 )}

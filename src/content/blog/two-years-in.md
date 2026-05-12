@@ -2,7 +2,7 @@
 title: "Two Years In"
 description: "On two years of daily meditation — what it changed, what it didn't, and the quiet practice of accepting what comes."
 pubDate: 2024-08-15
-heroImage: ../../assets/blog/two-years-in.jpg
+heroImage: /images/blog/two-years-in.jpg
 category: reflections
 ---
 

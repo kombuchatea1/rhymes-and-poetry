@@ -2,7 +2,7 @@
 title: "We Carry a Torch"
 description: "Written on a bridge in Florence, watching the Arno pass below — a meditation on what we carry forward and what we leave behind."
 pubDate: 2025-09-15
-heroImage: ../../assets/blog/we-carry-a-torch.jpg
+heroImage: /images/blog/we-carry-a-torch.jpg
 ig_shortcode: "DL2rYpSsyQT"
 category: reflections
 ---
