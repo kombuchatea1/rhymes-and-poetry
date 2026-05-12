@@ -3,41 +3,26 @@
  * src/components/Topics.astro
  * Rhymes & Poetry — "Browse by topic" section (5 circular counters)
  *
- * Editorial sites traditionally have category indexes — this is the
- * brand's version. Five circular counters, each leading to a topic page
- * that lists posts in that category.
- *
- * COUNTS ARE HARDCODED FOR NOW
- * ----------------------------
- * The numbers shown are editorial placeholders, not actual post counts.
- * When we migrate the 15 SEO-ready posts and tag each with a category,
- * we'll swap this for a dynamic count via getCollection() filtering.
- * Pattern would look like:
- *
- *   import { getCollection } from 'astro:content';
- *   const posts = await getCollection('blog');
- *   const counts = topics.map(t => ({
- *     ...t,
- *     count: posts.filter(p => p.data.category === t.slug).length
- *   }));
- *
- * For MVP, hardcoded values are fine — visitors don't notice and we can
- * iterate to real data without changing the visual design.
- *
- * LINK TARGETS ARE PLACEHOLDER ROUTES
- * -----------------------------------
- * /topics/{slug} routes don't exist yet. Clicking will 404 cleanly until
- * we build the topic-listing page (a future task). The URLs are set up
- * with the right pattern so adding the routes later just makes them work.
+ * Counts are computed at build time from the content collection by
+ * filtering posts where data.category matches each topic's slug.
+ * The slugs here MUST match the enum in content.config.ts — keep in sync.
  * ========================================================================= */
 
-const topics = [
-    { slug: "reflections", label: "Reflections", count: 18 },
-    { slug: "rap-and-bars", label: "Rap & Bars", count: 24 },
-    { slug: "nature", label: "Nature", count: 9 },
-    { slug: "love-loss", label: "Love & Loss", count: 12 },
-    { slug: "community", label: "Community", count: 7 },
+import { getCollection } from "astro:content";
+
+const TOPIC_DEFS = [
+    { slug: "reflections" as const, label: "Reflections" },
+    { slug: "rap-and-bars" as const, label: "Rap & Bars" },
+    { slug: "nature" as const, label: "Nature" },
+    { slug: "love-loss" as const, label: "Love & Loss" },
+    { slug: "community" as const, label: "Community" },
 ];
+
+const posts = await getCollection("blog");
+const topics = TOPIC_DEFS.map((t) => ({
+    ...t,
+    count: posts.filter((p) => p.data.category === t.slug).length,
+}));
 
 // Format counts with leading zero for visual rhythm — 18, 24, 09, 12, 07
 const fmtCount = (n: number) => String(n).padStart(2, "0");

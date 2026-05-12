@@ -15,6 +15,18 @@ const blog = defineCollection({
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
 			ig_shortcode: z.string().optional(),
+			// Category — one of the five canonical topics. z.enum gives
+			// us compile-time validation: a typo in a post's frontmatter
+			// will fail the build rather than silently miscategorizing.
+			category: z
+				.enum([
+					"reflections",
+					"rap-and-bars",
+					"nature",
+					"love-loss",
+					"community",
+				])
+				.optional(),
 		}),
 });
 

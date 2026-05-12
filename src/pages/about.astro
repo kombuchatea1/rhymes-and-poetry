@@ -15,10 +15,12 @@
  * with an <img> referencing src/assets/about/portrait.jpg).
  * ========================================================================= */
 
+import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Subscribe from "../components/Subscribe.astro";
+import portraitImage from "../assets/about/portrait.jpg";
 
 const PAGE_TITLE = "About — Rhymes & Poetry";
 const PAGE_DESC =
@@ -46,14 +48,16 @@ const PAGE_DESC =
 					</p>
 				</header>
 
-				<!-- Portrait placeholder -->
+				<!-- Portrait -->
 				<div class="portrait-frame">
-					<div class="portrait" aria-hidden="true">
-						<span class="portrait-mark">R&amp;P</span>
+					<div class="portrait">
+						<Image
+							src={portraitImage}
+							alt="Jake Cohn (JTC)"
+							width={360}
+							height={360}
+						/>
 					</div>
-					<p class="portrait-caption">
-						<em>Portrait coming soon</em>
-					</p>
 				</div>
 
 				<!-- Bio prose -->
@@ -181,30 +185,17 @@ const PAGE_DESC =
 			.portrait {
 				width: 180px;
 				height: 180px;
-				margin: 0 auto 14px;
+				margin: 0 auto;
 				border-radius: 50%;
-				background: var(--rp-sage);
-				display: flex;
-				align-items: center;
-				justify-content: center;
+				overflow: hidden;
+				/* Sage ring around the portrait — subtle brand touch */
+				box-shadow: 0 0 0 1px var(--rp-sage-line);
 			}
-
-			.portrait-mark {
-				font-family: var(--rp-font-display);
-				font-style: italic;
-				font-size: 56px;
-				color: var(--rp-cream);
-				letter-spacing: -0.02em;
-			}
-
-			.portrait-caption {
-				font-family: var(--rp-font-body);
-				font-size: 13px;
-				color: var(--rp-faint);
-				margin: 0;
-			}
-			.portrait-caption em {
-				font-style: italic;
+			.portrait :global(img) {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
 			}
 
 			/* ===== Bio body ===== */

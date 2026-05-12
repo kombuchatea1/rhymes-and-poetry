@@ -3,6 +3,7 @@ title: "Courage to Be Kind"
 description: "On legacy, kindness, and a mother's wisdom — that what people remember isn't what you said or did, but how you made them feel."
 pubDate: 2026-05-10
 heroImage: ../../assets/blog/courage-to-be-kind.jpg
+category: reflections
 ---
 
 There's a question that lives quietly under most of our days, even when we don't notice it: *how will the people we passed through remember us?* Not the headline things — the role, the title, the curated bio version of you — but the residue. The feeling left behind in someone else's afternoon.

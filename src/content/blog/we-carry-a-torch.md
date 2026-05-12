@@ -4,6 +4,7 @@ description: "Written on a bridge in Florence, watching the Arno pass below — 
 pubDate: 2025-09-15
 heroImage: ../../assets/blog/we-carry-a-torch.jpg
 ig_shortcode: "DL2rYpSsyQT"
+category: reflections
 ---
 
 There are places that make you think about time differently. Not its passage — that's everywhere — but its weight. The accumulation. The way certain stones have stood through more than you ever will. This came from a bridge in Florence, looking down at the Arno, the Ponte Vecchio still standing where it has been for almost seven hundred years.

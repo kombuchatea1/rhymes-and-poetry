@@ -3,6 +3,7 @@ title: "Two Years In"
 description: "On two years of daily meditation — what it changed, what it didn't, and the quiet practice of accepting what comes."
 pubDate: 2024-08-15
 heroImage: ../../assets/blog/two-years-in.jpg
+category: reflections
 ---
 
 Two years feels like a long time to keep one promise. It also feels like nothing — the practice unfolds at its own pace, the changes come quietly, and most days you're not sure anything is actually happening. Then, on some ordinary morning, you notice that you've stopped reaching for things you used to reach for. The reaching just... isn't there.

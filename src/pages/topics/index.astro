@@ -1,0 +1,250 @@
+---
+/* ===========================================================================
+ * src/pages/topics/index.astro
+ * Rhymes & Poetry — Topics overview page
+ *
+ * Full-page version of the home Topics component. Shows all 5 categories
+ * with real post counts (queried from the content collection at build
+ * time) and short descriptions. Click each card to drill into that
+ * topic's posts at /topics/[slug].
+ * ========================================================================= */
+
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+// Canonical topic definitions. Slugs match the enum in content.config.ts —
+// changing one here without changing the schema (or vice versa) will
+// produce zero-count topics that link to 404s, so keep them in sync.
+const TOPIC_DEFS = [
+	{
+		slug: "reflections",
+		label: "Reflections",
+		desc: "Personal observations, meditations on character and growth — the quiet pieces.",
+	},
+	{
+		slug: "rap-and-bars",
+		label: "Rap & Bars",
+		desc: "Lyrics and bars built for cadence, force, and timing.",
+	},
+	{
+		slug: "nature",
+		label: "Nature",
+		desc: "The natural world as mirror and metaphor.",
+	},
+	{
+		slug: "love-loss",
+		label: "Love & Loss",
+		desc: "What we hold, what we give up, what stays after.",
+	},
+	{
+		slug: "community",
+		label: "Community",
+		desc: "Stories from the people, places, and moments that shape us.",
+	},
+] as const;
+
+const posts = await getCollection("blog");
+const topics = TOPIC_DEFS.map((t) => ({
+	...t,
+	count: posts.filter((p) => p.data.category === t.slug).length,
+}));
+
+const fmtCount = (n: number) => String(n).padStart(2, "0");
+
+const PAGE_TITLE = "Topics — Rhymes & Poetry";
+const PAGE_DESC =
+	"Browse the writing by topic — reflections, rap & bars, nature, love & loss, community.";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={PAGE_TITLE} description={PAGE_DESC} />
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<article class="topics-page">
+				<header class="topics-header">
+					<p class="eyebrow">Browse</p>
+					<h1 class="title">Topics</h1>
+					<p class="deck">
+						Pick a thread to follow. Each topic gathers the
+						pieces that share its preoccupation.
+					</p>
+				</header>
+
+				<div class="topics-grid">
+					{
+						topics.map((topic) => (
+							<a
+								href={`/topics/${topic.slug}/`}
+								class="topic-card"
+								aria-label={`${topic.label} — ${topic.count} posts`}
+							>
+								<div class="circle">
+									<span class="count">
+										{fmtCount(topic.count)}
+									</span>
+								</div>
+								<h2 class="topic-label">{topic.label}</h2>
+								<p class="topic-desc">{topic.desc}</p>
+							</a>
+						))
+					}
+				</div>
+			</article>
+		</main>
+
+		<Footer />
+
+		<style>
+			.topics-page {
+				max-width: var(--rp-page-max);
+				margin: 0 auto;
+				padding: 64px 24px 96px;
+			}
+
+			.topics-header {
+				text-align: center;
+				margin-bottom: 56px;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.eyebrow {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 14px;
+			}
+
+			.title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 48px;
+				line-height: 1.1;
+				color: var(--rp-ink);
+				margin: 0 0 16px;
+				letter-spacing: -0.015em;
+			}
+
+			.deck {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 19px;
+				color: var(--rp-muted);
+				line-height: 1.5;
+				margin: 0;
+			}
+
+			/* ===== Grid ===== */
+
+			.topics-grid {
+				display: grid;
+				/* Auto-fit handles 5 across on wide screens, wrapping
+				   gracefully to 2-3 columns on narrower viewports. */
+				grid-template-columns: repeat(
+					auto-fit,
+					minmax(180px, 1fr)
+				);
+				gap: 32px 24px;
+			}
+
+			.topic-card {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				text-decoration: none;
+				color: inherit;
+				padding: 8px;
+				border-radius: 4px;
+				transition: transform 0.2s ease;
+			}
+			.topic-card:hover {
+				text-decoration: none;
+				transform: translateY(-2px);
+			}
+
+			.circle {
+				width: 96px;
+				height: 96px;
+				border-radius: 50%;
+				background: var(--rp-cream-warm);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 0 14px;
+				transition: background 0.2s ease;
+			}
+			.topic-card:hover .circle {
+				background: var(--rp-sage);
+			}
+
+			.count {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 28px;
+				color: var(--rp-sage);
+				line-height: 1;
+				transition: color 0.2s ease;
+			}
+			.topic-card:hover .count {
+				color: var(--rp-cream);
+			}
+
+			.topic-label {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 18px;
+				color: var(--rp-ink);
+				margin: 0 0 8px;
+				line-height: 1.2;
+				transition: color 0.15s ease;
+			}
+			.topic-card:hover .topic-label {
+				color: var(--rp-sage);
+			}
+
+			.topic-desc {
+				font-family: var(--rp-font-body);
+				font-size: 13px;
+				line-height: 1.5;
+				color: var(--rp-muted);
+				margin: 0;
+				max-width: 220px;
+			}
+
+			/* ===== Mobile ===== */
+
+			@media (max-width: 600px) {
+				.topics-page {
+					padding: 48px 18px 72px;
+				}
+				.title {
+					font-size: 36px;
+				}
+				.deck {
+					font-size: 17px;
+				}
+				.topics-grid {
+					gap: 28px 18px;
+				}
+				.circle {
+					width: 84px;
+					height: 84px;
+				}
+				.count {
+					font-size: 24px;
+				}
+			}
+		</style>
+	</body>
+</html>
