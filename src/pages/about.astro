@@ -1,63 +1,298 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+/* ===========================================================================
+ * src/pages/about.astro
+ * Rhymes & Poetry — About page
+ *
+ * Editorial layout with its own structure (not using BlogPost.astro since
+ * this isn't a post). Three sections:
+ *   - Header (eyebrow + title + portrait placeholder)
+ *   - Bio (the writer's story, voice, why this site exists)
+ *   - CTA (subscribe + Instagram links)
+ *
+ * The bio copy is a thoughtful placeholder in the brand voice — edit
+ * directly in this file to make it yours. The R&P circle stands in for
+ * a portrait until you have one to drop in (replace the .portrait div
+ * with an <img> referencing src/assets/about/portrait.jpg).
+ * ========================================================================= */
+
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Subscribe from "../components/Subscribe.astro";
+
+const PAGE_TITLE = "About — Rhymes & Poetry";
+const PAGE_DESC =
+	"The writer behind Rhymes & Poetry — Jake (JTC) on what he writes, why, and how this whole thing started.";
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={PAGE_TITLE} description={PAGE_DESC} />
+	</head>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+	<body>
+		<Header />
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+		<main>
+			<article class="about">
+				<!-- Header -->
+				<header class="about-header">
+					<p class="eyebrow">The writer</p>
+					<h1 class="title">Hi, I'm Jake.</h1>
+					<p class="deck">
+						JTC if you know me from Instagram. Writing rap, poetry,
+						and the occasional honest sentence in between.
+					</p>
+				</header>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+				<!-- Portrait placeholder -->
+				<div class="portrait-frame">
+					<div class="portrait" aria-hidden="true">
+						<span class="portrait-mark">R&amp;P</span>
+					</div>
+					<p class="portrait-caption">
+						<em>Portrait coming soon</em>
+					</p>
+				</div>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+				<!-- Bio prose -->
+				<div class="about-body">
+					<p>
+						I started writing poetry the way most people start —
+						badly, in private, because something needed to come
+						out. That was years ago. I kept doing it because
+						somewhere along the way it stopped being a release
+						and became a practice. A way of paying attention that
+						I couldn't get from anywhere else.
+					</p>
+
+					<p>
+						Some of what I write is rap — built for cadence, for
+						bars, for that specific feeling when the line lands.
+						Some of it is quieter — the kind of poem that earns
+						its weight by sitting still. Most of it is somewhere
+						in between.
+					</p>
+
+					<h2>Why this site exists</h2>
+
+					<p>
+						Instagram is a feed. It moves. By the time you've
+						read a poem you cared about, the algorithm has
+						buried it. This site is the opposite — a place
+						where the work stays, gathers, gets the room it
+						deserves. Easier to find old pieces. Easier to read
+						them in the voice they were written in.
+					</p>
+
+					<p>
+						My hope is that something here makes you feel a
+						little less alone. That's it. That's the whole
+						project. If a line lands and you save it, screenshot
+						it, send it to someone — that's the work doing what
+						it was meant to do.
+					</p>
+
+					<h2>What you'll find here</h2>
+
+					<p>
+						<strong>The journal</strong> — every poem I've
+						published, most recent first. Searchable, organized
+						by topic, written to be read on any device.
+					</p>
+
+					<p>
+						<strong>The newsletter</strong> — twice a month, new
+						verses delivered to your inbox. No spam, no padding,
+						no sponsored anything. Just words.
+					</p>
+
+					<p>
+						<strong>Instagram</strong> — daily and weekly drops
+						at <a
+							href="https://www.instagram.com/rhymesandpoetry_jtc/"
+							target="_blank"
+							rel="noopener noreferrer">@rhymesandpoetry_jtc</a
+						>. The site is the long memory; Instagram is the
+						current moment.
+					</p>
+
+					<p>Thank you for reading.</p>
+				</div>
+
+				<div class="signature">— JTC</div>
+			</article>
+		</main>
+
+		<Subscribe />
+		<Footer />
+
+		<style>
+			.about {
+				max-width: var(--rp-content-max);
+				margin: 0 auto;
+				padding: 64px 24px 48px;
+			}
+
+			/* ===== Header ===== */
+
+			.about-header {
+				text-align: center;
+				margin-bottom: 48px;
+			}
+
+			.eyebrow {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 16px;
+			}
+
+			.title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 48px;
+				line-height: 1.1;
+				color: var(--rp-ink);
+				margin: 0 0 16px;
+				letter-spacing: -0.015em;
+			}
+
+			.deck {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 20px;
+				color: var(--rp-muted);
+				line-height: 1.5;
+				margin: 0 auto;
+				max-width: 540px;
+			}
+
+			/* ===== Portrait ===== */
+
+			.portrait-frame {
+				text-align: center;
+				margin: 0 0 56px;
+			}
+
+			.portrait {
+				width: 180px;
+				height: 180px;
+				margin: 0 auto 14px;
+				border-radius: 50%;
+				background: var(--rp-sage);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.portrait-mark {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 56px;
+				color: var(--rp-cream);
+				letter-spacing: -0.02em;
+			}
+
+			.portrait-caption {
+				font-family: var(--rp-font-body);
+				font-size: 13px;
+				color: var(--rp-faint);
+				margin: 0;
+			}
+			.portrait-caption em {
+				font-style: italic;
+			}
+
+			/* ===== Bio body ===== */
+
+			.about-body {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-body);
+				line-height: 1.75;
+				color: var(--rp-ink);
+			}
+
+			.about-body p {
+				margin: 0 0 1.4em;
+			}
+
+			.about-body h2 {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 28px;
+				color: var(--rp-ink);
+				line-height: 1.2;
+				margin: 2.2em 0 0.6em;
+			}
+
+			.about-body strong {
+				font-weight: 600;
+				color: var(--rp-ink);
+			}
+
+			.about-body a {
+				color: var(--rp-sage);
+			}
+			.about-body a:hover {
+				text-decoration: underline;
+				text-decoration-thickness: 1px;
+				text-underline-offset: 2px;
+			}
+
+			/* ===== Signature ===== */
+
+			.signature {
+				text-align: center;
+				margin-top: 3.5em;
+				padding-top: 36px;
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				color: var(--rp-sage);
+				font-size: 18px;
+				letter-spacing: 0.02em;
+				position: relative;
+			}
+			.signature::before {
+				content: "· · ·";
+				display: block;
+				text-align: center;
+				color: var(--rp-sage-line);
+				letter-spacing: 0.65em;
+				font-size: 16px;
+				margin-bottom: 28px;
+				padding-left: 0.65em;
+			}
+
+			/* ===== Mobile ===== */
+
+			@media (max-width: 700px) {
+				.about {
+					padding: 48px 18px 40px;
+				}
+				.title {
+					font-size: 36px;
+				}
+				.deck {
+					font-size: 17px;
+				}
+				.about-body {
+					font-size: 17px;
+				}
+				.about-body h2 {
+					font-size: 24px;
+				}
+				.portrait {
+					width: 140px;
+					height: 140px;
+				}
+				.portrait-mark {
+					font-size: 44px;
+				}
+			}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,406 @@
+---
+/* ===========================================================================
+ * src/pages/subscribe.astro
+ * Rhymes & Poetry — dedicated Subscribe page
+ *
+ * The Header's "Subscribe" pill links here instead of the home-page anchor.
+ * Editorial layout — generous, focused on conversion.
+ *
+ * Sections:
+ *   - Hero (eyebrow + title + compelling deck)
+ *   - The form (larger than the inline component on home page)
+ *   - "What to expect" — three-point breakdown of the newsletter promise
+ *   - Honest sign-off
+ *
+ * Form behavior is currently the same placeholder as the home-page block
+ * (no-op submission, honeypot for bots). Wire to a real provider
+ * (Buttondown / ConvertKit / Mailchimp) when ready.
+ * ========================================================================= */
+
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const PAGE_TITLE = "Subscribe — Rhymes & Poetry";
+const PAGE_DESC =
+	"New verses, twice a month. No spam, no padding — just words built to linger. Subscribe to the Rhymes & Poetry newsletter.";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={PAGE_TITLE} description={PAGE_DESC} />
+	</head>
+
+	<body>
+		<Header />
+
+		<main>
+			<article class="subscribe-page">
+				<!-- Hero -->
+				<header class="hero">
+					<p class="eyebrow">The newsletter</p>
+					<h1 class="title">
+						Stay close to the words.
+					</h1>
+					<p class="deck">
+						Twice a month. New poems, occasional reflections,
+						and the pieces that didn't quite fit anywhere else.
+						Built to be read in the margin of an afternoon.
+					</p>
+				</header>
+
+				<!-- Form -->
+				<section class="form-section" aria-labelledby="form-heading">
+					<h2 id="form-heading" class="visually-hidden">
+						Subscribe form
+					</h2>
+					<form class="form" action="#" method="post">
+						<label for="subscribe-email" class="visually-hidden">
+							Email address
+						</label>
+						<input
+							id="subscribe-email"
+							type="email"
+							name="email"
+							placeholder="your email"
+							required
+							autocomplete="email"
+							class="input"
+						/>
+						{/* Honeypot — bots fill any field labeled
+						    "name" or "website"; humans never see this */}
+						<input
+							type="text"
+							name="website"
+							tabindex="-1"
+							autocomplete="off"
+							class="honeypot"
+							aria-hidden="true"
+						/>
+						<button type="submit" class="button">
+							Subscribe
+						</button>
+					</form>
+					<p class="form-note">
+						Unsubscribe in one click, anytime. Your email
+						stays mine alone — never sold, never shared.
+					</p>
+				</section>
+
+				<!-- What to expect -->
+				<section
+					class="expectations"
+					aria-labelledby="expectations-heading"
+				>
+					<h2 id="expectations-heading" class="section-heading">
+						What you'll get
+					</h2>
+
+					<div class="expect-grid">
+						<div class="expect">
+							<div class="expect-icon" aria-hidden="true">
+								<span>I</span>
+							</div>
+							<h3>Two emails a month</h3>
+							<p>
+								Roughly the 1st and the 15th. New verses,
+								selected reflections, an occasional
+								behind-the-scenes note. Nothing more
+								frequent than that — the work needs space
+								to land.
+							</p>
+						</div>
+
+						<div class="expect">
+							<div class="expect-icon" aria-hidden="true">
+								<span>II</span>
+							</div>
+							<h3>No padding</h3>
+							<p>
+								No "5 things I've been loving" sections,
+								no sponsored partnerships, no algorithmic
+								engagement bait. Just the writing, framed
+								the way I'd hand it to a friend.
+							</p>
+						</div>
+
+						<div class="expect">
+							<div class="expect-icon" aria-hidden="true">
+								<span>III</span>
+							</div>
+							<h3>Occasional first looks</h3>
+							<p>
+								New pieces sometimes appear in the
+								newsletter before they go up on the site
+								or Instagram. Subscribers get the early
+								read.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Sign-off -->
+				<section class="sign-off">
+					<p>
+						This list is small on purpose. If you decide it's
+						not for you — unsubscribe, no friction. The link is
+						in every email.
+					</p>
+					<p class="sign">— JTC</p>
+				</section>
+			</article>
+		</main>
+
+		<Footer />
+
+		<style>
+			.subscribe-page {
+				max-width: var(--rp-content-max);
+				margin: 0 auto;
+				padding: 64px 24px 80px;
+			}
+
+			/* ===== Hero ===== */
+
+			.hero {
+				text-align: center;
+				margin-bottom: 56px;
+			}
+
+			.eyebrow {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 16px;
+			}
+
+			.title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 48px;
+				line-height: 1.1;
+				color: var(--rp-ink);
+				margin: 0 0 18px;
+				letter-spacing: -0.015em;
+			}
+
+			.deck {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 20px;
+				color: var(--rp-muted);
+				line-height: 1.5;
+				margin: 0 auto;
+				max-width: 560px;
+			}
+
+			/* ===== Form ===== */
+
+			.form-section {
+				background: var(--rp-sage-soft);
+				border-top: 1px solid var(--rp-sage-line);
+				border-bottom: 1px solid var(--rp-sage-line);
+				padding: 48px 24px;
+				margin: 0 0 64px;
+				text-align: center;
+			}
+
+			.form {
+				display: flex;
+				justify-content: center;
+				gap: 8px;
+				max-width: 480px;
+				margin: 0 auto;
+				flex-wrap: wrap;
+			}
+
+			.input {
+				flex: 1;
+				min-width: 240px;
+				padding: 13px 16px;
+				border: 1px solid var(--rp-sage);
+				background: var(--rp-cream);
+				color: var(--rp-ink);
+				font-family: var(--rp-font-body);
+				font-size: 16px;
+				border-radius: 0;
+			}
+			.input:focus {
+				outline: 2px solid var(--rp-sage-dark);
+				outline-offset: 2px;
+			}
+			.input::placeholder {
+				color: var(--rp-faint);
+				font-style: italic;
+			}
+
+			.button {
+				padding: 13px 26px;
+				background: var(--rp-sage);
+				color: var(--rp-cream);
+				border: none;
+				font-family: var(--rp-font-body);
+				font-size: 14px;
+				letter-spacing: var(--rp-track-cta);
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: background 0.15s ease;
+			}
+			.button:hover {
+				background: var(--rp-sage-dark);
+			}
+			.button:focus-visible {
+				outline: 2px solid var(--rp-ink);
+				outline-offset: 2px;
+			}
+
+			.form-note {
+				font-family: var(--rp-font-body);
+				font-size: 13px;
+				color: var(--rp-muted);
+				margin: 18px auto 0;
+				max-width: 460px;
+			}
+
+			/* Hidden honeypot field */
+			.honeypot {
+				position: absolute;
+				left: -9999px;
+				width: 1px;
+				height: 1px;
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			.visually-hidden {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				white-space: nowrap;
+				border: 0;
+			}
+
+			/* ===== Expectations grid ===== */
+
+			.expectations {
+				margin-bottom: 64px;
+			}
+
+			.section-heading {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 28px;
+				color: var(--rp-ink);
+				text-align: center;
+				margin: 0 0 36px;
+				line-height: 1.2;
+			}
+
+			.expect-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 28px;
+			}
+
+			.expect {
+				text-align: center;
+			}
+
+			.expect-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 48px;
+				height: 48px;
+				border-radius: 50%;
+				background: var(--rp-cream-warm);
+				border: 1px solid var(--rp-sage-line);
+				margin: 0 auto 16px;
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				color: var(--rp-sage);
+				font-size: 16px;
+			}
+
+			.expect h3 {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 20px;
+				color: var(--rp-ink);
+				margin: 0 0 10px;
+				line-height: 1.25;
+			}
+
+			.expect p {
+				font-family: var(--rp-font-body);
+				font-size: 15px;
+				line-height: 1.6;
+				color: var(--rp-muted);
+				margin: 0;
+			}
+
+			/* ===== Sign-off ===== */
+
+			.sign-off {
+				text-align: center;
+				font-family: var(--rp-font-body);
+				font-size: 15px;
+				color: var(--rp-muted);
+				line-height: 1.6;
+				max-width: 480px;
+				margin: 0 auto;
+			}
+
+			.sign-off p {
+				margin: 0 0 14px;
+			}
+
+			.sign {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				color: var(--rp-sage);
+				font-size: 18px;
+				margin-top: 24px !important;
+			}
+
+			/* ===== Mobile ===== */
+
+			@media (max-width: 700px) {
+				.subscribe-page {
+					padding: 48px 18px 64px;
+				}
+				.title {
+					font-size: 36px;
+				}
+				.deck {
+					font-size: 17px;
+				}
+				.form-section {
+					padding: 36px 18px;
+				}
+				.form {
+					flex-direction: column;
+					gap: 10px;
+				}
+				.input {
+					min-width: 0;
+					width: 100%;
+				}
+				.button {
+					width: 100%;
+				}
+				.expect-grid {
+					grid-template-columns: 1fr;
+					gap: 32px;
+				}
+			}
+		</style>
+	</body>
+</html>
