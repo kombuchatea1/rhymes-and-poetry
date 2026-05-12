@@ -129,11 +129,94 @@ const { title, description, pubDate, updatedDate, heroImage, ig_shortcode } =
 
 			.post-hero {
 				margin-bottom: 40px;
+				/* Cinematic 2:1 aspect ratio — Train Dreams influence.
+				   overflow: hidden contains the Ken Burns scaled image. */
+				aspect-ratio: 2 / 1;
+				overflow: hidden;
+				position: relative;
+
+				/* Torn-paper edges via PNG mask in /public.
+				   Mask is sized exactly 1:1 with the element so all four
+				   tear edges (top, right, bottom, left) land exactly at
+				   the element boundaries and are fully visible. */
+				mask-image: url("/torn-paper-mask.png");
+				-webkit-mask-image: url("/torn-paper-mask.png");
+				mask-size: 100% 100%;
+				-webkit-mask-size: 100% 100%;
+				mask-repeat: no-repeat;
+				-webkit-mask-repeat: no-repeat;
+				mask-position: 0 0;
+				-webkit-mask-position: 0 0;
+				mask-mode: alpha;
+				-webkit-mask-mode: alpha;
+
+				/* Soft sage drop-shadow that follows the torn outline
+				   (drop-shadow respects mask alpha — box-shadow would
+				   only follow the rectangular bounds). */
+				filter: drop-shadow(0 2px 10px rgba(74, 103, 65, 0.12));
 			}
+
+			/* Animation will be added in a separate pass — see notes. */
 			.post-hero img {
 				width: 100%;
-				height: auto;
+				height: 100%;
 				display: block;
+				object-fit: cover;
+				transform-origin: center center;
+
+				/* Two simultaneous animations on the image:
+				   1. Ken Burns slow zoom (transform): cinematic camera move
+				   2. Atmosphere (filter): the light/color "breathes"
+				      via tiny oscillations in brightness, saturation, and
+				      hue. Each oscillation is too small to notice in any
+				      single moment, but combined and over time, the scene
+				      feels alive — like the air is moving, the sun is
+				      shifting, the moment is happening rather than being
+				      a frozen photograph.
+
+				   Different periods (24s and 22s) ensure they never
+				   synchronize — gives organic feel rather than pulsed. */
+				animation:
+					rp-ken-burns 24s ease-in-out infinite alternate,
+					rp-atmosphere 22s ease-in-out infinite;
+			}
+
+			@keyframes rp-ken-burns {
+				0% {
+					transform: scale(1) translate(0, 0);
+				}
+				100% {
+					transform: scale(1.06) translate(-1%, 1%);
+				}
+			}
+
+			@keyframes rp-atmosphere {
+				/* Brightness ±2%, saturation ±3%, hue ±2deg. All within
+				   the threshold of "feels alive" rather than "obviously
+				   shifting." The image always returns to its true state
+				   at 0% and 100% so the loop is invisible. */
+				0% {
+					filter: brightness(0.98) saturate(0.97) hue-rotate(0deg);
+				}
+				50% {
+					filter: brightness(1.02) saturate(1.04) hue-rotate(2deg);
+				}
+				100% {
+					filter: brightness(0.98) saturate(0.97) hue-rotate(0deg);
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				.post-hero img {
+					animation: none;
+				}
+			}
+
+			/* Respect users who prefer reduced motion (accessibility) */
+			@media (prefers-reduced-motion: reduce) {
+				.post-hero img {
+					animation: none;
+				}
 			}
 
 			.post-header {
@@ -299,6 +382,44 @@ const { title, description, pubDate, updatedDate, heroImage, ig_shortcode } =
 				background: var(--rp-cream-warm);
 				padding: 1px 6px;
 				border-radius: 3px;
+			}
+
+			/* ===== SIGNATURE =====
+     Dinkus (centered three-dot ornament) + author initials in Playfair italic
+     sage. Editorial convention — marks a clean break between the post and
+     the metadata that follows.
+
+     Usage in markdown:
+       <div class="signature">
+
+       — JTC
+
+       </div>
+  */
+			.post-body .signature {
+				text-align: center;
+				margin-top: 3.5em;
+				padding-top: 36px;
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				color: var(--rp-sage);
+				font-size: 18px;
+				letter-spacing: 0.02em;
+				position: relative;
+			}
+			.post-body .signature::before {
+				content: "· · ·";
+				display: block;
+				text-align: center;
+				color: var(--rp-sage-line);
+				letter-spacing: 0.65em;
+				font-size: 16px;
+				margin-bottom: 28px;
+				/* compensate for letter-spacing pushing visual center off */
+				padding-left: 0.65em;
+			}
+			.post-body .signature p {
+				margin: 0;
 			}
 
 			/* ===== POEM BLOCK =====

@@ -37,4 +37,12 @@ I take a deep breath, and remind my tired mind
 
 </div>
 
-Knowledge can be beautiful. Kindness is what people carry.
+Knowledge is beautiful in the way a well-cut stone is beautiful — admirable, precise, impressive. Kindness is beautiful in a different way. It's the quality that gets remembered when no one's keeping score, the small decisions made when nothing's at stake. The things you do because they cost you something, not because they earn you something.
+
+I'm still learning. The poem is from a younger version of me trying to understand what my mother passed down, and from an older version still trying to live up to it. The work is to keep being the kind of person someone might be glad they crossed paths with — and to extend that same grace to yourself when you fall short.
+
+<div class="signature">
+
+— JTC
+
+</div>
