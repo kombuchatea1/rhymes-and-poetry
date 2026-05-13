@@ -208,8 +208,12 @@ async function main() {
     const content = readFileSync(mdPath, 'utf8');
     const { frontmatter, body } = parseFrontmatter(content);
 
-    if (hasHeroImage(frontmatter) && !FORCE) {
-      console.log(`- skip ${slug} (already has heroImage)`);
+    // Only skip if BOTH the frontmatter heroImage is set AND the actual
+    // JPG exists on disk. Otherwise we'd skip posts whose .md was
+    // pre-populated with heroImage but never had the image generated.
+    const expectedImagePath = join(PUBLIC_DIR, `${slug}.jpg`);
+    if (hasHeroImage(frontmatter) && existsSync(expectedImagePath) && !FORCE) {
+      console.log(`- skip ${slug} (already has heroImage + image on disk)`);
       skipped++;
       continue;
     }
