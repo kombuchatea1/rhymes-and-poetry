@@ -2,6 +2,7 @@
 title: "I Wish I Could See"
 description: "On the human ache to know — what's coming, what it all means, and whether knowing would change anything at all."
 pubDate: 2025-01-18
+heroImage: /images/blog/i-wish-i-could-see.jpg
 category: reflections
 ---
 

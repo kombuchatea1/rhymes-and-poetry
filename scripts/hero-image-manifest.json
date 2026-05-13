@@ -1,0 +1,33 @@
+{
+  "_comment": "Prompts for Replicate Flux 1.1 Pro hero-image generation. One entry per slug. Each prompt is tuned to the poem's emotional core in the same atmospheric / single-subject style as the existing three hero images. Keep prompts in natural-language Flux form, end with 'no text, no words'.",
+
+  "i-met-a-man": "A solitary craftsman silhouetted in the warm glow of a dusty workshop window at late afternoon, golden light streaming through floating dust motes, painterly cinematic, intimate and quiet, no text, no words",
+
+  "pull-of-the-universe": "A lone figure standing on wet sand watching the ocean at sunrise, soft pastel sky reflecting on the wet beach, painterly atmospheric, vast and contemplative, no text, no words",
+
+  "rhymes-and-beats": "A worn pair of cleats on cracked urban pavement, dramatic side-lit dusk light, gritty cinematic painterly, no text, no words",
+
+  "presence-in-the-present": "A single figure seated cross-legged at the edge of a misty cliff at golden hour, warm enveloping light, dreamy painterly, serene, no text, no words",
+
+  "look-into-my-eyes": "Reflection of a person's contemplative face in still water at twilight, ripples just settling, painterly atmospheric, melancholic and introspective, no text, no words",
+
+  "i-wish-i-could-see": "A lone silhouette on a quiet hilltop beneath a vast star-filled night sky with a faint Milky Way, atmospheric cinematic painterly, contemplative wonder, no text, no words",
+
+  "i-knew-it-was-you": "Two distant figures approaching each other on a misty country road at dawn, soft pastel light, dreamy painterly recognition, no text, no words",
+
+  "frozen-in-time": "Scattered old polaroid photographs on a weathered wooden floor, warm afternoon light streaming through a nearby window, nostalgic painterly stillness, no text, no words",
+
+  "are-you-listening": "Close intimate view of a hand resting gently over a person's heart, soft natural window light, quiet painterly tenderness, no text, no words",
+
+  "namaste": "Silhouette of a person bowing in greeting at the misty edge of a mountain pond at sunrise, soft golden mist, painterly serenity, no text, no words",
+
+  "were-not-so-different": "Two strangers sharing a park bench in the warm soft glow of late golden hour, viewed from a respectful distance, painterly quiet, no text, no words",
+
+  "i-believe-in-fate": "A foggy path forking through an old forest, sunbeams cutting through morning mist, mysterious atmospheric painterly, no text, no words",
+
+  "spreading-peace": "A solitary figure exhaling visible breath into cold morning urban air, soft cinematic dawn light on quiet streets, painterly contemplative, no text, no words",
+
+  "simple-things": "An empty wooden porch swing on a quiet front porch at golden hour, soft warm slanting light, nostalgic painterly stillness, no text, no words",
+
+  "until-i-met-you": "Two hands almost touching across a small cafe table, warm low candlelight, painterly intimate, soft focus background, no text, no words"
+}

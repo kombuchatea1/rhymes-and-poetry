@@ -2,6 +2,7 @@
 title: "Frozen in Time"
 description: "On old photographs, forgotten lives, and the strange tenderness of remembering people you've outgrown."
 pubDate: 2025-05-10
+heroImage: /images/blog/frozen-in-time.jpg
 category: love-loss
 ---
 

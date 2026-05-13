@@ -2,6 +2,7 @@
 title: "The Pull of the Universe"
 description: "On waves, destiny, and the quiet strength of being pulled toward what's meant for you."
 pubDate: 2024-05-22
+heroImage: /images/blog/pull-of-the-universe.jpg
 category: nature
 ---
 

@@ -2,6 +2,7 @@
 title: "Look Into My Eyes"
 description: "On contradictions, self-doubt, and the long practice of becoming someone you'd be proud to be."
 pubDate: 2024-12-03
+heroImage: /images/blog/look-into-my-eyes.jpg
 category: reflections
 ---
 

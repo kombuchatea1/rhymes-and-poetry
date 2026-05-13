@@ -2,6 +2,7 @@
 title: "Are You Listening?"
 description: "A haiku on the quiet wisdom of the body — and the cost of ignoring it."
 pubDate: 2025-07-14
+heroImage: /images/blog/are-you-listening.jpg
 category: reflections
 ---
 

@@ -2,6 +2,7 @@
 title: "A Presence in the Present"
 description: "On the fleeting bliss of full presence — when the past and future fall away, and there's only now."
 pubDate: 2024-10-08
+heroImage: /images/blog/presence-in-the-present.jpg
 category: reflections
 ---
 

@@ -2,6 +2,7 @@
 title: "I Knew It Was You"
 description: "A haiku on recognition — the moment you meet someone and feel certain you've already known them somewhere before."
 pubDate: 2025-03-22
+heroImage: /images/blog/i-knew-it-was-you.jpg
 category: love-loss
 ---
 

@@ -2,6 +2,7 @@
 title: "I Met a Man"
 description: "On hidden talent, the beauty most people miss, and how easily the most important things in our lives go unrecognized."
 pubDate: 2024-03-12
+heroImage: /images/blog/i-met-a-man.jpg
 category: reflections
 ---
 

@@ -2,6 +2,7 @@
 title: "Rhymes and Beats"
 description: "Short and sharp — the kind of bar that doesn't ask for breath. Four lines, one shot."
 pubDate: 2024-07-04
+heroImage: /images/blog/rhymes-and-beats.jpg
 category: rap-and-bars
 ---
 

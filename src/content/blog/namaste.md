@@ -2,6 +2,7 @@
 title: "Namaste"
 description: "On change, looking inward, and the quiet honor in greeting yourself the way you would a friend."
 pubDate: 2025-11-05
+heroImage: /images/blog/namaste.jpg
 category: reflections
 ---
 
