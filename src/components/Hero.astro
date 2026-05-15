@@ -178,8 +178,9 @@ const featured = {
         line-height: 1.4;
         color: var(--rp-ink);
         margin: 0 0 22px;
-        /* Browser default for <blockquote> adds left margin we don't want */
-        padding: 0;
+        /* Reset browser <blockquote> default margins, but preserve breathing
+           room between the global blockquote sage border-left and the text */
+        padding: 4px 0 4px 18px;
     }
 
     .featured-attribution {

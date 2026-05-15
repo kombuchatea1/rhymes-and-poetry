@@ -1,0 +1,146 @@
+---
+/* ===========================================================================
+ * src/pages/subscribed.astro
+ * Rhymes & Poetry — post-subscribe thank-you page
+ *
+ * Visitors land here after submitting the subscribe form. The /api/subscribe
+ * endpoint redirects to this URL on success.
+ * ========================================================================= */
+
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const PAGE_TITLE = "You're in — Rhymes & Poetry";
+const PAGE_DESC =
+	"Thanks for subscribing to Rhymes & Poetry. New verses, twice a month.";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={PAGE_TITLE} description={PAGE_DESC} />
+	</head>
+
+	<body>
+		<Header />
+
+		<main>
+			<article class="thanks">
+				<header class="hero">
+					<p class="eyebrow">You're in</p>
+					<h1 class="title">Welcome to the list.</h1>
+					<p class="deck">
+						Twice a month, a new piece will land in your inbox.
+						No spam, no padding, no algorithm. Just words.
+					</p>
+				</header>
+
+				<div class="actions">
+					<a href="/blog" class="cta cta-primary">Start reading</a>
+					<a href="/" class="cta cta-secondary">Back home</a>
+				</div>
+
+				<p class="sign">— JTC</p>
+			</article>
+		</main>
+
+		<Footer />
+
+		<style>
+			.thanks {
+				max-width: var(--rp-content-max);
+				margin: 0 auto;
+				padding: 96px 24px 96px;
+				text-align: center;
+			}
+
+			.eyebrow {
+				font-family: var(--rp-font-body);
+				font-size: var(--rp-size-tiny);
+				letter-spacing: var(--rp-track-eyebrow);
+				text-transform: uppercase;
+				color: var(--rp-muted);
+				margin: 0 0 16px;
+			}
+
+			.title {
+				font-family: var(--rp-font-display);
+				font-weight: 400;
+				font-size: 48px;
+				line-height: 1.1;
+				color: var(--rp-ink);
+				margin: 0 0 18px;
+				letter-spacing: -0.015em;
+			}
+
+			.deck {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				font-size: 20px;
+				color: var(--rp-muted);
+				line-height: 1.5;
+				margin: 0 auto 40px;
+				max-width: 540px;
+			}
+
+			.actions {
+				display: flex;
+				justify-content: center;
+				gap: 14px;
+				margin: 0 0 56px;
+				flex-wrap: wrap;
+			}
+
+			.cta {
+				display: inline-block;
+				padding: 12px 28px;
+				font-family: var(--rp-font-body);
+				font-size: 13px;
+				letter-spacing: var(--rp-track-cta);
+				text-transform: uppercase;
+				text-decoration: none;
+				border-radius: var(--rp-radius-pill);
+				transition: background 0.15s ease, color 0.15s ease;
+			}
+			.cta-primary {
+				background: var(--rp-ink);
+				color: var(--rp-cream);
+			}
+			.cta-primary:hover {
+				background: var(--rp-sage-dark);
+				text-decoration: none;
+			}
+			.cta-secondary {
+				background: transparent;
+				color: var(--rp-sage);
+				border: 1px solid var(--rp-sage);
+			}
+			.cta-secondary:hover {
+				background: var(--rp-sage);
+				color: var(--rp-cream);
+				text-decoration: none;
+			}
+
+			.sign {
+				font-family: var(--rp-font-display);
+				font-style: italic;
+				color: var(--rp-sage);
+				font-size: 18px;
+				margin: 0;
+			}
+
+			@media (max-width: 700px) {
+				.thanks {
+					padding: 64px 18px 64px;
+				}
+				.title {
+					font-size: 36px;
+				}
+				.deck {
+					font-size: 17px;
+				}
+			}
+		</style>
+	</body>
+</html>

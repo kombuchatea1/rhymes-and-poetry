@@ -32,7 +32,7 @@
  * ========================================================================= */
 
 // TODO(setup): replace with your Buttondown username after signing up
-export const NEWSLETTER_USERNAME = "";
+export const NEWSLETTER_USERNAME = "jtc28";
 
 export const NEWSLETTER_PROVIDER = "buttondown" as const;
 

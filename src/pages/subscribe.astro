@@ -20,10 +20,9 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import {
-	NEWSLETTER_ACTION_URL,
-	NEWSLETTER_SUBMIT_TARGET,
-} from "../consts/newsletter";
+// Form posts to our own endpoint at /api/subscribe (see
+// src/pages/api/subscribe.ts) which handles validation, optional Buttondown
+// forwarding, and redirect to /subscribed.
 
 const PAGE_TITLE = "Subscribe — Rhymes & Poetry";
 const PAGE_DESC =
@@ -61,12 +60,9 @@ const PAGE_DESC =
 					</h2>
 					<form
 						class="form"
-						action={NEWSLETTER_ACTION_URL}
+						action="/api/subscribe"
 						method="post"
-						target={NEWSLETTER_SUBMIT_TARGET}
 					>
-						{/* Buttondown embed marker */}
-						<input type="hidden" name="embed" value="1" />
 						<label for="subscribe-email" class="visually-hidden">
 							Email address
 						</label>

@@ -46,10 +46,8 @@
  * Until NEWSLETTER_USERNAME is set there, form action="#" (no-op).
  * ========================================================================= */
 
-import {
-	NEWSLETTER_ACTION_URL,
-	NEWSLETTER_SUBMIT_TARGET,
-} from "../consts/newsletter";
+// Form posts to our own endpoint (src/pages/api/subscribe.ts) which handles
+// validation, optional Buttondown forwarding, and redirect to /subscribed.
 ---
 
 <section class="subscribe" aria-labelledby="subscribe-heading">
@@ -62,13 +60,9 @@ import {
 
         <form
             class="form"
-            action={NEWSLETTER_ACTION_URL}
+            action="/api/subscribe"
             method="post"
-            target={NEWSLETTER_SUBMIT_TARGET}
         >
-            {/* Buttondown's required hidden field — tells their endpoint
-                that this is an embed-style submission */}
-            <input type="hidden" name="embed" value="1" />
             <label for="subscribe-email" class="visually-hidden"
                 >Email address</label
             >
