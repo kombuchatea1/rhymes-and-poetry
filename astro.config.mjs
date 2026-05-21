@@ -8,7 +8,12 @@ import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rhymes-and-poetry.jakethomasc28.workers.dev',
+  // Production canonical URL — used by Astro.site for absolute URLs in
+  // OG/Twitter meta tags, sitemap, and RSS feed. While the Wix→Porkbun
+  // transfer of rhymesandpoetry.com is pending, point at the .org variant
+  // (active via Cloudflare Registrar). Switch to rhymesandpoetry.com once
+  // the .com DNS resolves to this Worker.
+  site: 'https://rhymesandpoetry.org',
   integrations: [mdx(), sitemap()],
 
   // Image service: passthrough (serve originals, no runtime transformation).

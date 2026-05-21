@@ -122,6 +122,41 @@ def main():
     (PUBLIC / "favicon.svg").write_text(svg)
     print(f"  ✓ {(PUBLIC / 'favicon.svg').relative_to(PROJECT_ROOT)}")
 
+    # Open Graph card — 1200x630 is the canonical OG/Twitter card size.
+    # Cream background, sage circle mark on the left, wordmark + tagline on
+    # the right. This is what shows in iMessage/Slack/Twitter link previews.
+    OG_W, OG_H = 1200, 630
+    og = Image.new("RGB", (OG_W, OG_H), (250, 249, 246))  # cream bg
+    od = ImageDraw.Draw(og)
+
+    # Mark on the left
+    mark_size = 280
+    mark = render_mark(mark_size, text_scale=0.40)
+    # Composite the mark with alpha onto the OG card
+    mark_x = 110
+    mark_y = (OG_H - mark_size) // 2
+    og.paste(mark, (mark_x, mark_y), mark)
+
+    # Wordmark "Rhymes & Poetry" — large italic serif
+    wordmark_font = ImageFont.truetype(ITALIC_SERIF, 78)
+    wordmark = "Rhymes & Poetry"
+    wm_bbox = od.textbbox((0, 0), wordmark, font=wordmark_font)
+    text_x = mark_x + mark_size + 70
+    wm_y = (OG_H // 2) - (wm_bbox[3] - wm_bbox[1]) - 12
+    od.text((text_x, wm_y), wordmark, font=wordmark_font, fill=(36, 41, 33))
+
+    # Tagline beneath
+    tagline_font = ImageFont.truetype(ITALIC_SERIF, 32)
+    tagline = "Poetry, reflections, and the line that doesn't leave you."
+    od.text((text_x, OG_H // 2 + 8), tagline, font=tagline_font, fill=(120, 130, 110))
+
+    # Subtle bottom rule
+    rule_y = OG_H - 60
+    od.rectangle([text_x, rule_y, text_x + 60, rule_y + 2], fill=(74, 103, 65))
+
+    og.save(BRAND_DIR / "og-default.jpg", "JPEG", quality=90, optimize=True)
+    print(f"  ✓ {(BRAND_DIR / 'og-default.jpg').relative_to(PROJECT_ROOT)}")
+
     print("\nDone.")
 
 
