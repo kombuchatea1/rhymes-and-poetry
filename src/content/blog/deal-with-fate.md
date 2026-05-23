@@ -1,9 +1,20 @@
 ---
-title: "Deal with Fate"
-description: "On the questions that visit at 3am — about choice, consequence, and whether the wrong choice is still ours."
+title: 'Deal with Fate: A Poem on Choice and Consequence'
+description: A reflective poem on fate, choice, and consequence — sitting with the
+  3am questions that have no easy answer, and making peace with the asking.
 pubDate: 2019-03-04
 heroImage: /images/blog/deal-with-fate.jpg
 category: reflections
+tags:
+- fate
+- choice
+- reflective poem
+- existential
+- sleeplessness
+- consequence
+heroImageAlt: A dimly lit room at night, evoking restless 3am thoughts about fate
+  and choice
+seoOptimizedAt: '2026-05-23'
 ---
 
 A piece written in the exact key of the questions that won't let you sleep. Not looking for an answer. Just sitting with the asking.
