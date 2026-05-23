@@ -1,0 +1,4 @@
+anthropic>=0.25.0
+python-frontmatter>=1.1.0
+python-dotenv>=1.0.0
+# 'requests' and 'smtplib' are Python stdlib — no install needed

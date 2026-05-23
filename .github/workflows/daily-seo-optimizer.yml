@@ -1,0 +1,92 @@
+# .github/workflows/daily-seo-optimizer.yml
+#
+# Copy this file into your rhymes-and-poetry repo at:
+#   .github/workflows/daily-seo-optimizer.yml
+#
+# Required GitHub Secrets (Settings → Secrets and variables → Actions):
+#   ANTHROPIC_API_KEY    — from console.anthropic.com
+#   GMAIL_APP_PASSWORD   — 16-char Google App Password (see README)
+#
+# The workflow runs daily at 9:00 AM UTC (adjust the cron below to your timezone).
+# It optimizes one post, commits the change to main, and sends you an email report.
+
+name: Daily SEO Optimizer
+
+on:
+  schedule:
+    # 9:00 AM UTC = 11:00 PM HST (Hawaii) previous day
+    # Adjust to taste — use https://crontab.guru to find your preferred time
+    - cron: "0 9 * * *"
+
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (preview only, no changes committed)"
+        required: false
+        default: "false"
+        type: choice
+        options: ["true", "false"]
+      slug:
+        description: "Specific post slug to optimize (leave blank for auto-select)"
+        required: false
+        default: ""
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit the updated frontmatter
+
+    steps:
+      # ── 1. Check out the repo ──────────────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so git log works
+
+      # ── 2. Set up Python ──────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: seo-optimizer/requirements.txt
+
+      # ── 3. Install dependencies ───────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install -r seo-optimizer/requirements.txt
+
+      # ── 4. Run the optimizer ─────────────────────────────────────────────
+      - name: Run SEO optimizer
+        env:
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_FROM:         jakethomasc28@gmail.com
+          GMAIL_TO:           jakethomasc28@gmail.com
+          # Point at your Astro blog content directory (relative to repo root)
+          BLOG_DIR:           src/content/blog
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          fi
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            ARGS="$ARGS --slug ${{ github.event.inputs.slug }}"
+          fi
+          python seo-optimizer/seo_optimizer.py $ARGS
+
+      # ── 5. Commit any changes ────────────────────────────────────────────
+      - name: Commit optimized frontmatter
+        run: |
+          git config user.name  "SEO Optimizer Bot"
+          git config user.email "actions@github.com"
+          # Only commit if there are actual changes
+          if git diff --quiet; then
+            echo "No changes to commit."
+          else
+            git add src/content/blog/
+            git commit -m "chore(seo): daily optimization run [$(date -u +'%Y-%m-%d')]"
+            git push
+            echo "Changes committed and pushed."
+          fi
