@@ -60,7 +60,7 @@ jobs:
       # ── 4. Run the optimizer ─────────────────────────────────────────────
       - name: Run SEO optimizer
         env:
-          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY:  ${{ secrets.SEO_AGENT_KEY }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GMAIL_FROM:         jakethomasc28@gmail.com
           GMAIL_TO:           jakethomasc28@gmail.com
