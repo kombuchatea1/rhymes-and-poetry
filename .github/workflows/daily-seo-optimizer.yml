@@ -14,9 +14,11 @@ name: Daily SEO Optimizer
 
 on:
   schedule:
-    # 9:00 AM UTC = 11:00 PM HST (Hawaii) previous day
-    # Adjust to taste — use https://crontab.guru to find your preferred time
-    - cron: "0 9 * * *"
+    # 9:00 AM Eastern (EDT/EST) — 13:00 UTC in summer, 14:00 UTC in winter
+    # GitHub Actions cron doesn't support timezone-aware schedules, so this
+    # fires at 9AM EDT (summer). It will shift to 8AM EST in winter — close enough.
+    # To lock to true 9AM EST year-round, change to "0 14 * * *".
+    - cron: "0 13 * * *"
 
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
