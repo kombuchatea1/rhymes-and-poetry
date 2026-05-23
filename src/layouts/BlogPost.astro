@@ -66,6 +66,7 @@ const {
 	heroImage,
 	ig_shortcode,
 	slug,
+	readingTime,
 } = Astro.props;
 
 // Per-post tear mask URL — each post gets a deterministic unique tear
@@ -99,6 +100,7 @@ const tearMaskUrl = slug
 				<header class="post-header">
 					<p class="post-eyebrow">
 						<FormattedDate date={pubDate} />
+						{readingTime && <span class="reading-time"> · {readingTime}</span>}
 						{
 							updatedDate && (
 								<span class="updated">

@@ -3,6 +3,7 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders, passthroughImageService } from 'astro/config';
+import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs';
 
 import cloudflare from '@astrojs/cloudflare';
 
@@ -15,6 +16,10 @@ export default defineConfig({
   // the .com DNS resolves to this Worker.
   site: 'https://rhymesandpoetry.org',
   integrations: [mdx(), sitemap()],
+
+  markdown: {
+    remarkPlugins: [remarkReadingTime],
+  },
 
   // Image service: passthrough (serve originals, no runtime transformation).
   // Reason: @astrojs/cloudflare doesn't include image transformation in the
