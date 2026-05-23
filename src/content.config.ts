@@ -21,7 +21,12 @@ const blog = defineCollection({
 			// asset handler — no transformation, no /_image URL wrapping,
 			// guaranteed to work.
 			heroImage: z.string().optional(),
+			heroImageAlt: z.string().optional(),
 			ig_shortcode: z.string().optional(),
+			// Tags — written by the daily SEO optimizer agent
+			tags: z.array(z.string()).optional(),
+			// Tracking field stamped by the SEO optimizer
+			seoOptimizedAt: z.string().optional(),
 			// Category — one of the five canonical topics. z.enum gives
 			// us compile-time validation: a typo in a post's frontmatter
 			// will fail the build rather than silently miscategorizing.

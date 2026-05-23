@@ -57,6 +57,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Subscribe from "../components/Subscribe.astro";
 import FormattedDate from "../components/FormattedDate.astro";
+import RelatedPosts from "../components/RelatedPosts.astro";
 
 const {
 	title,
@@ -67,6 +68,7 @@ const {
 	ig_shortcode,
 	slug,
 	readingTime,
+	relatedPosts = [],
 } = Astro.props;
 
 // Per-post tear mask URL — each post gets a deterministic unique tear
@@ -133,6 +135,8 @@ const tearMaskUrl = slug
 					)
 				}
 			</article>
+
+			<RelatedPosts posts={relatedPosts} />
 		</main>
 
 		<Subscribe />

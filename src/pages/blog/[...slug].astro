@@ -13,8 +13,31 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(post);
+
+// Related posts — find up to 3 posts sharing at least one tag,
+// ranked by number of shared tags (most overlap = most relevant).
+// Falls back to the 3 most recent posts if no tag matches are found.
+const allPosts = await getCollection('blog');
+const currentTags = post.data.tags ?? [];
+
+const otherPosts = allPosts.filter((p) => p.id !== post.id);
+
+const tagMatches = otherPosts
+	.filter((p) => (p.data.tags ?? []).some((tag) => currentTags.includes(tag)))
+	.sort((a, b) => {
+		const aScore = (a.data.tags ?? []).filter((t) => currentTags.includes(t)).length;
+		const bScore = (b.data.tags ?? []).filter((t) => currentTags.includes(t)).length;
+		return bScore - aScore;
+	})
+	.slice(0, 3);
+
+const relatedPosts = tagMatches.length > 0
+	? tagMatches
+	: otherPosts
+		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+		.slice(0, 3);
 ---
 
-<BlogPost {...post.data} slug={post.id} readingTime={remarkPluginFrontmatter.minutesRead}>
+<BlogPost {...post.data} slug={post.id} readingTime={remarkPluginFrontmatter.minutesRead} relatedPosts={relatedPosts}>
 	<Content />
 </BlogPost>
