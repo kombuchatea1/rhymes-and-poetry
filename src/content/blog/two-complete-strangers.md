@@ -1,9 +1,19 @@
 ---
-title: "Two Complete Strangers"
-description: "On the small encounters that have no follow-up — and the strange, brief proof that the world is connected anyway."
+title: 'Two Complete Strangers: A Poem on Human Connection'
+description: A poem about the fleeting moments when two strangers share a glance —
+  and the quiet proof that human connection lives in the briefest exchanges.
 pubDate: 2019-04-15
 heroImage: /images/blog/two-complete-strangers.jpg
 category: community
+tags:
+- connection
+- strangers
+- reflective poem
+- community
+- humanity
+- fleeting moments
+heroImageAlt: Two strangers sharing a brief glance on a busy street in the rain
+seoOptimizedAt: '2026-05-24'
 ---
 
 The shortest connections are sometimes the most clarifying. The whole shape of being alive in a single shared glance.
