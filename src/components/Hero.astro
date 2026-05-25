@@ -6,16 +6,16 @@
  * Two-column layout: editorial intro on the left, featured-quote card on
  * the right. Stacks vertically on mobile.
  *
- * The featured quote is hardcoded for now. Later we'll either pull it from
- * a content collection (so you can edit quotes in Markdown frontmatter) or
- * randomize from a small array on each visit. For MVP, one good quote is
- * better than a system without content.
+ * The featured quote rotates daily from src/data/quotes.js.
+ * Selection is deterministic (day-of-year % pool size), so the same quote
+ * shows all day and changes automatically at UTC midnight.
+ * A client-side script below keeps it accurate even on stale builds.
  * ========================================================================= */
 
-const featured = {
-    quote: "Poetry is the shadow cast by our streetlight imaginations.",
-    author: "Lawrence Ferlinghetti",
-};
+import { getTodaysQuote, QUOTES } from "../data/quotes.js";
+
+const featured = getTodaysQuote();
+const quotesJson = JSON.stringify(QUOTES);
 ---
 
 <section class="hero">
@@ -41,16 +41,45 @@ const featured = {
 
         <aside class="featured" aria-label="Featured quote">
             <p class="featured-eyebrow">Featured today</p>
-            <blockquote class="featured-quote">
-                &ldquo;{featured.quote}&rdquo;
+            <blockquote class="featured-quote" id="js-featured-quote">
+                &ldquo;{featured.quote.split('\n').map((line, i, arr) => (
+                    <>{line}{i < arr.length - 1 && <br />}</>
+                ))}&rdquo;
             </blockquote>
             <div class="featured-attribution">
                 <span class="rule" aria-hidden="true"></span>
-                <cite>{featured.author}</cite>
+                <cite id="js-featured-author">{featured.author}</cite>
             </div>
+            <p class="featured-source" id="js-featured-source">{featured.source}</p>
         </aside>
     </div>
 </section>
+
+<!-- Client-side refresh: ensures the quote matches today's date even if the
+     last Cloudflare Pages build was yesterday. Runs after hydration. -->
+<script define:vars={{ quotesJson }}>
+    const QUOTES = JSON.parse(quotesJson);
+
+    function getTodaysQuote() {
+        const now = new Date();
+        const dayOfYear = Math.floor(
+            (Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) -
+                Date.UTC(now.getUTCFullYear(), 0, 0)) /
+                86400000
+        );
+        return QUOTES[dayOfYear % QUOTES.length];
+    }
+
+    const q = getTodaysQuote();
+
+    const quoteEl  = document.getElementById('js-featured-quote');
+    const authorEl = document.getElementById('js-featured-author');
+    const sourceEl = document.getElementById('js-featured-source');
+
+    if (quoteEl)  quoteEl.innerHTML  = '“' + q.quote.split('\n').join('<br>') + '”';
+    if (authorEl) authorEl.textContent = q.author;
+    if (sourceEl) sourceEl.textContent = q.source;
+</script>
 
 <style>
     .hero {
@@ -194,6 +223,16 @@ const featured = {
     .featured-attribution cite {
         font-style: normal;
     }
+
+    .featured-source {
+        font-family: var(--rp-font-body);
+        font-size: 12px;
+        font-style: italic;
+        color: var(--rp-faint);
+        margin: 8px 0 0;
+        padding: 0;
+    }
+
     .rule {
         display: block;
         width: 28px;
