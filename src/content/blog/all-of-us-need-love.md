@@ -1,9 +1,20 @@
 ---
-title: "All of Us Need Love"
-description: "On the variety of how we hold pain — and the one thing we all hold in common."
+title: 'All of Us Need Love: A List Poem'
+description: A list poem on the many ways we carry pain — and the universal need for
+  love that quietly lives underneath all of it.
 pubDate: 2019-05-22
 heroImage: /images/blog/all-of-us-need-love.jpg
 category: community
+tags:
+- list poem
+- love
+- human connection
+- emotions
+- community
+- reflective verse
+heroImageAlt: A soft gathering of people in warm light, each holding something quietly
+  — evoking shared humanity and the need for love
+seoOptimizedAt: '2026-05-25'
 ---
 
 A list poem. People come in many shapes. The thing under the shapes is mostly the same.
