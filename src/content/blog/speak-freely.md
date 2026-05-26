@@ -1,9 +1,19 @@
 ---
-title: "Speak Freely"
-description: "On the conversation you wish you'd had — and the small lesson we keep failing to learn from it."
+title: 'Speak Freely: A Poem on Words Left Unsaid'
+description: A poem on the words left unsaid — for the people we lost before we finished,
+  and the ones we still have time to say it to.
 pubDate: 2019-06-09
 heroImage: /images/blog/speak-freely.jpg
 category: love-loss
+tags:
+- grief
+- loss
+- regret
+- words left unsaid
+- reflective poem
+- love-loss
+heroImageAlt: An empty chair by a window, evoking loss and words left unsaid
+seoOptimizedAt: '2026-05-26'
 ---
 
 For the people we lost without finishing what we wanted to say. And for everyone we still get the chance to.
