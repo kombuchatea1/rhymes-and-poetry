@@ -1,9 +1,18 @@
 ---
-title: "Distant Lands"
-description: "Three lines for the kind of peace that only the unfamiliar can offer."
+title: 'Distant Lands: A Travel Haiku on Finding Peace'
+description: A travel haiku on finding peace by going far enough to feel small again
+  — three lines for the perspective that wandering quietly restores.
 pubDate: 2019-08-18
 heroImage: /images/blog/distant-lands.jpg
 category: nature
+tags:
+- haiku
+- travel
+- peace
+- nature
+- reflective verse
+heroImageAlt: A sweeping view of distant rolling landscapes under a wide open sky
+seoOptimizedAt: '2026-05-28'
 ---
 
 A haiku. Some peace can only be reached by going far enough away to feel small again.
