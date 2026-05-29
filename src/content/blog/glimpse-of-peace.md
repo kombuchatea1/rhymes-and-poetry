@@ -1,9 +1,20 @@
 ---
-title: "Glimpse of Peace"
-description: "On the dream that ends just as you understood it — and the strange residue it leaves."
+title: 'Glimpse of Peace: A Dream Poem on Longing'
+description: A reflective poem on the dreams that arrive like messages and dissolve
+  before you can read them — and the longing they leave behind.
 pubDate: 2019-09-25
 heroImage: /images/blog/glimpse-of-peace.jpg
 category: reflections
+tags:
+- dreams
+- peace
+- longing
+- reflective poem
+- subconscious
+- hope
+heroImageAlt: Soft light filtering through a window, evoking the quiet aftermath of
+  a fading dream
+seoOptimizedAt: '2026-05-29'
 ---
 
 There are dreams that arrive feeling like messages, then dissolve before you can read them. This poem is for one of those.
