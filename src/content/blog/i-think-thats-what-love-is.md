@@ -1,9 +1,19 @@
 ---
-title: "I Think That's What Love Is"
-description: "On the small re-orientation when someone else's emotional weather becomes part of yours."
+title: I Think That's What Love Is — A Short Love Poem
+description: A short love poem on the quiet shift that happens when someone else's
+  joy and pain become yours too — plain, exact, and true.
 pubDate: 2019-11-04
 heroImage: /images/blog/i-think-thats-what-love-is.jpg
 category: love-loss
+tags:
+- love poem
+- short poem
+- empathy
+- relationships
+- reflective verse
+heroImageAlt: Two people standing close together, their hands almost touching — a
+  quiet moment of shared feeling
+seoOptimizedAt: '2026-05-31'
 ---
 
 A small piece. Plain and exact, the way the realization itself was.
