@@ -1,9 +1,19 @@
 ---
-title: "When to Change Your Route"
-description: "On the comfortable rut that's slowly becoming a tomb — and the awareness that lets you climb out."
+title: 'When to Change Your Route: A Poem on Stagnation'
+description: A reflective poem on stagnation and the courage to change — for anyone
+  who's felt the quiet unease of a life that's stopped growing.
 pubDate: 2020-02-22
 heroImage: /images/blog/when-to-change-your-route.jpg
 category: reflections
+tags:
+- reflective verse
+- stagnation
+- personal growth
+- change
+- self-awareness
+heroImageAlt: A winding road through an open landscape, evoking the choice to change
+  direction
+seoOptimizedAt: '2026-06-03'
 ---
 
 There's a kind of stable life that's secretly stagnant. The discomfort of admitting it is a small price for the freedom on the other side.
