@@ -1,9 +1,19 @@
 ---
-title: "Love Supreme"
-description: "On the long shadow of being told you weren't enough — and the small dream of believing in love anyway."
+title: 'Love Supreme: A Poem on Fear and Self-Worth'
+description: A poem on the long shadow of being told you weren't enough — and the
+  quiet, stubborn part that still dares to believe in love.
 pubDate: 2020-04-04
 heroImage: /images/blog/love-supreme.jpg
 category: love-loss
+tags:
+- love poem
+- self-worth
+- fear of love
+- heartbreak
+- emotional healing
+heroImageAlt: Soft light falling on an empty room, evoking longing and the quiet ache
+  of love held at a distance
+seoOptimizedAt: '2026-06-05'
 ---
 
 For anyone who's been told they don't measure up and then quietly built their whole self-image around the verdict. The poem is for the part underneath that still wants better.
