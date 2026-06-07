@@ -1,9 +1,19 @@
 ---
-title: "Take Care of Yourself"
-description: "On the strange survival posture of always defending — and the small invitation to let go of it."
+title: 'Take Care of Yourself: A Short Self-Care Poem'
+description: A short self-care poem on the exhausting habit of fending for yourself
+  — and the quiet permission to finally let your guard down.
 pubDate: 2020-06-08
 heroImage: /images/blog/take-care-of-yourself.jpg
 category: reflections
+tags:
+- self-care
+- mental health
+- reflective verse
+- short poem
+- letting go
+heroImageAlt: A quiet, soft-lit moment of stillness — an image evoking self-care and
+  rest
+seoOptimizedAt: '2026-06-07'
 ---
 
 A short one. The thing I want to say to most of the people I care about, at the end of most days.
