@@ -1,9 +1,19 @@
 ---
-title: "Forms Like a Nuke Bomb"
-description: "Five bars built on cadence — and a few proper nouns the right people will recognize."
+title: 'Forms Like a Nuke Bomb: A Rap Bar Poem'
+description: A rap bar poem built on internal rhyme, stacked references, and pure
+  cadence — five lines that hit fast and land hard.
 pubDate: 2020-07-04
 heroImage: /images/blog/forms-like-a-nuke-bomb.jpg
 category: rap-and-bars
+tags:
+- rap poetry
+- bars
+- internal rhyme
+- hip-hop
+- spoken word
+heroImageAlt: Abstract explosive burst of light suggesting the force and cadence of
+  a rap bar poem
+seoOptimizedAt: '2026-06-08'
 ---
 
 Sometimes a bar is just for the bar. Internal rhyme, four references stacked, in and out.
