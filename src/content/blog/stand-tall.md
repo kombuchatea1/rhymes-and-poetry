@@ -1,9 +1,20 @@
 ---
-title: "Stand Tall"
-description: "On the high seas and the calm ones — and the small, durable lesson that holds across both."
+title: 'Stand Tall: A Poem on Resilience and Life''s Journey'
+description: A reflective poem on resilience — sitting with life's storms and calm
+  seas alike, and finding the one quiet instruction that holds across all of it.
 pubDate: 2020-11-08
 heroImage: /images/blog/stand-tall.jpg
 category: reflections
+tags:
+- resilience
+- reflective verse
+- life journey
+- poem
+- ups and downs
+- nature
+heroImageAlt: Ocean waves under a stormy sky, evoking resilience and life's ebbs and
+  flows
+seoOptimizedAt: '2026-06-12'
 ---
 
 A piece that doesn't try to flatten the variety of life. Just sits with it, and ends with the only instruction that fits all of it.
