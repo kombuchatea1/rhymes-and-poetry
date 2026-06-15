@@ -1,9 +1,18 @@
 ---
-title: "Cynically Optimistic"
-description: "On forgiving without forgetting — and listening to the small voice underneath."
+title: 'Cynically Optimistic: A Poem on Hope and Resilience'
+description: A reflective poem on holding hope and cynicism at once — forgiving without
+  forgetting, and learning to trust the small voice inside.
 pubDate: 2021-01-12
 heroImage: /images/blog/cynically-optimistic.jpg
 category: reflections
+tags:
+- reflective poem
+- hope
+- resilience
+- forgiveness
+- inner voice
+heroImageAlt: A figure standing in soft light, holding two opposing feelings at once
+seoOptimizedAt: '2026-06-15'
 ---
 
 Two seemingly contradictory traits, sharing one body. This is for the version of me that holds both at once.
