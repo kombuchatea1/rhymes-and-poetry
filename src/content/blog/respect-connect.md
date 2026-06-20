@@ -1,9 +1,19 @@
 ---
-title: "Respect, Connect"
-description: "Five lines about the simplest version of what we're all trying to find."
+title: 'Respect, Connect: A Short Poem on Human Connection'
+description: A short poem on belonging, respect, and human connection — boiled down
+  to the simplest vocabulary, and the two words we keep returning to.
 pubDate: 2021-03-15
 heroImage: /images/blog/respect-connect.jpg
 category: community
+tags:
+- short poem
+- human connection
+- belonging
+- community
+- reflective verse
+heroImageAlt: Two hands reaching toward each other, symbolizing respect and human
+  connection
+seoOptimizedAt: '2026-06-20'
 ---
 
 A small one. Boiled down to the simplest possible vocabulary.
