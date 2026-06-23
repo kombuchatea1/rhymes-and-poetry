@@ -1,9 +1,21 @@
 ---
-title: "Why Now, Why Me"
-description: "On finally meeting someone who actually means it — and the strange suspicion that follows."
+title: 'Why Now, Why Me: A Poem on Fear of Being Loved'
+description: A poem for anyone who's been hurt enough to distrust real love — naming
+  the defense we build, and the strange fear that arrives when someone finally means
+  it.
 pubDate: 2021-04-30
 heroImage: /images/blog/why-now-why-me.jpg
 category: love-loss
+tags:
+- love poem
+- heartbreak
+- emotional walls
+- fear of love
+- healing
+- reflective verse
+heroImageAlt: A solitary figure standing in soft light, looking away — evoking guarded
+  hope and the fear of being loved
+seoOptimizedAt: '2026-06-23'
 ---
 
 For the part of you that's been hurt enough times to have built a defense against being loved properly. The poem doesn't dismantle the defense. It just names it.
