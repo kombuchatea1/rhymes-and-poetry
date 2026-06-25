@@ -1,9 +1,19 @@
 ---
-title: "I Like Your Weird"
-description: "On the particular kind of love that's specifically pointed at the parts of someone nobody else has bothered to notice."
+title: 'I Like Your Weird: A Love Poem for the Specific'
+description: A love poem about the specific, personal kind of love — written for one
+  person, but true for anyone who's ever genuinely been seen and cherished.
 pubDate: 2021-05-22
 heroImage: /images/blog/i-like-your-weird.jpg
 category: love-loss
+tags:
+- love poem
+- romantic poetry
+- individuality
+- love
+- reflective verse
+heroImageAlt: Two people sharing a quiet, tender moment — a love poem about celebrating
+  someone's uniqueness
+seoOptimizedAt: '2026-06-25'
 ---
 
 A love poem in praise of weirdness. Written for one person, but probably true about anybody who's ever genuinely been loved.
