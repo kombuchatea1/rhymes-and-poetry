@@ -1,9 +1,19 @@
 ---
-title: "I'm Glad You Did What You Had To"
-description: "On the chapters of a life — and the only thing you can really say to the past version of yourself."
+title: 'I''m Glad You Did What You Had To: A Self-Compassion Poem'
+description: A reflective poem on self-compassion and healing — the words you'd want
+  to hear looking back, and how to start saying them to yourself now.
 pubDate: 2021-07-08
 heroImage: /images/blog/im-glad-you-did-what-you-had-to.jpg
 category: reflections
+tags:
+- self-compassion
+- healing
+- reflective poem
+- inner voice
+- resilience
+heroImageAlt: Open journal resting on a worn wooden surface, soft natural light falling
+  across blank pages
+seoOptimizedAt: '2026-06-28'
 ---
 
 The way you'd want to be talked to, looking back. The way it might be useful to start talking to your past self now.
