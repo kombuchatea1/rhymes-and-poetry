@@ -1,9 +1,20 @@
 ---
-title: "Divided Yet Interconnected"
-description: "On the strange paradox of being more reachable and more isolated than ever — and the slow hope of healing."
+title: 'Divided Yet Interconnected: A Poem on Modern Isolation'
+description: A reflective poem on modern isolation and human connection — the strange
+  paradox of being more reachable than ever and yet further apart.
 pubDate: 2021-07-12
 heroImage: /images/blog/divided-yet-interconnected.jpg
 category: community
+tags:
+- community
+- isolation
+- human connection
+- reflective poem
+- social media
+- healing
+heroImageAlt: Two hands reaching toward each other across a divide, symbolizing modern
+  isolation and the hope of reconnection
+seoOptimizedAt: '2026-06-29'
 ---
 
 The paradox of our moment, written down in plain language. We've never had more access to each other and never felt less close. The poem just sits with that.
