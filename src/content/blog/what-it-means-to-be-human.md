@@ -1,9 +1,18 @@
 ---
-title: "What It Means to Be Human"
-description: "On the small, unselfish gestures — and the quiet realization of what they're actually for."
+title: 'What It Means to Be Human: A Poem on Giving'
+description: A reflective poem on giving when you didn't feel like it — and the quiet
+  surprise of what an unselfish gesture shows you about yourself.
 pubDate: 2021-09-10
 heroImage: /images/blog/what-it-means-to-be-human.jpg
 category: community
+tags:
+- reflective poem
+- giving
+- human connection
+- community
+- kindness
+heroImageAlt: Two hands exchanging a small gift, warm light in the background
+seoOptimizedAt: '2026-07-02'
 ---
 
 A small one about giving when you didn't really feel like it. And about what it shows you when you do.
