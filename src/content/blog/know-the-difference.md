@@ -1,9 +1,18 @@
 ---
-title: "Know the Difference"
-description: "On the hard-earned skill of telling real love from the things that wear its name."
+title: 'Know the Difference: A Poem on Love vs. Obsession'
+description: A reflective poem on love vs. obsession — the hard-earned skill of telling
+  real love from the things that wear its name, and what it costs to learn.
 pubDate: 2021-09-22
 heroImage: /images/blog/know-the-difference.jpg
 category: love-loss
+tags:
+- love poem
+- obsession
+- relationships
+- reflective poem
+- love-loss
+heroImageAlt: Two hands almost touching, symbolizing the line between love and obsession
+seoOptimizedAt: '2026-07-03'
 ---
 
 Some lessons you can only learn from the inside. This one took me too long. Sharing in case it shortens the road for someone else.
