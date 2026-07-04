@@ -1,9 +1,18 @@
 ---
-title: "Where We Need to Go"
-description: "On wanting someone you love to grow with you — and the hard math when the paces don't match."
+title: 'Where We Need to Go: A Poem on Growing Apart'
+description: A poem on growing apart from someone you love — when the want is mutual
+  but the pace isn't, and neither answer feels right.
 pubDate: 2021-10-12
 heroImage: /images/blog/where-we-need-to-go.jpg
 category: love-loss
+tags:
+- love poem
+- growing apart
+- relationships
+- personal growth
+- reflective verse
+heroImageAlt: Two figures walking separate paths through an open landscape
+seoOptimizedAt: '2026-07-04'
 ---
 
 One of the harder pieces. About the love that wants more for both of you and isn't sure what to do when *more* doesn't show up symmetrically.
