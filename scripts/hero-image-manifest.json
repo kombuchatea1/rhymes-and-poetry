@@ -1,289 +1,147 @@
 {
   "_comment": "Prompts for Replicate Flux 1.1 Pro hero-image generation. One entry per slug. Each prompt is tuned to the poem's emotional core in the same atmospheric / single-subject style as the existing three hero images. Keep prompts in natural-language Flux form, end with 'no text, no words'.",
-
   "i-met-a-man": "A solitary craftsman silhouetted in the warm glow of a dusty workshop window at late afternoon, golden light streaming through floating dust motes, painterly cinematic, intimate and quiet, no text, no words",
-
   "pull-of-the-universe": "A lone figure standing on wet sand watching the ocean at sunrise, soft pastel sky reflecting on the wet beach, painterly atmospheric, vast and contemplative, no text, no words",
-
   "rhymes-and-beats": "A worn pair of cleats on cracked urban pavement, dramatic side-lit dusk light, gritty cinematic painterly, no text, no words",
-
   "presence-in-the-present": "A single figure seated cross-legged at the edge of a misty cliff at golden hour, warm enveloping light, dreamy painterly, serene, no text, no words",
-
   "look-into-my-eyes": "Reflection of a person's contemplative face in still water at twilight, ripples just settling, painterly atmospheric, melancholic and introspective, no text, no words",
-
   "i-wish-i-could-see": "A lone silhouette on a quiet hilltop beneath a vast star-filled night sky with a faint Milky Way, atmospheric cinematic painterly, contemplative wonder, no text, no words",
-
   "i-knew-it-was-you": "Two distant figures approaching each other on a misty country road at dawn, soft pastel light, dreamy painterly recognition, no text, no words",
-
   "frozen-in-time": "Scattered old polaroid photographs on a weathered wooden floor, warm afternoon light streaming through a nearby window, nostalgic painterly stillness, no text, no words",
-
   "are-you-listening": "Close intimate view of a hand resting gently over a person's heart, soft natural window light, quiet painterly tenderness, no text, no words",
-
   "namaste": "Silhouette of a person bowing in greeting at the misty edge of a mountain pond at sunrise, soft golden mist, painterly serenity, no text, no words",
-
   "were-not-so-different": "Two strangers sharing a park bench in the warm soft glow of late golden hour, viewed from a respectful distance, painterly quiet, no text, no words",
-
   "i-believe-in-fate": "A foggy path forking through an old forest, sunbeams cutting through morning mist, mysterious atmospheric painterly, no text, no words",
-
   "spreading-peace": "A solitary figure exhaling visible breath into cold morning urban air, soft cinematic dawn light on quiet streets, painterly contemplative, no text, no words",
-
   "simple-things": "An empty wooden porch swing on a quiet front porch at golden hour, soft warm slanting light, nostalgic painterly stillness, no text, no words",
-
   "until-i-met-you": "Two hands almost touching across a small cafe table, warm low candlelight, painterly intimate, soft focus background, no text, no words",
-
   "your-own-beat": "A lone figure walking down a quiet empty city street at dusk under soft amber streetlights, painterly cinematic, contemplative independence, no text, no words",
-
   "dust-off-the-boots": "A pair of worn leather boots resting on a weathered wooden porch in soft golden-hour light, painterly nostalgic, hopeful, no text, no words",
-
   "they-dont-even-know": "Two distant silhouettes embracing in soft window light at dusk, intimate painterly, vulnerable tenderness, no text, no words",
-
   "i-keep-failing": "A single candle with a low wavering flame burning in a quiet dim room at dawn, soft warm flickering shadow on the wall, painterly contemplative, resilient and quiet, no text, no words",
-
   "i-had-a-good-day": "Aerial view of a small town at twilight with warm scattered window lights glowing across countless homes, painterly atmospheric, no text, no words",
-
   "love-in-spring": "A field of soft pastel wildflowers in spring at golden hour, sunlight filtering through, painterly tender intimate atmosphere, no text, no words",
-
   "ill-see-you-later": "Two distant figures walking in opposite directions on a misty country road at dusk, soft pastel light, painterly bittersweet, no text, no words",
-
   "that-anger-that-pain": "A weathered wooden door slightly ajar in a dim hallway with soft warm light streaming through, painterly contemplative atmospheric, no text, no words",
-
   "we-only-get-one-shot": "A small boy lying in tall green grass looking up at a vast cloudy sky at golden hour, painterly nostalgic wonder, no text, no words",
-
   "silence-is-the-killer": "An empty corporate lobby at dusk with rows of identical glass panels, cold cinematic light, painterly atmospheric critique, no text, no words",
-
   "romantic-at-heart": "A lone wanderer's silhouette walking through a vast desert at sunrise, a distant oasis visible on the horizon, painterly cinematic dreamy, no text, no words",
-
   "many-soulmates": "Two silhouettes seated on a park bench under a single warm lamppost at twilight, painterly intimate melancholy, no text, no words",
-
   "where-time-stands-still": "A still mountain pond surrounded by quiet forest in soft morning mist, painterly serene timeless, no text, no words",
-
   "take-a-breath": "A single candle flickering softly in warm window light at dawn, painterly contemplative quiet, no text, no words",
-
   "off-my-chest": "An open notebook on a wooden desk with soft window light, a fountain pen resting beside it, painterly intimate, no text, no words",
-
   "once-im-in-the-zone": "A meditating silhouette against a vast misty mountainscape at dawn, painterly atmospheric transcendent calm, no text, no words",
-
   "feelings-need-nourishment": "Sunlight streaming through a dense quiet forest at morning, mist drifting between tall trees, painterly atmospheric, no text, no words",
-
   "to-my-dear-friend": "A single white dove flying across a soft pastel evening sky, painterly serene grief, no text, no words",
-
   "if-the-world-was-ending": "A vast empty beach at sunset with dramatic stormy clouds approaching from the horizon, painterly cinematic, no text, no words",
-
   "symbolic-bars": "An old typewriter on a wooden desk in soft warm dim light, scattered pages around it, painterly creative atmospheric, no text, no words",
-
   "spiritual-downpour": "Heavy rain falling on a dim quiet street at dusk, soft streetlights reflecting in puddles, painterly cinematic atmospheric rebirth, no text, no words",
-
   "walking-by-the-sea": "A solitary figure walking on wet sand beside the ocean at golden hour sunset, painterly cinematic peaceful, no text, no words",
-
   "nightmares-are-dreams": "An empty bedroom with morning light streaming through soft curtains, painterly contemplative peaceful awakening, no text, no words",
-
   "still-scared-to-crumble": "A weathered stone wall partially crumbled in soft afternoon light, ivy growing through cracks, painterly atmospheric metaphor, no text, no words",
-
   "swimming-in-someone-elses-seas": "A small distant figure swimming across a vast calm ocean at sunrise, painterly cinematic vastness, no text, no words",
-
   "live-presently": "A still water surface reflecting soft pastel sky at dusk, ripples just settling, painterly contemplative quiet, no text, no words",
-
   "delicate-soul": "A single tender bloom of a wildflower in soft morning light with dewdrops on petals, painterly intimate gentle, no text, no words",
-
   "i-dont-belong-anywhere": "A solitary silhouette standing in the middle of a vast empty plaza at twilight, soft cinematic light, painterly atmospheric quiet, no text, no words",
-
   "addicted-to-validation": "A soft warm-lit dressing room mirror at twilight, blurred reflection visible, painterly contemplative, gentle warm light, no text, no words",
-
   "did-we-have-the-choice": "A long winding path disappearing into a soft misty forest at dawn, painterly atmospheric mysterious, no text, no words",
-
   "silence-is-my-solitude": "An empty wooden chair beside a sunlit window at dawn, soft warm light streaming in, painterly peaceful, no text, no words",
-
   "in-your-corner": "Two distant warm-lit windows seen across a quiet field at dusk, painterly tender atmospheric, no text, no words",
-
   "not-a-war-i-intend-to-lose": "A dim quiet bedroom with a single lamp glowing warmly at dawn, painterly contemplative quiet resilience, no text, no words",
-
   "take-your-time-kid": "A young child seated on a porch step looking out at a quiet street at golden hour, painterly tender nostalgic, no text, no words",
-
   "time-is-a-vessel": "An old hourglass on a wooden desk in soft warm window light, sand falling slowly, painterly atmospheric, no text, no words",
-
   "embrace-the-storm": "A solitary silhouette standing on a cliff facing an approaching storm at dusk, painterly cinematic resilient, no text, no words",
-
   "depths-we-have": "A grand classical archway in a European piazza at dusk, soft warm light, painterly cinematic, no text, no words",
-
   "writer-who-doesnt-write": "An untouched grand piano in a softly lit room at dusk, dust motes floating in warm light, painterly atmospheric quiet longing, no text, no words",
-
   "age-of-information": "A dim room with the soft glow of a single television screen at night, painterly atmospheric critique, no text, no words",
-
   "are-we-really-listening": "An old wooden window with soft afternoon light streaming through sheer curtains, painterly contemplative listening, no text, no words",
-
   "presently-dreaming": "Soft sunlight streaming through a quiet bedroom window at dawn, gentle warm shadow on wall, painterly serene, no text, no words",
-
   "oh-oliver": "A small fluffy golden cockapoo dog resting peacefully in soft window light, painterly tender intimate, no text, no words",
-
   "beauty-abound": "A small wildflower growing through cracks in old stone in soft morning light, painterly delicate hope, no text, no words",
-
   "the-sight-of-trees": "A quiet forest grove with sunlight filtering through tall trees at golden hour, soft mist drifting, painterly atmospheric, no text, no words",
-
   "warm-tea-and-yoga": "A steaming ceramic cup of tea on a windowsill in soft morning light, painterly serene contemplative, no text, no words",
-
   "under-water": "Soft sunlight filtering through clear ocean water seen from below the surface, painterly serene healing, no text, no words",
-
   "cynically-optimistic": "A misty path winding through a forest at dawn, sunlight filtering through tall trees, painterly atmospheric contemplative, no text, no words",
-
   "be-kind-to-yourself": "A still pond reflecting soft pastel sky at dawn, painterly serene calm, no text, no words",
-
   "ive-got-myself-to-lean-on": "A solitary tree standing tall on a quiet hillside at golden hour, painterly atmospheric strength, no text, no words",
-
   "its-my-mental": "A dim window streaked with rain at night, soft city lights blurred beyond, painterly atmospheric melancholic, no text, no words",
-
   "if-i-loved-myself-sooner": "An empty wooden bench beside a quiet pond at golden hour, painterly contemplative wistful, no text, no words",
-
   "maybe-somehow": "A small green sapling growing through cracks in old stone in soft golden light, painterly hope, no text, no words",
-
   "divided-yet-interconnected": "Many warmly lit windows of an old apartment building seen across a quiet street at dusk, painterly atmospheric, no text, no words",
-
   "loving-so-deeply": "A vast ocean meeting soft pastel sky at sunrise, painterly serene timeless, no text, no words",
-
   "know-the-difference": "Two delicate hands almost touching across a quiet table at warm dawn light, painterly intimate, no text, no words",
-
   "a-spiral": "A swirling spiral staircase descending into shadow with soft warm light from above, painterly atmospheric tense, no text, no words",
-
   "you-get-what-you-need": "An old leather-bound journal on a wooden desk in soft window light, painterly intimate quiet, no text, no words",
-
   "connect-with-my-dad": "An old upright piano in soft warm window light, dust motes floating in the air, painterly nostalgic intimate, no text, no words",
-
   "poor-girl-i-thought": "An empty park bench beneath a spreading tree in soft afternoon light, painterly atmospheric quiet melancholy, no text, no words",
-
   "imagine-yourself-a-pilot": "A small plane silhouetted against vast cloudy sky with sun breaking through dark storm clouds, painterly cinematic, no text, no words",
-
   "i-have-just-begun": "A quiet meditation cushion beside a sunlit window at dawn, painterly serene beginning, no text, no words",
-
   "olhando-no-mar": "A lone figure standing at the edge of a vast calm ocean at sunrise, painterly cinematic dreamy, no text, no words",
-
   "drenched-in-sweat": "Soft morning light streaming through quiet bedroom curtains after a storm, painterly contemplative healing, no text, no words",
-
   "eu-ainda-choro": "A single raindrop on a window pane with soft blurred warm light beyond, painterly intimate quiet, no text, no words",
-
   "until-i-cant": "A solitary runner silhouetted on a quiet country road at dawn, painterly atmospheric perseverance, no text, no words",
-
   "its-friday": "A car windshield with rain streaks and a blurred figure walking on a wet city street at dusk, painterly cinematic, no text, no words",
-
   "two-souls": "Two intertwined hands resting on a soft blanket in warm window light, painterly intimate tender, no text, no words",
-
   "some-days": "A wide open desert landscape at golden hour with scattered cacti and distant mountains, painterly atmospheric varied, no text, no words",
-
   "always-beginning-anew": "Soft morning light filtering through a forest with new green leaves emerging, painterly atmospheric renewal, no text, no words",
-
   "is-art-not-a-part-of-us": "An old paintbrush resting on a canvas in soft warm studio light, painterly intimate creative, no text, no words",
-
   "i-hope-i-can-be-proud": "A solitary figure walking up a winding hillside path at golden sunrise, painterly cinematic hopeful, no text, no words",
-
   "running-helps-me-breathe": "A solitary runner on a misty forest trail at dawn, painterly atmospheric meditative, no text, no words",
-
   "meu-amor": "An empty cafe table beside a window with soft morning light and a steaming cup of coffee, painterly intimate atmospheric, no text, no words",
-
   "good-days": "A clear river flowing through a sunlit meadow with wildflowers, painterly serene flow, no text, no words",
-
   "she-moved-me": "A vintage typewriter on a wooden desk in soft warm light, an open notebook beside it, painterly nostalgic intimate, no text, no words",
-
   "trends-and-themes": "Soft afternoon light casting long shadows of leaves on an old wooden floor, painterly atmospheric pattern, no text, no words",
-
   "writing-helps-calm-me": "An open journal with a fountain pen resting beside it in soft window light, painterly intimate meditative, no text, no words",
-
   "nothing-really-matters": "A vast night sky filled with stars seen above a quiet horizon, painterly cosmic atmospheric, no text, no words",
-
   "each-season": "A single grand tree in a quiet field showing autumn colors with soft mist, painterly atmospheric cyclical, no text, no words",
-
   "the-sound-of-rain": "Heavy rain falling on a dim quiet street at twilight, soft streetlights reflecting in puddles, painterly cinematic atmospheric, no text, no words",
-
   "if-you-had-my-eyes": "Soft morning sunlight reflecting on a still pond surrounded by distant mountains, painterly serene beautiful, no text, no words",
-
   "anticipations-heavy": "An open notebook beside a steaming mug on a wooden deck overlooking distant palm trees at golden hour, painterly intimate creative, no text, no words",
-
   "consistently-inconsistent": "A potter's hands shaping clay on a spinning wheel in soft warm studio light, painterly intimate craft, no text, no words",
-
   "algorithmic-identity": "A dim modern city street at night with soft cold glow of countless screens reflected in windows, painterly atmospheric, no text, no words",
-
   "even-if-you-forget-my-name": "A single candle flickering softly in a dim room at dawn, soft warm shadow on wall, painterly contemplative legacy, no text, no words",
-
   "bond-impossible-to-break": "Two distant figures silhouetted against a vast ocean sunrise, painterly cinematic timeless, no text, no words",
-
   "every-day-is-a-new-beginning": "Soft golden sunrise light spilling across a quiet field with morning mist, painterly atmospheric renewal, no text, no words",
-
   "running-is-my-self-reflection": "A solitary runner on a winding mountain path at golden hour, painterly atmospheric reflective, no text, no words",
-
   "nothing-permanent": "Soft cherry blossom petals falling through warm afternoon light, painterly atmospheric impermanent, no text, no words",
-
   "the-meaning-of-life": "A vast ocean horizon at sunset with a single contrail crossing the sky, painterly cinematic philosophical, no text, no words",
-
   "seldom-speaking": "A crowded city sidewalk at dusk with anonymous figures looking down, painterly atmospheric isolation, no text, no words",
-
   "deal-with-fate": "A vast dramatic sky filled with clouds at midday with sun breaking through, painterly cinematic existential, no text, no words",
-
   "two-complete-strangers": "An old open archway in a quiet European plaza at dusk, soft warm light, painterly cinematic, no text, no words",
-
   "all-of-us-need-love": "A wooden footbridge crossing a quiet stream in a lush green forest, painterly atmospheric, no text, no words",
-
   "speak-freely": "A vast empty beach at sunrise with golden light spilling across the sand, painterly cinematic contemplative, no text, no words",
-
   "do-we-ever-choose": "A long winding dirt road through dense lush green vegetation, painterly atmospheric mysterious, no text, no words",
-
   "distant-lands": "Dramatic white limestone cliffs meeting deep turquoise ocean at midday, painterly cinematic vast, no text, no words",
-
   "glimpse-of-peace": "Soft pastel evening light over a quiet beach with sand dunes, painterly atmospheric dreamlike, no text, no words",
-
   "perfectly-imperfect": "A solitary tree on a green coastal cliff overlooking the ocean, painterly atmospheric balanced, no text, no words",
-
   "i-think-thats-what-love-is": "A quiet garden with two large old trees and a still pond in soft afternoon light, painterly intimate atmospheric, no text, no words",
-
   "without-you-by-my-side": "A vast empty beach at moonlit night with soft glowing beach huts in distance, painterly cinematic longing, no text, no words",
-
   "cosmic-connection": "A solitary figure standing on a beach watching a vast pastel sunset over the ocean, painterly cinematic dreamy, no text, no words",
-
   "when-to-change-your-route": "Lush tropical plants in a quiet courtyard with soft afternoon light, painterly atmospheric contemplative, no text, no words",
-
   "sometimes-i-like-him": "A blurred figure reflected in a quiet still pond at dusk, painterly atmospheric introspective, no text, no words",
-
   "love-supreme": "A solitary figure walking on a vast empty beach at sunset, painterly cinematic vulnerable, no text, no words",
-
   "past-this-life": "A vast star-filled night sky over a quiet ocean horizon, painterly cosmic eternal, no text, no words",
-
   "take-care-of-yourself": "A still pond reflecting soft golden hour light surrounded by quiet green trees, painterly serene calm, no text, no words",
-
   "forms-like-a-nuke-bomb": "A dramatic stormy sky with distant lightning over a desolate landscape, painterly cinematic powerful, no text, no words",
-
   "warms-my-soul": "An open notebook with a steaming mug on a wooden desk in soft golden window light, painterly intimate creative, no text, no words",
-
   "a-love-sublime": "Two distant figures dancing under warm string lights in a quiet evening setting, painterly intimate joyful, no text, no words",
-
   "the-dam-is-breaking": "A small stream of water beginning to flow through cracks in an old stone dam at golden hour, painterly atmospheric breakthrough, no text, no words",
-
   "stand-tall": "A solitary tree standing tall on a windswept cliff at golden hour, painterly atmospheric resilient, no text, no words",
-
   "weve-become-one": "A solitary figure laying on quiet sand at night under a vast star-filled sky, painterly cosmic intimate, no text, no words",
-
   "footsteps-of-jesus": "A pair of weathered footprints in soft sand at dawn, painterly atmospheric simple, no text, no words",
-
   "faith-is-hard-to-keep": "A single beam of light cutting through clouds over a quiet horizon, painterly atmospheric divine, no text, no words",
-
   "truly-being-free": "A single candle and an antique hourglass on a wooden desk in soft warm light, painterly contemplative time, no text, no words",
-
   "respect-connect": "Two hands clasped warmly in soft window light, painterly intimate connection, no text, no words",
-
   "begin-anew": "Soft golden morning sunlight streaming through a quiet bedroom window onto a cozy unmade bed, painterly serene, no text, no words",
-
   "why-now-why-me": "A soft blurred figure standing in warm window light at dawn, painterly atmospheric vulnerable, no text, no words",
-
   "i-like-your-weird": "A field of wildly varied wildflowers blooming together at golden hour, painterly atmospheric celebratory, no text, no words",
-
   "awakening-from-suffering": "Soft sunrise light breaking through dense forest canopy after rain, painterly atmospheric awakening, no text, no words",
-
   "im-glad-you-did-what-you-had-to": "An open old book with worn pages on a wooden desk in soft warm light, painterly intimate atmospheric, no text, no words",
-
   "hello-old-friend": "A quiet old hometown street at golden hour with soft warm light on familiar facades, painterly nostalgic, no text, no words",
-
   "what-it-means-to-be-human": "Warm hands extending a small gift to another in soft golden light, painterly intimate kind, no text, no words",
-
   "where-we-need-to-go": "A long boardwalk stretching across a vast horizon at sunset, painterly cinematic uncertain, no text, no words",
-
   "slaves-to-unchanging-identities": "A dramatic stormy sky over a vast wilderness, painterly atmospheric collective, no text, no words",
-
   "a-sliver-of-light": "A single sliver of golden sunlight breaking through dark stormy clouds over a quiet beach, painterly cinematic hopeful, no text, no words",
-
-  "it-doesnt-take-much": "A small child's hand reaching up to hold an adult's hand on a quiet evening street, painterly tender intimate, no text, no words"
+  "it-doesnt-take-much": "A small child's hand reaching up to hold an adult's hand on a quiet evening street, painterly tender intimate, no text, no words",
+  "the-journey-home": "An open front door at dusk with a suitcase set just inside on worn wood floors, warm lamplight spilling out into blue evening air, painterly cinematic, quiet and intimate, no text, no words"
 }
