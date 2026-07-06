@@ -2,6 +2,7 @@
 title: "The Journey Home"
 description: "On travel, culture, and the strange comfort of your own bed — a poem about how even the trip home tells its own story."
 pubDate: 2026-07-06
+heroImage: /images/blog/the-journey-home.jpg
 category: reflections
 ---
 
