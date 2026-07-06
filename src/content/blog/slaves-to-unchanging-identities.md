@@ -1,9 +1,19 @@
 ---
-title: "Slaves to Unchanging Identities"
-description: "On the chains we build out of who we used to be — and the storm that might be the only way to wash them off."
+title: 'Slaves to Unchanging Identities: A Poem on Self'
+description: A reflective poem on identity and self-reinvention — the chains we build
+  from who we used to be, and the storm that finally washes them off.
 pubDate: 2021-11-04
 heroImage: /images/blog/slaves-to-unchanging-identities.jpg
 category: community
+tags:
+- identity
+- self-reinvention
+- reflective poem
+- personal growth
+- community
+heroImageAlt: Wind scattering sand — an image representing identity, change, and the
+  self we perform long after it stops being true
+seoOptimizedAt: '2026-07-06'
 ---
 
 A harder one about the way we get locked into versions of ourselves and start performing them long after they've stopped being true.
