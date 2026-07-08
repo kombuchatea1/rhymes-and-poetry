@@ -1,9 +1,20 @@
 ---
-title: "Connect with My Dad"
-description: "On finding the keys, finding the song, and finding — late but not too late — a way back to the person who taught you both."
+title: 'Connect with My Dad: A Poem About Music and Family'
+description: A poem about reconnecting with a father through music — finding the keys,
+  finding the song, and finding your way back before it's too late.
 pubDate: 2021-12-04
 heroImage: /images/blog/connect-with-my-dad.jpg
 category: love-loss
+tags:
+- father poem
+- music
+- family
+- love-loss
+- reflective poem
+- connection
+heroImageAlt: Piano keys in soft light, evoking music as a bridge between a child
+  and their father
+seoOptimizedAt: '2026-07-08'
 ---
 
 Some doors take a long time to open. Music opened one for me, and what I found behind it was my dad.
