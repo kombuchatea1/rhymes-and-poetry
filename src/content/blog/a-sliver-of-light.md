@@ -1,9 +1,19 @@
 ---
-title: "A Sliver of Light"
-description: "On the storms that don't end on schedule — and the small beam that shows up anyway."
+title: 'A Sliver of Light: A Poem on Hope and Resilience'
+description: A reflective poem on hope and resilience — for the seasons that go on
+  too long, and the small sliver of light that shows up anyway.
 pubDate: 2021-12-08
 heroImage: /images/blog/a-sliver-of-light.jpg
 category: reflections
+tags:
+- hope
+- resilience
+- reflective poem
+- nature
+- storms
+- healing
+heroImageAlt: A single beam of light breaking through dark storm clouds
+seoOptimizedAt: '2026-07-09'
 ---
 
 For the seasons that go on too long. The poem promises nothing about timing. It just promises that the light eventually arrives.
