@@ -1,9 +1,19 @@
 ---
-title: "It Doesn't Take Much"
-description: "On what kids still know that we forgot — and the small price of remembering."
+title: 'It Doesn''t Take Much: A Poem on Childhood and Wonder'
+description: A reflective poem on childhood wonder and the small things kids still
+  know — and what it costs us, as adults, to remember them.
 pubDate: 2022-01-04
 heroImage: /images/blog/it-doesnt-take-much.jpg
 category: community
+tags:
+- childhood
+- wonder
+- reflective poem
+- innocence
+- community
+- short poem
+heroImageAlt: A child playing a simple outdoor game, light and carefree
+seoOptimizedAt: '2026-07-10'
 ---
 
 A piece for the small things. Inspired by every kid I've ever watched, and the version of me that used to know what they still know.
