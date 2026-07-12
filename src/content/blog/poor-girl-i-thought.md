@@ -1,9 +1,20 @@
 ---
-title: "Poor Girl I Thought"
-description: "A small scene observed from a distance — and the quiet hope of being wrong about it."
+title: 'Poor Girl I Thought: A Poem on Empathy and Assumption'
+description: A reflective poem on empathy and assumption — a street-corner moment
+  observed from afar, and the quiet hope of having read it all wrong.
 pubDate: 2022-01-15
 heroImage: /images/blog/poor-girl-i-thought.jpg
 category: community
+tags:
+- reflective poem
+- empathy
+- observation
+- community
+- human connection
+- street scene
+heroImageAlt: A lone figure standing on a street corner, observed from a distance
+  on a quiet day
+seoOptimizedAt: '2026-07-12'
 ---
 
 Some days you see something on a corner and the whole rest of the day is colored by what you imagined was happening. This is one of those days, written down.
