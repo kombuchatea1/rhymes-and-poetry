@@ -1,9 +1,20 @@
 ---
-title: "Imagine Yourself a Pilot"
-description: "An extended metaphor on the storms that arrive mid-flight — and the only direction available."
+title: 'Imagine Yourself a Pilot: A Poem on Resilience'
+description: An extended metaphor poem on resilience and navigating life's storms
+  — when the only path forward is the one you chart through turbulence.
 pubDate: 2022-02-08
 heroImage: /images/blog/imagine-yourself-a-pilot.jpg
 category: reflections
+tags:
+- extended metaphor
+- resilience
+- reflective poem
+- storms
+- inner strength
+- journey
+heroImageAlt: A lone pilot flying through stormy skies, a metaphor for navigating
+  life's turbulence
+seoOptimizedAt: '2026-07-13'
 ---
 
 A long one. Sometimes the best way to talk about a thing is to talk about something else that has the same shape.
