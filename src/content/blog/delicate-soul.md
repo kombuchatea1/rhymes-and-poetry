@@ -1,9 +1,20 @@
 ---
-title: "Delicate Soul"
-description: "On feeling everything at full volume — and the small ask to be handled accordingly."
+title: 'Delicate Soul: A Poem on Feeling Everything Deeply'
+description: A poem for the deeply feeling soul — every emotion at full volume, every
+  word absorbed. A quiet ask to be handled with care.
 pubDate: 2022-02-14
 heroImage: /images/blog/delicate-soul.jpg
 category: reflections
+tags:
+- emotional sensitivity
+- reflective poem
+- empathy
+- self-expression
+- feelings
+- reflective verse
+heroImageAlt: A soft, close-up image evoking emotional depth and sensitivity — light
+  filtering through a delicate surface
+seoOptimizedAt: '2026-07-14'
 ---
 
 Some people experience the world at a baseline. Others are tuned a little higher — every signal lands harder, every wave feels more like weather. This poem is from one of those.
