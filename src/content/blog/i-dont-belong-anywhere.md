@@ -1,9 +1,20 @@
 ---
-title: "I Don't Belong Anywhere"
-description: "Four lines on the strange ache of feeling close to many people and home in none of them."
+title: 'I Don''t Belong Anywhere: A Poem on Loneliness'
+description: A short poem on loneliness and belonging — four lines for the strange
+  ache of feeling connected to many people and at home in none of them.
 pubDate: 2022-03-09
 heroImage: /images/blog/i-dont-belong-anywhere.jpg
 category: reflections
+tags:
+- loneliness
+- belonging
+- reflective poem
+- short poem
+- isolation
+- emotions
+heroImageAlt: A solitary figure standing apart from a warm, blurred crowd — evoking
+  the feeling of connection without belonging
+seoOptimizedAt: '2026-07-16'
 ---
 
 A small piece. The kind of thought you don't always say out loud.
