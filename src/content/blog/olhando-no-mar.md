@@ -1,9 +1,20 @@
 ---
-title: "Olhando no Mar"
-description: "A bilingual haiku — a love seen first in Portuguese, then in English."
+title: 'Olhando no Mar: A Bilingual Love Haiku'
+description: A bilingual love haiku written first in Portuguese, then in English —
+  on seeing a dream in the sea, and the quiet act of translating feeling.
 pubDate: 2022-04-02
 heroImage: /images/blog/olhando-no-mar.jpg
 category: love-loss
+tags:
+- haiku
+- love poem
+- bilingual
+- sea
+- portuguese
+- romantic poetry
+heroImageAlt: Ocean waves at dusk, evoking longing and love — illustration for a bilingual
+  Portuguese-English haiku
+seoOptimizedAt: '2026-07-17'
 ---
 
 Some thoughts arrive in a different language than the one you usually think in. This one came in Portuguese first.
