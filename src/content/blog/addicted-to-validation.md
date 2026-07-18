@@ -1,9 +1,19 @@
 ---
-title: "Addicted to Validation"
-description: "On needing to hear it from someone else — and the long road of learning to believe it from inside."
+title: 'Addicted to Validation: A Poem on Seeking Approval'
+description: A reflective poem on the quiet addiction of seeking approval — and the
+  long, honest road of learning to trust what you already know inside.
 pubDate: 2022-04-22
 heroImage: /images/blog/addicted-to-validation.jpg
 category: reflections
+tags:
+- reflective poem
+- self-worth
+- seeking approval
+- emotional wellness
+- inner voice
+heroImageAlt: A solitary figure reflected in still water, evoking the search for self-worth
+  beyond others' approval
+seoOptimizedAt: '2026-07-18'
 ---
 
 Validation is one of those quiet addictions that doesn't show up in the data. You don't notice the dependence until you go a week without it and realize how much of your weather depends on someone else's reflection of you.
