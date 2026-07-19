@@ -1,9 +1,20 @@
 ---
-title: "Drenched in Sweat"
-description: "On the dream that wakes you up at 3am — and the small choice of what to do with it."
+title: 'Drenched in Sweat: A Poem About Nightmares and Fear'
+description: A reflective poem about nightmares and fear — the 3am dream that shows
+  you what you've been carrying, and the small choice of what to do next.
 pubDate: 2022-05-09
 heroImage: /images/blog/drenched-in-sweat.jpg
 category: reflections
+tags:
+- nightmare poem
+- fear
+- sleeplessness
+- reflective poem
+- anxiety
+- 3am
+heroImageAlt: A dark bedroom at 3am, sheets tangled, suggesting a restless night after
+  a vivid nightmare
+seoOptimizedAt: '2026-07-19'
 ---
 
 A bad dream is sometimes a small mercy. It shows you the shape of a fear you'd been carrying without knowing. This is from one of those nights.
