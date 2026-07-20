@@ -1,9 +1,21 @@
 ---
-title: "Did We Have the Choice"
-description: "On the rabbit hole of cause and effect — and the unsettling question of whether we ever really chose any of it."
+title: Did We Have the Choice? A Poem on Free Will and Fate
+description: A reflective poem on free will and fate — tumbling down the rabbit hole
+  of cause and effect, and the unsettling question of whether we ever really chose
+  any of it.
 pubDate: 2022-05-30
 heroImage: /images/blog/did-we-have-the-choice.jpg
 category: reflections
+tags:
+- free will
+- fate
+- existential
+- reflective poem
+- choice
+- cause and effect
+heroImageAlt: A figure descending into a dark spiral tunnel, evoking the feeling of
+  falling down a rabbit hole
+seoOptimizedAt: '2026-07-20'
 ---
 
 Every now and then a thought arrives that won't let you finish whatever else you were doing. This was one of those.
