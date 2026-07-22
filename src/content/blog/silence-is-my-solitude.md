@@ -1,9 +1,18 @@
 ---
-title: "Silence Is My Solitude"
-description: "On the quiet that gets mistaken for sadness — and the small peace of being misread on purpose."
+title: 'Silence Is My Solitude: A Poem on Quiet and Peace'
+description: A reflective poem on silence and solitude — for the quiet that gets mistaken
+  for sadness, and the small peace of choosing to let it be misread.
 pubDate: 2022-06-18
 heroImage: /images/blog/silence-is-my-solitude.jpg
 category: reflections
+tags:
+- solitude
+- silence
+- reflective poem
+- peace
+- inner life
+heroImageAlt: A quiet, softly lit space suggesting stillness and solitude
+seoOptimizedAt: '2026-07-22'
 ---
 
 People worry when you go quiet. Sometimes they should. Sometimes they shouldn't. This is for the times they shouldn't.
