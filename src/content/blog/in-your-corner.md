@@ -1,9 +1,19 @@
 ---
-title: "In Your Corner"
-description: "A letter in verse to the people I love — even the ones I haven't talked to in awhile."
+title: 'In Your Corner: A Love Poem for the People I Keep'
+description: A love poem written as a letter in verse — for the people I carry with
+  me, even the ones I haven't talked to in a while.
 pubDate: 2022-07-12
 heroImage: /images/blog/in-your-corner.jpg
 category: love-loss
+tags:
+- love poem
+- friendship
+- dedication poem
+- reflective verse
+- human connection
+heroImageAlt: A handwritten letter resting on a warm wooden surface, evoking love
+  and quiet dedication
+seoOptimizedAt: '2026-07-24'
 ---
 
 Some poems are for everyone. This one is for a specific list of people in my life. They know who they are. If you're reading it and someone you love comes to mind — they probably do too.
