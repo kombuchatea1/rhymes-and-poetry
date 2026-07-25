@@ -1,9 +1,20 @@
 ---
-title: "Not a War I Intend to Lose"
-description: "On the persistent thoughts that won't leave — and the slow, stubborn work of refusing to let them win."
+title: 'Not a War I Intend to Lose: A Poem on Mental Resilience'
+description: A poem on mental resilience and persistent thoughts — the honest, unglamorous
+  fight inside your own head, and the stubborn refusal to lose it.
 pubDate: 2022-08-04
 heroImage: /images/blog/not-a-war-i-intend-to-lose.jpg
 category: reflections
+tags:
+- mental health
+- resilience
+- reflective poem
+- inner struggle
+- depression
+- hope
+heroImageAlt: A solitary figure standing in dim light, evoking the quiet inner battle
+  of persistent thoughts and mental resilience
+seoOptimizedAt: '2026-07-25'
 ---
 
 Some seasons you fight a war that nobody else can see. The honest version of that fight isn't pretty. Neither is this poem. But it ends where it needs to.
