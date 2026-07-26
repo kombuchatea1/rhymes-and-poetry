@@ -1,9 +1,19 @@
 ---
-title: "It's Friday"
-description: "A small scene in the rain — and the strange weight of meeting a stranger's eyes for one second."
+title: 'It''s Friday: A Poem About Strangers in the Rain'
+description: A poem about a rainy Friday and one fleeting moment — a stranger's eyes
+  through a windshield, and the quiet weight that small encounter leaves behind.
 pubDate: 2022-08-12
 heroImage: /images/blog/its-friday.jpg
 category: community
+tags:
+- community
+- strangers
+- rain
+- reflective poem
+- everyday life
+- human connection
+heroImageAlt: A rainy street scene viewed through a wet car windshield
+seoOptimizedAt: '2026-07-26'
 ---
 
 There are days when the smallest thing — a pair of eyes meeting yours through a windshield — sticks with you longer than the rest of the day. This is one of those.
