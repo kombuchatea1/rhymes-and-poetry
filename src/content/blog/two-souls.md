@@ -1,9 +1,20 @@
 ---
-title: "Two Souls"
-description: "On the love that arrives feeling like discovery — and the promise to be the one who shows up."
+title: 'Two Souls: A Love Poem on Staying Near Each Other'
+description: A love poem on the depth that surprises you — and the quiet, repeated
+  promise to show up for the person who carries your pain as their own.
 pubDate: 2022-09-04
 heroImage: /images/blog/two-souls.jpg
 category: love-loss
+tags:
+- love poem
+- romantic poetry
+- soulmate
+- devotion
+- reflective verse
+- love-loss
+heroImageAlt: Two figures standing close together, a quiet image of mutual love and
+  devotion
+seoOptimizedAt: '2026-07-27'
 ---
 
 For the love that surprises you with its depth — and for the small, repeated work of staying near it.
