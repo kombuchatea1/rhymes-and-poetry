@@ -1,9 +1,20 @@
 ---
-title: "Take Your Time, Kid"
-description: "On the conversation between the calm self and the anxious one — and the small mercy of letting the past stay there."
+title: 'Take Your Time, Kid: A Poem on Anxiety and the Inner Voice'
+description: A reflective poem on anxiety and the inner voice — the calm self and
+  the racing one, and the quiet grace of letting the past stay where it belongs.
 pubDate: 2022-09-15
 heroImage: /images/blog/take-your-time-kid.jpg
 category: reflections
+tags:
+- anxiety
+- inner voice
+- reflective poem
+- self-compassion
+- stress
+- mental wellness
+heroImageAlt: A quiet, softly lit moment suggesting stillness and self-reflection
+  — evoking the calm voice in a poem about anxiety and inner dialogue
+seoOptimizedAt: '2026-07-28'
 ---
 
 Most of us have an internal voice that's trying to slow us down and another one that won't stop running the math on every imagined future. This poem is the conversation between them.
