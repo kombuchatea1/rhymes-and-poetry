@@ -1,9 +1,20 @@
 ---
-title: "Some Days"
-description: "A list poem about the texture of a normal life — and the small surprise of opening your eyes."
+title: 'Some Days: A List Poem About the Texture of Life'
+description: A list poem about the texture of an ordinary life — the strong days,
+  the tired ones, and the small surprise of waking up to a new day.
 pubDate: 2022-10-18
 heroImage: /images/blog/some-days.jpg
 category: reflections
+tags:
+- list poem
+- reflective poem
+- everyday life
+- hope
+- emotions
+- reflective verse
+heroImageAlt: Soft morning light over an ordinary day — illustrating the quiet texture
+  of a life in a list poem
+seoOptimizedAt: '2026-07-29'
 ---
 
 There's no single mood that captures a life. The list is the form that comes closest.
