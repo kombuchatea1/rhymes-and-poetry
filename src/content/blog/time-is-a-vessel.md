@@ -1,9 +1,19 @@
 ---
-title: "Time Is a Vessel"
-description: "On time as both gift and thief — and the small, repeated hope underneath."
+title: 'Time Is a Vessel: A Poem on Time and Meaning'
+description: A reflective poem on time as both gift and thief — the cruelty of it,
+  the grace of it, and the quiet hope that it adds up to something.
 pubDate: 2022-10-21
 heroImage: /images/blog/time-is-a-vessel.jpg
 category: reflections
+tags:
+- reflective poem
+- time
+- hope
+- meaning
+- resilience
+heroImageAlt: An hourglass resting on a weathered surface, light falling across it
+  softly
+seoOptimizedAt: '2026-07-30'
 ---
 
 Time is the one resource you can't earn more of. The poem sits with that — the cruelty of it, the gift of it, and the quiet hope that what you've done with it adds up to something.
