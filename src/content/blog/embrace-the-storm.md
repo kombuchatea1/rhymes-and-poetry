@@ -1,9 +1,20 @@
 ---
-title: "Embrace the Storm"
-description: "On loneliness, the universal weather underneath it, and the quiet permission to feel it all."
+title: 'Embrace the Storm: A Poem on Loneliness and Feeling'
+description: A reflective poem on loneliness and the feelings we all share — and the
+  quiet permission to stop asking if you're the only one who feels this way.
 pubDate: 2022-11-08
 heroImage: /images/blog/embrace-the-storm.jpg
 category: reflections
+tags:
+- loneliness
+- reflective poem
+- emotions
+- healing
+- human connection
+- resilience
+heroImageAlt: Storm clouds breaking over a quiet landscape, symbolising loneliness
+  giving way to connection
+seoOptimizedAt: '2026-07-31'
 ---
 
 This is for the night-version of the question *am I the only one who feels this?* The answer is no. You aren't.
