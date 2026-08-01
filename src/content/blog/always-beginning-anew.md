@@ -1,9 +1,20 @@
 ---
-title: "Always Beginning Anew"
-description: "On the and-also of being human — that two true things can sit in the same chest at once."
+title: 'Always Beginning Anew: A Poem on Contradictions'
+description: A reflective poem on the contradictions of being human — that two true
+  things can live in the same chest, and both of them can be right.
 pubDate: 2022-11-15
 heroImage: /images/blog/always-beginning-anew.jpg
 category: reflections
+tags:
+- reflective poem
+- contradictions
+- self-compassion
+- emotional wellness
+- list poem
+- inner voice
+heroImageAlt: A soft, open journal resting on a window ledge with warm light — evoking
+  the quiet permission to hold two truths at once
+seoOptimizedAt: '2026-08-01'
 ---
 
 A list of permissions. A reminder that the contradictions inside us aren't bugs — they're the design.
