@@ -1,9 +1,19 @@
 ---
-title: "Is Art Not a Part of Us"
-description: "On the songs and stories woven into us — and the small, sacred work of meditating on what moves you."
+title: Is Art Not a Part of Us? A Poem on Art and Identity
+description: A reflective poem on art and identity — the stories, songs, and films
+  that don't decorate life but become part of the fiber of who we are.
 pubDate: 2022-12-08
 heroImage: /images/blog/is-art-not-a-part-of-us.jpg
 category: reflections
+tags:
+- reflective poem
+- art
+- identity
+- inspiration
+- human connection
+heroImageAlt: A close-up of paint-stained hands holding an open book, symbolizing
+  art as part of human identity
+seoOptimizedAt: '2026-08-02'
 ---
 
 The art that sticks to you isn't decoration. It becomes part of the fiber. This is for that.
