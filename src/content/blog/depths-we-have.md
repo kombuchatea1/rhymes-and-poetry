@@ -1,9 +1,20 @@
 ---
-title: "What Depths We Have"
-description: "Three lines, written in Florence — on the strange privilege of being moved by people who don't exist."
+title: 'What Depths We Have: A Haiku on Human Empathy'
+description: A haiku on human empathy written in Florence — on the strange privilege
+  of feeling deeply for fictional people, and what that capacity says about us.
 pubDate: 2022-12-12
 heroImage: /images/blog/depths-we-have.jpg
 category: reflections
+tags:
+- haiku
+- empathy
+- human connection
+- reflective verse
+- florence
+- emotional depth
+heroImageAlt: Sunlit piazza in Florence with strangers passing through, evoking quiet
+  human observation
+seoOptimizedAt: '2026-08-03'
 ---
 
 Wrote this in Florence one afternoon, watching strangers move through a piazza. Sometimes the smallest noticing is the whole poem.
