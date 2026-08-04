@@ -1,9 +1,19 @@
 ---
-title: "I Hope I Can Be Proud"
-description: "On the quiet wish to like the person you become — and to have made some good in someone else along the way."
+title: 'I Hope I Can Be Proud: A Reflective Poem on Self-Worth'
+description: A reflective poem on self-worth and growth — the quiet wish to like who
+  you become, and to have left something good in someone else along the way.
 pubDate: 2023-01-04
 heroImage: /images/blog/i-hope-i-can-be-proud.jpg
 category: reflections
+tags:
+- reflective poem
+- self-worth
+- personal growth
+- life choices
+- inner voice
+heroImageAlt: A quiet path stretching forward, evoking reflection on choices and personal
+  growth
+seoOptimizedAt: '2026-08-04'
 ---
 
 Most of us want to like ourselves at the end. The poem is just an honest list of the things that requires.
