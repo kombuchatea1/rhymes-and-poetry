@@ -1,9 +1,20 @@
 ---
-title: "A Writer Who Doesn't Write"
-description: "On the gift you keep promising to give yourself time for — and the slow ache of never quite getting there."
+title: 'A Writer Who Doesn''t Write: A Poem on Lost Creativity'
+description: A reflective poem on the grief of unused creative gifts — the pile of
+  laters, the untouched piano, and the writing that keeps waiting for the right time.
 pubDate: 2023-01-07
 heroImage: /images/blog/writer-who-doesnt-write.jpg
 category: reflections
+tags:
+- reflective poem
+- creativity
+- procrastination
+- self-expression
+- grief
+- writer life
+heroImageAlt: A dusty typewriter sitting unopened on a wooden desk, bathed in dim
+  afternoon light
+seoOptimizedAt: '2026-08-05'
 ---
 
 There's a particular grief reserved for the talents we don't use. Not because we lost them — because we kept saying *later.* This poem is about the pile of *laters.*
