@@ -1,9 +1,18 @@
 ---
-title: "Running Helps Me Breathe"
-description: "On the strange medicine of putting one foot in front of the other — and how the body teaches things the mind keeps forgetting."
+title: 'Running Helps Me Breathe: A Poem on Self-Love'
+description: A poem on running, self-love, and the body's quiet wisdom — on putting
+  one foot in front of the other until you finally feel at home in yourself.
 pubDate: 2023-01-22
 heroImage: /images/blog/running-helps-me-breathe.jpg
 category: reflections
+tags:
+- running poem
+- self-love
+- body image
+- reflective poem
+- emotional wellness
+heroImageAlt: A lone runner on an open path, light breaking through trees
+seoOptimizedAt: '2026-08-06'
 ---
 
 There's a thing the body does, on the right run, that nothing else can do for me. This poem is about that.
