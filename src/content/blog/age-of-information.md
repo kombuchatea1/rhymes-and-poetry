@@ -1,9 +1,20 @@
 ---
-title: "Age of Information"
-description: "On the irony of knowing everything and understanding less — and the part each of us plays."
+title: 'Age of Information: A Poem on the Internet Age'
+description: A reflective poem on the internet age — the irony of knowing everything
+  and understanding less, and the quiet part each of us plays in it.
 pubDate: 2023-01-28
 heroImage: /images/blog/age-of-information.jpg
 category: community
+tags:
+- reflective poem
+- social media
+- information overload
+- critical thinking
+- community
+- internet age
+heroImageAlt: A blurred flood of digital screens and text, evoking information overload
+  in the internet age
+seoOptimizedAt: '2026-08-07'
 ---
 
 The internet was supposed to make us smarter. The data is mixed. This poem is about the part where it didn't.
