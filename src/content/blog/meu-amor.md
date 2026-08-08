@@ -1,9 +1,20 @@
 ---
-title: "Meu Amor"
-description: "A coffee-shop morning, a map on the wall, and a quiet decision that the where doesn't matter as much as the who."
+title: 'Meu Amor: A Love Poem About Home and Each Other'
+description: A love poem set over coffee — a map on the wall, the whole world to explore,
+  and the quiet decision that the who matters more than the where.
 pubDate: 2023-02-12
 heroImage: /images/blog/meu-amor.jpg
 category: love-loss
+tags:
+- love poem
+- romantic poetry
+- coffee shop
+- travel
+- reflective verse
+- narrative poem
+heroImageAlt: Two coffee cups on a wooden table beside a vintage world map on a café
+  wall
+seoOptimizedAt: '2026-08-08'
 ---
 
 A small narrative poem. The kind of moment you don't realize is the whole point until later.
