@@ -1,9 +1,19 @@
 ---
-title: "Presently Dreaming"
-description: "Three lines that fold the future into the present — and find them already touching."
+title: 'Presently Dreaming: A Haiku on Living in the Now'
+description: A haiku on living in the now — three lines that fold the future into
+  the present, and find them already touching. Read it twice.
 pubDate: 2023-02-26
 heroImage: /images/blog/presently-dreaming.jpg
 category: reflections
+tags:
+- haiku
+- mindfulness
+- present moment
+- reflective verse
+- short poem
+heroImageAlt: Soft light filtering through a window, evoking the quiet stillness of
+  the present moment
+seoOptimizedAt: '2026-08-10'
 ---
 
 A small one. Read it twice — once forward, once with the meaning of "now" in mind.
