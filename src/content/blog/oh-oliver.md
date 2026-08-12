@@ -1,9 +1,19 @@
 ---
-title: "Oh Oliver"
-description: "A small love letter to the dog who keeps walking into the room and rearranging the day."
+title: 'Oh Oliver: A Poem for the Family Dog'
+description: A poem for the family dog — for Oliver, who keeps walking into the room
+  and quietly rearranging the whole day around himself.
 pubDate: 2023-03-10
 heroImage: /images/blog/oh-oliver.jpg
 category: love-loss
+tags:
+- dog poem
+- love
+- pets
+- family
+- reflective verse
+- joy
+heroImageAlt: A dog named Oliver resting contentedly, the subject of a warm love poem
+seoOptimizedAt: '2026-08-12'
 ---
 
 Some poems are for the people we love. This one is for the dog. Oliver, mostly. If you've been here for a while, you know him.
