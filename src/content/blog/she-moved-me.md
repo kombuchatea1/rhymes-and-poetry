@@ -1,9 +1,19 @@
 ---
-title: "She Moved Me"
-description: "On the people we'll never see again — and the way they keep teaching us how to be."
+title: 'She Moved Me: A Poem on Love and Loss'
+description: A love and loss poem for the people who leave the room but never quite
+  leave you — and the quiet ways they keep shaping who you become.
 pubDate: 2023-03-28
 heroImage: /images/blog/she-moved-me.jpg
 category: love-loss
+tags:
+- love poem
+- loss
+- grief
+- remembrance
+- reflective poem
+- love-loss
+heroImageAlt: Soft light falling on an empty chair, evoking memory and quiet loss
+seoOptimizedAt: '2026-08-14'
 ---
 
 Some people leave the room and stay in the room at the same time. This is for one of them.
