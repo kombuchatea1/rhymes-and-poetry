@@ -1,9 +1,19 @@
 ---
-title: "The Sight of Trees"
-description: "On the particular peace that arrives in a forest — and the wish to one day share it with someone."
+title: 'The Sight of Trees: A Nature Poem on Forest Peace'
+description: A nature poem on the particular peace that arrives in a forest — and
+  the quiet wish to one day share it with someone you love.
 pubDate: 2023-04-02
 heroImage: /images/blog/the-sight-of-trees.jpg
 category: nature
+tags:
+- nature poem
+- forest
+- peace
+- reflective poem
+- trees
+- solitude
+heroImageAlt: Tall trees in a quiet forest with soft light filtering through the canopy
+seoOptimizedAt: '2026-08-15'
 ---
 
 There's a kind of peace that only certain places can deliver. For me, a lot of those places have trees. This poem came from one of them.
