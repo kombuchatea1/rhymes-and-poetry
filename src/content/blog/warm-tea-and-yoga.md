@@ -1,9 +1,18 @@
 ---
-title: "Warm Tea and Yoga"
-description: "Three lines for the small rituals that quietly do the heavy lifting."
+title: 'Warm Tea and Yoga: A Haiku on Simple Rituals'
+description: A haiku on the small rituals that carry us through low-grade dread —
+  breath, warmth, movement, and the wisdom of keeping it simple.
 pubDate: 2023-04-09
 heroImage: /images/blog/warm-tea-and-yoga.jpg
 category: reflections
+tags:
+- haiku
+- mindfulness
+- simple rituals
+- wellness
+- reflective verse
+heroImageAlt: A warm mug of tea beside a yoga mat in soft morning light
+seoOptimizedAt: '2026-08-16'
 ---
 
 Some haikus are observations. This one is a recipe.
