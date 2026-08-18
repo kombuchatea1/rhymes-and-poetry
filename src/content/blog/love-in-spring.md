@@ -1,9 +1,19 @@
 ---
-title: "Love in Spring"
-description: "Four lines for the kind of love that arrives like a season."
+title: 'Love in Spring: A Short Love Poem in Four Lines'
+description: A short love poem in four lines — for the kind of love that rewrites
+  your calendar and changes the way you see every season after.
 pubDate: 2023-04-15
 heroImage: /images/blog/love-in-spring.jpg
 category: love-loss
+tags:
+- love poem
+- short poem
+- spring
+- romantic poetry
+- reflective verse
+heroImageAlt: Soft spring blossoms on a sunlit branch, evoking new love and seasonal
+  change
+seoOptimizedAt: '2026-08-18'
 ---
 
 Some loves come into your life and rewrite the calendar. You weren't keeping track of seasons before. Now you are.
