@@ -1,9 +1,20 @@
 ---
-title: "Trends and Themes"
-description: "On the patterns underneath the days — and the small practice of trying to embrace them carefully."
+title: 'Trends and Themes: A Poem on Life''s Patterns'
+description: A reflective poem on life's recurring patterns — the lessons that keep
+  showing up in new disguises, and the quiet practice of learning to embrace them.
 pubDate: 2023-04-22
 heroImage: /images/blog/trends-and-themes.jpg
 category: reflections
+tags:
+- reflective poem
+- life patterns
+- self-growth
+- emotional cycles
+- mindfulness
+- resilience
+heroImageAlt: A quiet abstract pattern of repeating shapes suggesting life's recurring
+  lessons and themes
+seoOptimizedAt: '2026-08-19'
 ---
 
 The longer I pay attention, the more I notice that life keeps offering the same lessons in slightly different costumes.
