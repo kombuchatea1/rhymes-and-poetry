@@ -1,9 +1,20 @@
 ---
-title: "Writing Helps Calm Me"
-description: "Three lines about the medicine you can't get anywhere else."
+title: 'Writing Helps Calm Me: A Haiku on the Peace of the Page'
+description: A haiku on writing as calm — three lines for the peace that therapy,
+  running, and meditation couldn't quite reach. The page just receives.
 pubDate: 2023-05-04
 heroImage: /images/blog/writing-helps-calm-me.jpg
 category: reflections
+tags:
+- haiku
+- writing
+- mindfulness
+- calm
+- healing
+- reflective verse
+heroImageAlt: An open notebook on a quiet desk, soft light suggesting calm and creative
+  stillness
+seoOptimizedAt: '2026-08-20'
 ---
 
 A haiku, about the only thing that consistently does what nothing else does.
