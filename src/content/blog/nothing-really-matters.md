@@ -1,9 +1,20 @@
 ---
-title: "Nothing Really Matters"
-description: "On the strange paradox of meaninglessness — and the deep capacity we have to make meaning anyway."
+title: 'Nothing Really Matters: A Poem on Meaning and Life'
+description: A reflective poem on meaning and meaninglessness — the strange paradox
+  of knowing nothing lasts, and the deep human capacity to love and hope anyway.
 pubDate: 2023-05-30
 heroImage: /images/blog/nothing-really-matters.jpg
 category: reflections
+tags:
+- reflective poem
+- meaning
+- existential
+- human spirit
+- hope
+- reflective verse
+heroImageAlt: A wide open sky fading to dusk, evoking the quiet vastness of meaning
+  and the human spirit
+seoOptimizedAt: '2026-08-22'
 ---
 
 Some questions don't have answers, and asking them anyway is part of being alive.
