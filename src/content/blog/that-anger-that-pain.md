@@ -1,9 +1,20 @@
 ---
-title: "That Anger, That Pain"
-description: "On the refrain underneath the noise — how much of what we call anger is really just a child asking where they went."
+title: 'That Anger, That Pain: A Poem on Grief and Loss'
+description: A reflective poem on anger and grief — tracing the feeling underneath
+  the noise, and the child's voice quietly asking where they went.
 pubDate: 2023-06-10
 heroImage: /images/blog/that-anger-that-pain.jpg
 category: reflections
+tags:
+- reflective poem
+- anger
+- grief
+- emotional wellness
+- loss
+- inner child
+heroImageAlt: Soft light filtering through a window, evoking quiet grief and the unnamed
+  feelings beneath anger
+seoOptimizedAt: '2026-08-23'
 ---
 
 Some emotions don't have a clean translation. *That anger, that pain* is what they become when the actual feeling can't find its name. This poem traces what's underneath.
