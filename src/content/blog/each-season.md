@@ -1,9 +1,20 @@
 ---
-title: "Each Season"
-description: "On the slow loops of growth — and the breath that lets the next one begin."
+title: 'Each Season: A Poem on Growth and Letting Go'
+description: A reflective poem on growth, cycles, and letting go — for the lessons
+  we keep circling back to, and the quiet courage it takes to release them.
 pubDate: 2023-06-12
 heroImage: /images/blog/each-season.jpg
 category: reflections
+tags:
+- reflective poem
+- growth
+- letting go
+- cycles
+- seasons
+- healing
+heroImageAlt: Soft seasonal landscape showing the turning of leaves — a visual metaphor
+  for growth and cycles
+seoOptimizedAt: '2026-08-24'
 ---
 
 Growth isn't linear. It's circular. We come back to the same lessons in slightly different keys, and each time we're a little more able to hear them.
