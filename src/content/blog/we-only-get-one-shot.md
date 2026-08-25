@@ -1,9 +1,20 @@
 ---
-title: "We Only Get One Shot"
-description: "On the boy who fell in the woods and the man who can't quite see the sky the same way anymore."
+title: 'We Only Get One Shot: A Poem on Childhood and Loss'
+description: A reflective poem on childhood wonder and the quiet loss that follows
+  — for the boy who fell in the woods and the man still reaching for that sky.
 pubDate: 2023-07-04
 heroImage: /images/blog/we-only-get-one-shot.jpg
 category: reflections
+tags:
+- reflective poem
+- childhood
+- memory
+- nature
+- loss
+- nostalgia
+heroImageAlt: Soft forest floor with light filtering through trees, evoking a childhood
+  memory of falling in the woods
+seoOptimizedAt: '2026-08-25'
 ---
 
 Most of us had a moment as a kid where the sky cracked open and we understood something we couldn't name yet. The work of being an adult is partly trying not to lose track of that moment, and partly forgiving yourself for the years you did.
