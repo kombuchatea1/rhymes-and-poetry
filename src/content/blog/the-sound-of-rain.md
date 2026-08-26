@@ -1,9 +1,19 @@
 ---
-title: "The Sound of Rain"
-description: "On the strange way time stretches and compresses — and the storms that briefly make you forget there was anything else."
+title: 'The Sound of Rain: A Poem on Time and Storms'
+description: A reflective poem on time and how it stretches and compresses — and the
+  storms that briefly make you forget there was anything else at all.
 pubDate: 2023-07-08
 heroImage: /images/blog/the-sound-of-rain.jpg
 category: reflections
+tags:
+- reflective poem
+- time
+- storms
+- nature
+- emotional wellness
+heroImageAlt: Rain falling against a window, soft and blurred, evoking the slow stretch
+  of time
+seoOptimizedAt: '2026-08-26'
 ---
 
 Some weeks feel like decades. Some decades feel like weeks. The poem doesn't try to explain this — just to sit inside it.
