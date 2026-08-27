@@ -1,9 +1,18 @@
 ---
-title: "If You Had My Eyes"
-description: "On the ugly the mirror shows you — and the small, stubborn fact that the mirror is wrong."
+title: 'If You Had My Eyes: A Poem on Self-Worth'
+description: A reflective poem on self-worth and body image — for anyone who's lost
+  the argument with the mirror, and needs a reminder that it lies.
 pubDate: 2023-08-04
 heroImage: /images/blog/if-you-had-my-eyes.jpg
 category: reflections
+tags:
+- reflective poem
+- self-worth
+- body image
+- self-compassion
+- inner voice
+heroImageAlt: A blurred mirror reflection suggesting distorted self-perception
+seoOptimizedAt: '2026-08-27'
 ---
 
 For anyone who's stared at themselves and lost the argument. The mirror is unreliable.
