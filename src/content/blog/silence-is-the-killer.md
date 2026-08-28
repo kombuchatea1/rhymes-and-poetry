@@ -1,9 +1,18 @@
 ---
-title: "Silence Is the Killer"
-description: "On the corporate gloss sold as substance — and the quiet that lets it pass."
+title: 'Silence Is the Killer: A Poem on Corporate Conformity'
+description: A poem on corporate conformity and the hollow gloss of ambition — when
+  nothing said is quite a lie, but nothing said is true either.
 pubDate: 2023-08-19
 heroImage: /images/blog/silence-is-the-killer.jpg
 category: community
+tags:
+- reflective poem
+- corporate conformity
+- social commentary
+- community
+- authenticity
+heroImageAlt: A polished corporate corridor, empty and silent, evoking hollow ambition
+seoOptimizedAt: '2026-08-28'
 ---
 
 There's a kind of hollow that mass-produced ambition makes. You can feel it walking through certain spaces — the polish, the slogans, the way nothing said is *quite* a lie but nothing said is true either. This poem is a small refusal.
