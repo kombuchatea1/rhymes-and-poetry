@@ -1,9 +1,20 @@
 ---
-title: "Anticipations Heavy"
-description: "On the strange thing that happens to writers when they're at peace — and the loss of control that comes when the words finally arrive."
+title: 'Anticipations Heavy: A Meta-Poem on Writing and Sadness'
+description: A meta-poem on writing and sadness — the strange truth that creativity
+  arrives when something's wrong, and what that costs a writer at peace.
 pubDate: 2023-08-22
 heroImage: /images/blog/anticipations-heavy.jpg
 category: reflections
+tags:
+- meta-poem
+- writing process
+- creativity
+- sadness
+- reflective poem
+- inspiration
+heroImageAlt: A handwritten poem in an open notebook on a deck surrounded by palm
+  trees
+seoOptimizedAt: '2026-08-29'
 ---
 
 A handwritten one, scribbled in a notebook on a deck overlooking palm trees. The honest meta-poem about why the rest of the poems happen at all.
