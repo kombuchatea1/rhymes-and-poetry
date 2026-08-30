@@ -1,9 +1,19 @@
 ---
-title: "Consistently Inconsistent"
-description: "On the loops we keep running — and the small commitment to keep coming back to the work."
+title: 'Consistently Inconsistent: A Poem on Creative Habits'
+description: A reflective poem on creative habits and consistency — the loops we keep
+  running, and the quiet commitment to keep coming back to the work.
 pubDate: 2023-09-09
 heroImage: /images/blog/consistently-inconsistent.jpg
 category: reflections
+tags:
+- reflective poem
+- creative habits
+- consistency
+- self-compassion
+- inner voice
+heroImageAlt: A pendulum mid-swing, symbolising the rhythm of creative consistency
+  and returning to the work
+seoOptimizedAt: '2026-08-30'
 ---
 
 Some patterns don't break. They just get noticed, and then chosen anyway. This poem is about that.
