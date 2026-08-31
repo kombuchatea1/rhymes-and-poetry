@@ -1,9 +1,20 @@
 ---
-title: "Romantic at Heart"
-description: "On the wanderer's curse — going so far in your dreams that you miss the oasis right in front of you."
+title: 'Romantic at Heart: A Poem on Presence and Dreaming'
+description: A reflective poem on the romantic's curse — dreaming so vividly that
+  real life goes blurry, and the quiet work of finding presence in the present.
 pubDate: 2023-09-12
 heroImage: /images/blog/romantic-at-heart.jpg
 category: reflections
+tags:
+- reflective poem
+- mindfulness
+- presence
+- romantic poetry
+- daydreaming
+- inner voice
+heroImageAlt: A lone figure standing at the edge of a misty landscape, gazing into
+  the distance
+seoOptimizedAt: '2026-08-31'
 ---
 
 The romantic's failure mode is the inability to live in the present moment that the romanticism was supposed to deliver you to. You imagine the future so vividly that the actual life — the one already here — goes blurry by comparison.
