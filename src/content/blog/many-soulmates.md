@@ -1,9 +1,20 @@
 ---
-title: "Many Soulmates"
-description: "A four-line reframe on the word *soulmate* — and the quiet permission inside it."
+title: 'Many Soulmates: A Short Poem on Love and Connection'
+description: A short poem that reframes the word soulmate — not as singular and finite,
+  but as something we're allowed to find again, and again.
 pubDate: 2023-10-04
 heroImage: /images/blog/many-soulmates.jpg
 category: love-loss
+tags:
+- soulmate
+- love poem
+- loss
+- connection
+- reflective poem
+- short poem
+heroImageAlt: Two people sitting together in warm light, suggesting quiet connection
+  and the many forms a soulmate can take
+seoOptimizedAt: '2026-09-01'
 ---
 
 The word *soulmate* gets sold as singular. One per customer, never available again. This is the version someone offered me when I needed a different shape for it.
