@@ -1,9 +1,20 @@
 ---
-title: "Algorithmic Identity"
-description: "On being shaped by the feed — and the slow erosion of decency it's costing all of us."
+title: 'Algorithmic Identity: A Poem on Social Media and Self'
+description: A reflective poem on algorithmic identity and social media — on being
+  shaped by the feed, and the slow erosion of decency it's costing all of us.
 pubDate: 2023-10-15
 heroImage: /images/blog/algorithmic-identity.jpg
 category: community
+tags:
+- reflective poem
+- social media
+- identity
+- community
+- humanity
+- critical thinking
+heroImageAlt: Abstract figure dissolving into streams of algorithmic data and social
+  media feeds
+seoOptimizedAt: '2026-09-02'
 ---
 
 A harder one to write because the diagnosis applies to me too. We're all in the same machine. The poem is for the part of all of us that knows.
