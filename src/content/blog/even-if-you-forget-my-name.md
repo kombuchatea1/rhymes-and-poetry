@@ -1,9 +1,20 @@
 ---
-title: "Even If You Forget My Name"
-description: "On legacy — and the difference between being remembered and being felt."
+title: 'Even If You Forget My Name: A Poem on Legacy'
+description: A reflective poem on legacy — the difference between being remembered
+  and being felt, and the version of a life worth quietly working toward.
 pubDate: 2023-11-04
 heroImage: /images/blog/even-if-you-forget-my-name.jpg
 category: reflections
+tags:
+- reflective poem
+- legacy
+- identity
+- self-worth
+- hope
+- reflective verse
+heroImageAlt: A solitary figure standing in soft light, evoking reflection on legacy
+  and being remembered
+seoOptimizedAt: '2026-09-03'
 ---
 
 A long one. About what gets to count, and the version of legacy worth working toward.
