@@ -1,9 +1,20 @@
 ---
-title: "Where Time Stands Still"
-description: "A small ask of the world — to sweep us off our feet again, to a place where love can begin."
+title: 'Where Time Stands Still: A Poem on Longing and Love'
+description: A reflective poem on longing and love — the ache for a texture life once
+  had, and a quiet ask to be swept somewhere that still believes in beginning.
 pubDate: 2023-11-08
 heroImage: /images/blog/where-time-stands-still.jpg
 category: love-loss
+tags:
+- longing
+- love poem
+- reflective poem
+- nature
+- love-loss
+- nostalgia
+heroImageAlt: A soft, still landscape where light fades into distance — evoking longing,
+  love, and a world that once felt possible
+seoOptimizedAt: '2026-09-04'
 ---
 
 There's a version of longing that isn't about a person. It's about a *texture* — the feeling that life used to have, or could have, if the world remembered how to do it.
