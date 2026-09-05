@@ -1,9 +1,19 @@
 ---
-title: "Bond Impossible to Break"
-description: "On the soulmate as fresh air — and the kind of love that arrives feeling like physics."
+title: 'Bond Impossible to Break: A Soulmate Love Poem'
+description: A soulmate love poem on the bond that needs no argument — the kind of
+  love that feels like a deep breath, fate, and physics all at once.
 pubDate: 2023-12-02
 heroImage: /images/blog/bond-impossible-to-break.jpg
 category: love-loss
+tags:
+- love poem
+- soulmate
+- romantic poetry
+- fate
+- reflective verse
+heroImageAlt: Two intertwined paths converging under a starlit sky, evoking fate and
+  soulmate connection
+seoOptimizedAt: '2026-09-05'
 ---
 
 Another poem about the rarest version of love. The kind that doesn't need to be argued for.
