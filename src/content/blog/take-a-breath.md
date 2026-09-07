@@ -1,9 +1,20 @@
 ---
-title: "Take a Breath"
-description: "Small acts of care, written down as instructions — because how fast life moves is rarely how fast we notice."
+title: 'Take a Breath: A Poem on Slowing Down'
+description: A list poem on slowing down and paying attention — small acts of care
+  written as instructions for the days when life moves faster than we can notice.
 pubDate: 2023-12-22
 heroImage: /images/blog/take-a-breath.jpg
 category: reflections
+tags:
+- list poem
+- mindfulness
+- slowing down
+- reflective poem
+- attention
+- daily life
+heroImageAlt: A quiet moment of stillness — a single breath, hands at rest, soft natural
+  light
+seoOptimizedAt: '2026-09-07'
 ---
 
 This one's a list disguised as a poem. Or a poem disguised as a list. It started as a note to myself on a day when the speed of everything had outpaced the noticing.
