@@ -1,9 +1,20 @@
 ---
-title: "Every Day Is a New Beginning"
-description: "On the New Year that arrives every morning — and the quiet truth that the journey is already underway."
+title: 'Every Day Is a New Beginning: A Morning Poem'
+description: A reflective morning poem on new beginnings — the quiet truth that you
+  don't have to wait for January. The journey is already underway.
 pubDate: 2024-01-01
 heroImage: /images/blog/every-day-is-a-new-beginning.jpg
 category: reflections
+tags:
+- morning poem
+- new beginnings
+- reflective poem
+- hope
+- new year
+- motivation
+heroImageAlt: Soft morning light breaking through a window, symbolizing a fresh start
+  and new beginning
+seoOptimizedAt: '2026-09-08'
 ---
 
 You don't have to wait until January. The work of becoming is the work of every morning.
