@@ -1,9 +1,19 @@
 ---
-title: "Off My Chest"
-description: "Six lines on why some thoughts only fit through verse — and what to do when normal sentences won't hold them."
+title: 'Off My Chest: A Meta-Poem on Why Poetry Exists'
+description: A meta-poem on why poetry exists — for the thoughts that won't fit in
+  normal sentences, and the quiet relief of finally finding the right form.
 pubDate: 2024-01-08
 heroImage: /images/blog/off-my-chest.jpg
 category: reflections
+tags:
+- meta-poem
+- writing process
+- reflective poem
+- self-expression
+- creativity
+heroImageAlt: A handwritten notebook open on a wooden desk, a pen resting across the
+  page
+seoOptimizedAt: '2026-09-09'
 ---
 
 Every poem on this site exists because some thought wouldn't fit through a normal sentence. This one is the meta-poem — the one about why the others had to happen at all.
