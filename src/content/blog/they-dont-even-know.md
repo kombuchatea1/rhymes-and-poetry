@@ -1,9 +1,20 @@
 ---
-title: "They Don't Even Know"
-description: "On the secondhand weight of someone else's pain — and how care quietly carries it."
+title: 'They Don''t Even Know: A Poem on Empathy and Care'
+description: A reflective poem on empathy and secondhand pain — the weight you absorb
+  when you love someone, and the private cost they never see you carry.
 pubDate: 2024-01-22
 heroImage: /images/blog/they-dont-even-know.jpg
 category: love-loss
+tags:
+- empathy
+- reflective poem
+- love-loss
+- emotional weight
+- care
+- human connection
+heroImageAlt: A person sitting alone at night by a window, quietly carrying a weight
+  the world cannot see
+seoOptimizedAt: '2026-09-10'
 ---
 
 Sometimes you sit with someone you love while they tell you about a hurt they've been carrying, and you nod, and you say the right things, and then later that night the weight you absorbed catches up with you in private. They never see it. They were busy carrying their own.
