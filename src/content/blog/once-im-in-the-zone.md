@@ -1,9 +1,20 @@
 ---
-title: "Once I'm in the Zone"
-description: "A bar about flow — when the writing stops needing oxygen and starts breathing for you."
+title: 'Once I''m in the Zone: A Rap Poem on Flow State'
+description: A rap poem on flow state — when the writing stops needing oxygen and
+  starts breathing for you. From one of those nights when it all clicks.
 pubDate: 2024-02-02
 heroImage: /images/blog/once-im-in-the-zone.jpg
 category: rap-and-bars
+tags:
+- rap
+- flow state
+- writing process
+- creativity
+- bars
+- hip-hop poetry
+heroImageAlt: A dimly lit writing desk late at night, pen in hand, evoking the creative
+  flow state
+seoOptimizedAt: '2026-09-11'
 ---
 
 There's a state athletes call flow and writers call the zone. The thing you've been working at suddenly works back. This is from one of those nights.
