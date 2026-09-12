@@ -1,9 +1,18 @@
 ---
-title: "Dust Off the Boots"
-description: "On returning to the path you already know is good for you — even after the rabbit hole."
+title: 'Dust Off the Boots: A Poem on Starting Over'
+description: A reflective poem on starting over — returning to the path you already
+  know is good for you, even after the drift, even after the rabbit hole.
 pubDate: 2024-02-14
 heroImage: /images/blog/dust-off-the-boots.jpg
 category: reflections
+tags:
+- reflective poem
+- starting over
+- healing
+- self-compassion
+- resilience
+heroImageAlt: A worn pair of boots on a woodland path, ready to walk again
+seoOptimizedAt: '2026-09-12'
 ---
 
 The hardest part of getting better isn't figuring out what's good for you. Most of us already know. The hardest part is going back to it after we've drifted.
