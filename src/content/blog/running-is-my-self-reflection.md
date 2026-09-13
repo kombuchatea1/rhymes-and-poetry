@@ -1,9 +1,20 @@
 ---
-title: "Running Is My Self-Reflection"
-description: "On running as practice — the one we don't always cherish, and the only one we won't always have."
+title: 'Running Is My Self-Reflection: A Poem on Mindfulness'
+description: A reflective running poem on mindfulness, courage, and daily practice
+  — the habit we take for granted, and the one we won't always have.
 pubDate: 2024-02-15
 heroImage: /images/blog/running-is-my-self-reflection.jpg
 category: reflections
+tags:
+- running poem
+- mindfulness
+- reflective poem
+- self-reflection
+- daily practice
+- courage
+heroImageAlt: A lone runner on an open road at dawn, captured mid-stride in quiet
+  motion
+seoOptimizedAt: '2026-09-13'
 ---
 
 Another running poem. Different angle. The one about what running is *for*, not just what it does.
