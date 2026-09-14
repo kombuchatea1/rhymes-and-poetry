@@ -1,9 +1,20 @@
 ---
-title: "Feelings Need Nourishment"
-description: "Four lines on the forest inside us — and the quiet rhythm of acting and pausing."
+title: 'Feelings Need Nourishment: A Short Reflective Poem'
+description: A short reflective poem on emotional nourishment — four lines about the
+  forest inside us, and knowing when to act and when to pause.
 pubDate: 2024-03-04
 heroImage: /images/blog/feelings-need-nourishment.jpg
 category: reflections
+tags:
+- reflective poem
+- short poem
+- emotional wellness
+- nature
+- mindfulness
+- self-compassion
+heroImageAlt: Sunlight filtering through a quiet forest, evoking stillness and emotional
+  nourishment
+seoOptimizedAt: '2026-09-14'
 ---
 
 A small one. Sometimes the work is to do something. Sometimes the work is to do nothing. The forest knows which.
