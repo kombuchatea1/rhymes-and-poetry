@@ -1,9 +1,19 @@
 ---
-title: "I Met a Man"
-description: "On hidden talent, the beauty most people miss, and how easily the most important things in our lives go unrecognized."
+title: 'I Met a Man: A Poem on Hidden Talent'
+description: A reflective poem on hidden talent — for the painters who don't paint,
+  the writers who don't write, and the gifts nobody's thought to name yet.
 pubDate: 2024-03-12
 heroImage: /images/blog/i-met-a-man.jpg
 category: reflections
+tags:
+- reflective poem
+- hidden talent
+- self-worth
+- potential
+- inner voice
+heroImageAlt: A solitary figure walking through a crowd, unnoticed, carrying an unseen
+  gift
+seoOptimizedAt: '2026-09-15'
 ---
 
 There are people walking around with extraordinary gifts they'll never name. Painters who don't paint. Writers who don't write. The quietly astonishing person at the next desk over whose mind nobody's ever really seen.
