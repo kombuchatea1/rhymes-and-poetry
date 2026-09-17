@@ -1,9 +1,20 @@
 ---
-title: "To My Dear Friend"
-description: "A letter in verse to someone who isn't here anymore — and a promise about what gets carried forward."
+title: 'To My Dear Friend: A Poem About Losing Someone You Love'
+description: A poem about losing a dear friend — a letter in verse that honors their
+  spirit, keeps their lessons close, and holds the love that doesn't leave.
 pubDate: 2024-04-02
 heroImage: /images/blog/to-my-dear-friend.jpg
 category: love-loss
+tags:
+- grief
+- friendship
+- loss
+- memorial poem
+- reflective poem
+- love-loss
+heroImageAlt: A quiet, softly lit letter resting on a wooden surface — evoking remembrance
+  and a message written for someone no longer here
+seoOptimizedAt: '2026-09-17'
 ---
 
 Some poems are for the person who's still here. This one isn't.
