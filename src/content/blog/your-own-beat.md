@@ -1,9 +1,20 @@
 ---
-title: "Your Own Beat"
-description: "On the modern weight of being constantly watched — and the courage it still takes to march to your own beat."
+title: 'Your Own Beat: A Poem on Individuality and Courage'
+description: On the modern weight of being constantly watched — and the courage it
+  still takes to march to your own beat.
 pubDate: 2024-04-18
 heroImage: /images/blog/your-own-beat.jpg
 category: community
+tags:
+- reflective poem
+- individuality
+- social pressure
+- self-expression
+- courage
+- community
+heroImageAlt: A lone figure walking a different path, symbolising the courage to march
+  to your own beat
+seoOptimizedAt: '2026-09-18'
 ---
 
 Somewhere along the way, the audience moved inside our heads. We carry it around all day — the imagined room of strangers ready to weigh in on every move. This poem started as an honest count of how much that weight had been costing me.
