@@ -1,9 +1,21 @@
 ---
-title: "The Pull of the Universe"
-description: "On waves, destiny, and the quiet strength of being pulled toward what's meant for you."
+title: 'The Pull of the Universe: A Poem on Destiny'
+description: A reflective poem on destiny and the ocean — on unrepeating waves, the
+  quiet pull toward what's meant for you, and the beauty of not knowing what comes
+  next.
 pubDate: 2024-05-22
 heroImage: /images/blog/pull-of-the-universe.jpg
 category: nature
+tags:
+- reflective poem
+- destiny
+- nature
+- ocean
+- fate
+- reflective verse
+heroImageAlt: Ocean waves arriving on shore, each one different, under soft morning
+  light
+seoOptimizedAt: '2026-09-20'
 ---
 
 There are places where you can sit and watch the ocean for hours, and no two waves ever come the same way twice. There's something in that — the unrepeating rhythm, the way each one arrives different and leaves the same shape behind.
