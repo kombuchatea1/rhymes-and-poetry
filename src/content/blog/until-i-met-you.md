@@ -1,9 +1,18 @@
 ---
-title: "Until I Met You"
-description: "Three lines. The whole shape of meeting someone who rewrites what you thought you knew."
+title: 'Until I Met You: A Short Love Poem in Three Lines'
+description: A short love poem in three lines — for the person who quietly rewrote
+  everything you thought you knew about love.
 pubDate: 2024-06-22
 heroImage: /images/blog/until-i-met-you.jpg
 category: love-loss
+tags:
+- love poem
+- short poem
+- haiku-style
+- romantic poetry
+- reflective verse
+heroImageAlt: Two people meeting for the first time, soft light, quiet moment of recognition
+seoOptimizedAt: '2026-09-22'
 ---
 
 Some poems take a hundred lines to get where they're going. This one took three.
