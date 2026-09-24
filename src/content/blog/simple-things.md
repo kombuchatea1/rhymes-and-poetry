@@ -1,9 +1,20 @@
 ---
-title: "Simple Things"
-description: "On the regret that arrives only after the simple things are gone — and the chance, if we get it, to do them differently."
+title: 'Simple Things: A Poem on Gratitude and Regret'
+description: On the regret that arrives only after the simple things are gone — and
+  the chance, if we get it, to do them differently.
 pubDate: 2024-07-18
 heroImage: /images/blog/simple-things.jpg
 category: reflections
+tags:
+- reflective poem
+- gratitude
+- regret
+- taking things for granted
+- loss
+- second chances
+heroImageAlt: Soft natural light falling on everyday objects — a quiet scene evoking
+  the simple things we overlook
+seoOptimizedAt: '2026-09-24'
 ---
 
 The simple things are easy to miss because they don't ask for anything. They don't insist. They just sit there, available, until they aren't.
