@@ -1,9 +1,19 @@
 ---
-title: "Spreading Peace"
-description: "Six bars on poetry, peace, and breathing through the noise."
+title: 'Spreading Peace: A Rap Poem on Peace and Noise'
+description: A short rap poem on peace, poetry, and breathing through the noise —
+  six bars that exhale slow and hit harder than they look.
 pubDate: 2024-08-05
 heroImage: /images/blog/spreading-peace.jpg
 category: rap-and-bars
+tags:
+- rap poem
+- peace
+- spoken word
+- reflective verse
+- social commentary
+heroImageAlt: A calm open sky suggesting peace and breathing space, evoking the quiet
+  resolve of a rap poem on spreading peace
+seoOptimizedAt: '2026-09-26'
 ---
 
 Some pieces want to be a long, slow exhale. Some want to be six bars and out. This one's the second kind.
