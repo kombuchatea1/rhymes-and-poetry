@@ -1,9 +1,20 @@
 ---
-title: "Walking by the Sea"
-description: "On the particular peace of being alone with the ocean — and how solitude, on the right day, can feel like company."
+title: 'Walking by the Sea: A Poem on Solitude and Peace'
+description: A reflective poem on solitude and the ocean — the particular peace of
+  walking by the sea alone, and how that stillness can feel like company.
 pubDate: 2024-08-20
 heroImage: /images/blog/walking-by-the-sea.jpg
 category: nature
+tags:
+- nature
+- solitude
+- ocean
+- reflective poem
+- peace
+- mindfulness
+heroImageAlt: A lone figure walking along a quiet beach at sunset, waves rolling in
+  from the ocean
+seoOptimizedAt: '2026-09-28'
 ---
 
 There's a specific kind of music you only hear the first time when you're walking by the ocean alone. The song was always there. The conditions for noticing it weren't.
