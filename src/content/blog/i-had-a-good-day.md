@@ -1,9 +1,20 @@
 ---
-title: "I Had a Good Day"
-description: "On the parallel weather of a planet — joy and grief unfolding at the same time, and the small grace of remembering."
+title: 'I Had a Good Day: A Poem on Joy and Grief at Once'
+description: A poem on holding joy and grief at the same time — the quiet truth that
+  your good day and someone else's worst exist in the same moment.
 pubDate: 2024-09-04
 heroImage: /images/blog/i-had-a-good-day.jpg
 category: community
+tags:
+- reflective poem
+- joy
+- grief
+- simultaneity
+- human connection
+- emotional wellness
+heroImageAlt: Soft light falling across an open page, evoking the quiet coexistence
+  of joy and grief
+seoOptimizedAt: '2026-09-29'
 ---
 
 One of the strange truths of being alive is that every emotion you're feeling is being felt by someone else, in reverse, at the exact same moment. Your good day is someone else's worst day. Your low week is someone else's first week of peace in a long time.
