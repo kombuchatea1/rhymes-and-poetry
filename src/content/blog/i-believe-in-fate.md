@@ -1,9 +1,20 @@
 ---
-title: "I Believe in Fate"
-description: "On the paradox of free will and destiny — and the quiet hope that, if it's all written, the writing is kind."
+title: 'I Believe in Fate: A Poem on Free Will and Destiny'
+description: A reflective poem on the paradox of free will and destiny — and the quiet
+  hope that, if it's all written, the writing is kind.
 pubDate: 2024-09-20
 heroImage: /images/blog/i-believe-in-fate.jpg
 category: reflections
+tags:
+- fate
+- free will
+- destiny
+- existential
+- reflective poem
+- hope
+heroImageAlt: An open road disappearing into a misty horizon, evoking fate and the
+  unknown
+seoOptimizedAt: '2026-09-30'
 ---
 
 I've never been able to fully decide whether I believe in fate or not. The honest answer is something like: I believe in both, depending on the day. Some of what's happened in my life feels too patterned to be random. And some of what's happened feels too obviously mine to be predetermined.
