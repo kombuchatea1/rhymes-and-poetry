@@ -1,9 +1,19 @@
 ---
-title: "A Presence in the Present"
-description: "On the fleeting bliss of full presence — when the past and future fall away, and there's only now."
+title: 'A Presence in the Present: A Poem on Mindfulness'
+description: A reflective poem on mindfulness and presence — for the rare moment when
+  the past and future fall away, and there is only now.
 pubDate: 2024-10-08
 heroImage: /images/blog/presence-in-the-present.jpg
 category: reflections
+tags:
+- reflective poem
+- mindfulness
+- presence
+- meditation
+- inner peace
+heroImageAlt: Soft natural light falling on a quiet space, evoking stillness and present-moment
+  awareness
+seoOptimizedAt: '2026-10-01'
 ---
 
 Almost every meditation teacher will tell you the same thing in slightly different language: presence is the whole game. The hard part isn't understanding it. The hard part is staying there.
