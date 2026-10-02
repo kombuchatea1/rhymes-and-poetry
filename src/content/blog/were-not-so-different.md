@@ -1,9 +1,18 @@
 ---
-title: "We're Not So Different"
-description: "On the small, brave act of being honest with a stranger — and the recognition that comes back."
+title: 'We''re Not So Different: A Poem on Human Connection'
+description: A poem on human connection and the rare, brave moment of being honest
+  with a stranger — and the quiet recognition that comes back when they are too.
 pubDate: 2024-10-12
 heroImage: /images/blog/were-not-so-different.jpg
 category: community
+tags:
+- human connection
+- reflective poem
+- strangers
+- honesty
+- community
+heroImageAlt: Two strangers sharing a quiet, honest moment of connection
+seoOptimizedAt: '2026-10-02'
 ---
 
 Most of the time we treat strangers like terrain to navigate around. Sometimes, though, you find yourself telling one of them something true — and they say something true back — and the whole map redraws.
