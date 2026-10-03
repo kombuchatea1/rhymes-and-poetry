@@ -1,9 +1,20 @@
 ---
-title: "Nightmares Are Dreams"
-description: "On the hard feelings — and the small, weirdly hopeful reminder that nightmares end the same way dreams do."
+title: 'Nightmares Are Dreams: A Poem on Fear and Healing'
+description: 'A reflective poem on fear and healing — and the small, weirdly hopeful
+  reminder that nightmares end the same way dreams do: by waking up.'
 pubDate: 2024-11-06
 heroImage: /images/blog/nightmares-are-dreams.jpg
 category: reflections
+tags:
+- reflective poem
+- nightmares
+- fear
+- healing
+- emotional wellness
+- sleeplessness
+heroImageAlt: A dimly lit bedroom at night, suggesting the restless space between
+  nightmares and waking
+seoOptimizedAt: '2026-10-03'
 ---
 
 Some feelings are so heavy that the only way to carry them is to remember they're going to lift. Not because you fixed them. Just because nothing — even nightmares — gets to keep you forever.
