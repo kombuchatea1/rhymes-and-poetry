@@ -1,9 +1,20 @@
 ---
-title: "Look Into My Eyes"
-description: "On contradictions, self-doubt, and the long practice of becoming someone you'd be proud to be."
+title: 'Look Into My Eyes: A Poem on Self-Doubt and Becoming'
+description: A reflective poem on self-doubt and contradiction — written for the in-between
+  years, when the person you wanted to be still hasn't quite arrived.
 pubDate: 2024-12-03
 heroImage: /images/blog/look-into-my-eyes.jpg
 category: reflections
+tags:
+- reflective poem
+- self-doubt
+- identity
+- becoming
+- contradictions
+- inner voice
+heroImageAlt: A close-up of a person's eyes, half in shadow, reflecting uncertainty
+  and quiet introspection
+seoOptimizedAt: '2026-10-04'
 ---
 
 There's a stretch of life — for me, somewhere in the middle of becoming whoever I'm becoming — where you start to realize you contain a lot more contradictions than you used to admit. The version of yourself you wanted to be by now still hasn't quite arrived.
