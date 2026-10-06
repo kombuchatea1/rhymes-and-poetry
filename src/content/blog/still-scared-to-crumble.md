@@ -1,9 +1,20 @@
 ---
-title: "Still Scared to Crumble"
-description: "Three lines for the 3am questions — and the small honesty of admitting we're still scared anyway."
+title: 'Still Scared to Crumble: A Haiku on Existential Fear'
+description: A haiku on existential fear and the 3am questions philosophy can't answer
+  — three lines for the honesty of admitting we're still scared anyway.
 pubDate: 2024-12-15
 heroImage: /images/blog/still-scared-to-crumble.jpg
 category: reflections
+tags:
+- haiku
+- existential
+- fear
+- 3am
+- sleeplessness
+- reflective verse
+heroImageAlt: A dim bedroom at 3am, soft light casting shadows — evoking the quiet
+  dread of late-night existential questions
+seoOptimizedAt: '2026-10-06'
 ---
 
 Three lines. The late-night version of an entire philosophy course, compressed.
