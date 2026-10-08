@@ -1,9 +1,19 @@
 ---
-title: "Swimming in Someone Else's Seas"
-description: "On the cost of people-pleasing — and the slow work of learning to swim in the seas that are actually yours."
+title: 'Swimming in Someone Else''s Seas: A Poem on People-Pleasing'
+description: A reflective poem on people-pleasing and self-loss — and the slow, honest
+  work of learning to swim in the seas that are actually yours.
 pubDate: 2025-02-10
 heroImage: /images/blog/swimming-in-someone-elses-seas.jpg
 category: community
+tags:
+- people-pleasing
+- self-worth
+- reflective poem
+- emotional wellness
+- identity
+- self-compassion
+heroImageAlt: A lone figure wading into an open sea, light breaking across the water
+seoOptimizedAt: '2026-10-08'
 ---
 
 A lot of us spend years trying to be the right shape for someone else's water. The polite name for it is *agreeable*. The honest name for it is something closer to *vanishing*.
