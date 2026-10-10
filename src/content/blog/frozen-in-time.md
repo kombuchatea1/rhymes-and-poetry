@@ -1,9 +1,20 @@
 ---
-title: "Frozen in Time"
-description: "On old photographs, forgotten lives, and the strange tenderness of remembering people you've outgrown."
+title: 'Frozen in Time: A Poem on Memory and Old Photographs'
+description: A poem on old photographs and faded memory — the strange tenderness of
+  finding a face you've forgotten, and the person you used to be beside them.
 pubDate: 2025-05-10
 heroImage: /images/blog/frozen-in-time.jpg
 category: love-loss
+tags:
+- memory
+- nostalgia
+- old photographs
+- reflective poem
+- love-loss
+- identity
+heroImageAlt: A faded old photograph lying on a wooden surface, evoking memory and
+  forgotten connection
+seoOptimizedAt: '2026-10-10'
 ---
 
 Every now and then I'll find a photo from a version of myself I'd almost forgotten. The clothes are wrong, the hair is wrong, the face is younger in a way I don't remember being. And there's almost always someone next to me whose name I have to try to recall.
