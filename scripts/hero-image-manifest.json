@@ -1,5 +1,6 @@
 {
   "_comment": "Prompts for Replicate Flux 1.1 Pro hero-image generation. One entry per slug. Each prompt is tuned to the poem's emotional core in the same atmospheric / single-subject style as the existing three hero images. Keep prompts in natural-language Flux form, end with 'no text, no words'.",
+  "i-didnt-know-it-was-goodbye": "A faded vintage photograph resting on a weathered wooden table beside a window, warm late-afternoon light streaming in, soft dust in the air, muted nostalgic amber and sepia tones, blurred figures in the photo, painterly gentle melancholy, no text, no words",
   "i-met-a-man": "A solitary craftsman silhouetted in the warm glow of a dusty workshop window at late afternoon, golden light streaming through floating dust motes, painterly cinematic, intimate and quiet, no text, no words",
   "pull-of-the-universe": "A lone figure standing on wet sand watching the ocean at sunrise, soft pastel sky reflecting on the wet beach, painterly atmospheric, vast and contemplative, no text, no words",
   "rhymes-and-beats": "A worn pair of cleats on cracked urban pavement, dramatic side-lit dusk light, gritty cinematic painterly, no text, no words",
