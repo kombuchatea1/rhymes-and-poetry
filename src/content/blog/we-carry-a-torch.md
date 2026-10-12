@@ -1,10 +1,21 @@
 ---
-title: "We Carry a Torch"
-description: "Written on a bridge in Florence, watching the Arno pass below — a meditation on what we carry forward and what we leave behind."
+title: 'We Carry a Torch: A Reflective Poem on Time and Legacy'
+description: Written on a bridge in Florence, watching the Arno pass below — a meditation
+  on what we carry forward and what we leave behind.
 pubDate: 2025-09-15
 heroImage: /images/blog/we-carry-a-torch.jpg
-ig_shortcode: "DL2rYpSsyQT"
+ig_shortcode: DL2rYpSsyQT
 category: reflections
+tags:
+- reflective poem
+- time
+- legacy
+- travel
+- florence
+- memory
+heroImageAlt: The Arno river seen from a Florentine bridge at dusk, stone and water
+  stretching toward the Ponte Vecchio
+seoOptimizedAt: '2026-10-12'
 ---
 
 There are places that make you think about time differently. Not its passage — that's everywhere — but its weight. The accumulation. The way certain stones have stood through more than you ever will. This came from a bridge in Florence, looking down at the Arno, the Ponte Vecchio still standing where it has been for almost seven hundred years.
