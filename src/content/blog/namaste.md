@@ -1,9 +1,19 @@
 ---
-title: "Namaste"
-description: "On change, looking inward, and the quiet honor in greeting yourself the way you would a friend."
+title: 'Namaste: A Poem on Self-Compassion and Looking Inward'
+description: A reflective poem on self-compassion and looking inward — the version
+  of namaste that turns toward yourself, with the same grace you'd offer anyone else.
 pubDate: 2025-11-05
 heroImage: /images/blog/namaste.jpg
 category: reflections
+tags:
+- reflective poem
+- self-compassion
+- looking inward
+- mindfulness
+- namaste
+- inner voice
+heroImageAlt: Soft light falling on two open hands held together in a namaste gesture
+seoOptimizedAt: '2026-10-13'
 ---
 
 *Namaste* means many things, but the version that's stuck with me is something like *the divinity in me bows to the divinity in you*. It's a recognition. Both directions.
