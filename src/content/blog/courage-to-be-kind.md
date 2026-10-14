@@ -1,9 +1,20 @@
 ---
-title: "Courage to Be Kind"
-description: "On legacy, kindness, and a mother's wisdom — that what people remember isn't what you said or did, but how you made them feel."
+title: 'Courage to Be Kind: A Poem on Kindness and Legacy'
+description: A reflective poem on kindness and legacy — a mother's wisdom that what
+  people remember isn't what you did, but how you made them feel.
 pubDate: 2026-05-10
 heroImage: /images/blog/courage-to-be-kind.jpg
 category: reflections
+tags:
+- reflective poem
+- kindness
+- legacy
+- mother
+- human connection
+- self-compassion
+heroImageAlt: Soft light falling on an open journal resting on a wooden table, evoking
+  reflection and kindness
+seoOptimizedAt: '2026-10-14'
 ---
 
 There's a question that lives quietly under most of our days, even when we don't notice it: *how will the people we passed through remember us?* Not the headline things — the role, the title, the curated bio version of you — but the residue. The feeling left behind in someone else's afternoon.
