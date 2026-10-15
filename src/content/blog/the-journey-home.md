@@ -1,9 +1,20 @@
 ---
-title: "The Journey Home"
-description: "On travel, culture, and the strange comfort of your own bed — a poem about how even the trip home tells its own story."
+title: 'The Journey Home: A Travel Poem in Two Halves'
+description: A travel poem on the two halves of every trip — the wide-eyed wonder
+  of being somewhere else, and the long, unglamorous slog of getting back home.
 pubDate: 2026-07-06
 heroImage: /images/blog/the-journey-home.jpg
 category: reflections
+tags:
+- travel poem
+- reflective poem
+- journey
+- wanderlust
+- homecoming
+- reflective verse
+heroImageAlt: A winding road or cobblestone path leading homeward, evoking the long
+  return journey of a traveller
+seoOptimizedAt: '2026-10-15'
 ---
 
 There's a particular kind of alertness that comes with being somewhere unfamiliar — every cobblestone announcing itself, every hillside looking louder than it would back home. Travel does that. It turns the volume up on the world.
