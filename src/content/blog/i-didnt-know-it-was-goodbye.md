@@ -1,9 +1,20 @@
 ---
-title: "I Didn't Know It Was Goodbye"
-description: "A reflective poem about looking back at an old photo, missing moments we didn't know were fleeting, and wishing we'd soaked it all in."
-pubDate: "2026-10-11"
+title: 'I Didn''t Know It Was Goodbye: A Reflective Poem'
+description: A reflective poem about looking back at an old photo — the moments we
+  didn't know were fleeting, and the quiet ache of a goodbye we never said.
+pubDate: '2026-10-11'
 heroImage: /images/blog/i-didnt-know-it-was-goodbye.jpg
-category: "reflections"
+category: reflections
+tags:
+- reflective poem
+- nostalgia
+- loss
+- memory
+- grief
+- wistfulness
+heroImageAlt: An old faded photograph resting on a surface, evoking nostalgia and
+  the passage of time
+seoOptimizedAt: '2026-10-16'
 ---
 
 Sometimes an old photo stops you in your tracks. The person in it is you, but the moment feels like it belongs to someone else. This poem is about that feeling: grateful for where you are, yet wistful for the goodbyes you never knew you were saying.
