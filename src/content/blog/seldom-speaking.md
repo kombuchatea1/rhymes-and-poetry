@@ -1,21 +1,21 @@
 ---
-title: 'Seldom Speaking: A Poem on Noise and Disconnection'
-description: A poem about digital noise, disconnection, and the quiet act of refusing
-  to be swept along — for anyone who feels the contradiction of being endlessly connected
-  but rarely heard.
+title: 'Seldom Speaking: A Poem on Digital Noise and Disconnection'
+description: A poem on digital noise and disconnection — the contradiction of being
+  endlessly connected but rarely heard, and the quiet act of refusing to be swept
+  along.
 pubDate: 2019-02-08
 heroImage: /images/blog/seldom-speaking.jpg
 category: community
 tags:
-- poetry
 - disconnection
-- digital age
+- digital noise
 - social commentary
 - isolation
+- reflective poem
 - modern life
 heroImageAlt: A lone figure surrounded by a blur of noise and light, suggesting disconnection
   in the digital age
-seoOptimizedAt: '2026-05-23'
+seoOptimizedAt: '2026-10-18'
 ---
 
 A harder one. About the noise we're swimming in and the fact that almost none of it qualifies as actual conversation.
