@@ -1,18 +1,18 @@
 ---
-title: 'The Meaning of Life: A Haiku Answer'
-description: 'A haiku on the meaning of life — three lines that skip the philosophy
-  and land somewhere truer: meaning isn''t found, it''s made.'
+title: 'The Meaning of Life: A Haiku in Three Lines'
+description: 'A haiku on the meaning of life in three lines — skipping the philosophy
+  to land somewhere truer: meaning isn''t found, it''s made.'
 pubDate: 2019-01-12
 heroImage: /images/blog/the-meaning-of-life.jpg
 category: reflections
 tags:
 - haiku
 - meaning of life
-- philosophy
-- reflections
 - existential
+- philosophy
+- reflective verse
 heroImageAlt: Open sky at dusk, evoking the quiet question of the meaning of life
-seoOptimizedAt: '2026-05-23'
+seoOptimizedAt: '2026-10-19'
 ---
 
 A haiku. The shortest defensible answer.
