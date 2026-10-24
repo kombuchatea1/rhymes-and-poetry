@@ -1,7 +1,7 @@
 ---
-title: 'Distant Lands: A Travel Haiku on Finding Peace'
-description: A travel haiku on finding peace by going far enough to feel small again
-  — three lines for the perspective that wandering quietly restores.
+title: 'Distant Lands: A Travel Haiku on Peace and Perspective'
+description: A travel haiku on finding peace through wandering — three lines for the
+  perspective that only distance and smallness can restore to a restless mind.
 pubDate: 2019-08-18
 heroImage: /images/blog/distant-lands.jpg
 category: nature
@@ -10,9 +10,10 @@ tags:
 - travel
 - peace
 - nature
-- reflective verse
+- wandering
+- mindfulness
 heroImageAlt: A sweeping view of distant rolling landscapes under a wide open sky
-seoOptimizedAt: '2026-05-28'
+seoOptimizedAt: '2026-10-24'
 ---
 
 A haiku. Some peace can only be reached by going far enough away to feel small again.
