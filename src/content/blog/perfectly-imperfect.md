@@ -1,7 +1,7 @@
 ---
-title: 'Perfectly Imperfect: A Poem on Self-Acceptance'
-description: A reflective poem on self-acceptance — the if-only list we all carry,
-  and the quiet permission to be exactly the messy version we are.
+title: 'Perfectly Imperfect: A Self-Acceptance Poem'
+description: A reflective self-acceptance poem about the if-only list we all carry
+  — and the quiet, hard-won permission to be exactly the messy version we are.
 pubDate: 2019-10-12
 heroImage: /images/blog/perfectly-imperfect.jpg
 category: reflections
@@ -9,11 +9,11 @@ tags:
 - self-acceptance
 - reflective poem
 - imperfection
+- self-compassion
 - inner critic
-- personal growth
 heroImageAlt: A softly lit, imperfect surface — cracked paint or worn wood — evoking
   the beauty of accepting flaws
-seoOptimizedAt: '2026-05-30'
+seoOptimizedAt: '2026-10-26'
 ---
 
 Most of us run a long internal list of *if I always did X, I'd be Y.* The list is mostly fiction. The poem is about retiring it.
