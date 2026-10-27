@@ -11,9 +11,10 @@ tags:
 - empathy
 - relationships
 - reflective verse
+- emotional connection
 heroImageAlt: Two people standing close together, their hands almost touching — a
   quiet moment of shared feeling
-seoOptimizedAt: '2026-05-31'
+seoOptimizedAt: '2026-10-27'
 ---
 
 A small piece. Plain and exact, the way the realization itself was.
