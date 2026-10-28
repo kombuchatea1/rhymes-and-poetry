@@ -1,20 +1,20 @@
 ---
-title: 'Without You by My Side: A Love and Loss Poem'
-description: Four short stanzas on the love that turns the impossible possible — and
-  the ache of absence that quietly turns everything to nothing.
+title: 'Without You by My Side: A Love and Loss Poem in Paradoxes'
+description: A love and loss poem in four stanzas — where paradox makes the impossible
+  possible, and absence quietly turns everything to nothing.
 pubDate: 2019-12-08
 heroImage: /images/blog/without-you-by-my-side.jpg
 category: love-loss
 tags:
-- love
-- loss
 - love poem
+- loss
 - paradox
 - absence
+- love and loss
 - reflective verse
 heroImageAlt: A solitary figure standing in a paradoxical landscape — blooming trees
   in a desert, evoking love, absence, and longing
-seoOptimizedAt: '2026-06-01'
+seoOptimizedAt: '2026-10-28'
 ---
 
 A list of paradoxes. Each one is the kind of thing only love can make true.
