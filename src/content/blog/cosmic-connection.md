@@ -1,5 +1,5 @@
 ---
-title: 'Cosmic Connection: A Love Poem on Intuition'
+title: 'Cosmic Connection: A Love Poem About Intuition'
 description: A love poem on the intuition that defies explanation — and the quiet
   wisdom of trusting what you feel over what you can prove.
 pubDate: 2020-01-15
@@ -10,10 +10,11 @@ tags:
 - intuition
 - soulmate
 - romantic poetry
-- reflective verse
+- gut feeling
+- cosmic love
 heroImageAlt: Two figures standing under a star-filled sky, evoking a sense of cosmic
   connection and unexplained love
-seoOptimizedAt: '2026-06-02'
+seoOptimizedAt: '2026-10-29'
 ---
 
 The truest love stories tend to lack good explanations. The poem is okay with that.
