@@ -1,7 +1,7 @@
 ---
-title: 'Sometimes I Like Him: A Poem on Self-Perception'
-description: A short reflective poem on self-perception — the version of you in the
-  mirror is never quite the same twice, and the relationship to him shifts too.
+title: 'Sometimes I Like Him: A Short Poem on Self-Perception'
+description: A short reflective poem on self-perception and identity — the you in
+  the mirror is never quite the same twice, and the relationship to him keeps shifting.
 pubDate: 2020-03-12
 heroImage: /images/blog/sometimes-i-like-him.jpg
 category: reflections
@@ -11,9 +11,10 @@ tags:
 - identity
 - self-acceptance
 - short poem
+- mirror
 heroImageAlt: A close reflection in a mirror, slightly blurred — evoking the shifting,
   uncertain self
-seoOptimizedAt: '2026-06-04'
+seoOptimizedAt: '2026-10-31'
 ---
 
 A small one. About the strange fact that the *you* you see is never quite the same one twice.
