@@ -11,9 +11,10 @@ tags:
 - fear of love
 - heartbreak
 - emotional healing
+- self-compassion
 heroImageAlt: Soft light falling on an empty room, evoking longing and the quiet ache
   of love held at a distance
-seoOptimizedAt: '2026-06-05'
+seoOptimizedAt: '2026-11-01'
 ---
 
 For anyone who's been told they don't measure up and then quietly built their whole self-image around the verdict. The poem is for the part underneath that still wants better.
