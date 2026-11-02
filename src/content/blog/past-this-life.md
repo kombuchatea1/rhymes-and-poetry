@@ -1,5 +1,5 @@
 ---
-title: 'Past This Life: A Haiku on Eternal Love'
+title: 'Past This Life: A Haiku About Eternal Love'
 description: A haiku on love that outlasts time itself — three lines for the kind
   of devotion that stretches past this life and into whatever comes next.
 pubDate: 2020-05-18
@@ -9,11 +9,11 @@ tags:
 - haiku
 - love
 - eternal love
-- loss
 - romantic poetry
 - reflective verse
+- devotion
 heroImageAlt: Soft light fading at the horizon, evoking love that endures beyond time
-seoOptimizedAt: '2026-06-06'
+seoOptimizedAt: '2026-11-02'
 ---
 
 A haiku. Whatever you believe about what comes next, the love still stretches into it.
