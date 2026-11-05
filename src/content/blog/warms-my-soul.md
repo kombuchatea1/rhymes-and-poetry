@@ -1,19 +1,19 @@
 ---
-title: 'Warms My Soul: A Poem on Why I Write'
-description: A short poem on why I write — and why I can't not. On the writing that
-  arrives without warning, and the only honest reason to keep going.
+title: 'Warms My Soul: A Poem About Why I Write Poetry'
+description: A short poem about why I write poetry — and why I can't not. On the writing
+  that arrives without warning, and the only honest reason to keep going.
 pubDate: 2020-08-22
 heroImage: /images/blog/warms-my-soul.jpg
 category: reflections
 tags:
-- why i write
+- why i write poetry
 - creative process
-- reflective verse
-- poetry
+- writing process
+- reflective poem
 - inspiration
 heroImageAlt: A notebook open to a blank page, softly lit, evoking the quiet moment
   before writing begins
-seoOptimizedAt: '2026-06-09'
+seoOptimizedAt: '2026-11-05'
 ---
 
 A small one about why I write. Or rather, about why I can't not.
