@@ -1,19 +1,19 @@
 ---
 title: 'A Love Sublime: A Short Love Poem in Four Lines'
-description: A short love poem in four lines — the smallest possible draft of a wedding
-  vow, distilling everything that matters into dancing and laughter.
+description: A short love poem in four lines — dancing, laughter, and nothing else.
+  The smallest possible draft of a wedding vow, distilled to what matters most.
 pubDate: 2020-09-04
 heroImage: /images/blog/a-love-sublime.jpg
 category: love-loss
 tags:
 - love poem
 - short poem
-- wedding
+- wedding poem
 - romantic poetry
-- reflective verse
+- four-line poem
 heroImageAlt: Two hands reaching toward each other, soft light, evoking a simple and
   tender love
-seoOptimizedAt: '2026-06-10'
+seoOptimizedAt: '2026-11-06'
 ---
 
 Some love poems take a hundred lines. This one takes four.
