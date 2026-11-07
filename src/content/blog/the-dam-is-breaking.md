@@ -1,6 +1,6 @@
 ---
-title: 'The Dam Is Breaking: A Poem on Healing and Awakening'
-description: A poem on healing after years of self-doubt — the long sleep of being
+title: 'The Dam Is Breaking: A Healing and Awakening Poem'
+description: A healing poem about overcoming self-doubt — the long sleep of being
   your own worst enemy, and the slow, patient awakening that follows.
 pubDate: 2020-10-15
 heroImage: /images/blog/the-dam-is-breaking.jpg
@@ -9,11 +9,11 @@ tags:
 - healing
 - self-doubt
 - awakening
-- reflective verse
 - mental health poetry
+- reflective poem
 heroImageAlt: A cracked dam with water beginning to break through, symbolising emotional
   release and healing
-seoOptimizedAt: '2026-06-11'
+seoOptimizedAt: '2026-11-07'
 ---
 
 There's a kind of awakening that happens after years of throwing rocks at yourself. The poem is for that.
