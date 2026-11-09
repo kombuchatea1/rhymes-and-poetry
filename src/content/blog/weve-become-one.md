@@ -1,5 +1,5 @@
 ---
-title: 'We''ve Become One: A Beach Poem on Losing the Self'
+title: 'We''ve Become One: A Beach Poem on Loss of Self'
 description: A nature poem written on a beach at night — on sand, stars, and the quiet
   dissolution of self when the world and you stop feeling separate.
 pubDate: 2020-12-04
@@ -8,12 +8,12 @@ category: nature
 tags:
 - nature poem
 - beach
-- self-dissolution
+- loss of self
 - stars
 - reflective verse
-- night
+- mindfulness
 heroImageAlt: A quiet beach at night with stars reflected on the water's edge
-seoOptimizedAt: '2026-06-13'
+seoOptimizedAt: '2026-11-09'
 ---
 
 A piece written from a beach at night. The kind of night where you stop being able to tell where you end and the world begins.
