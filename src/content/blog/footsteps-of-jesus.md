@@ -1,20 +1,20 @@
 ---
-title: 'Footsteps of Jesus: A Short Poem on Faith and Practice'
-description: A short poem on the gap between faith and action — four sharp lines on
-  what it really means to follow what you claim to believe.
+title: 'Footsteps of Jesus: A Short Poem on Faith and Action'
+description: A sharp four-line poem on faith, belief, and the gap between claiming
+  a religion and actually living it — for every label worn lightly.
 pubDate: 2021-01-06
 heroImage: /images/blog/footsteps-of-jesus.jpg
 category: community
 tags:
-- short poem
 - faith
 - religion
 - hypocrisy
-- reflective verse
 - spirituality
+- short poem
+- reflective verse
 heroImageAlt: A lone path stretching forward through light and shadow, evoking the
   gap between intention and action
-seoOptimizedAt: '2026-06-14'
+seoOptimizedAt: '2026-11-10'
 ---
 
 Sometimes the shortest piece is the sharpest one. This is for the gap between identification and practice.
