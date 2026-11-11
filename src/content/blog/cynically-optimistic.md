@@ -10,9 +10,10 @@ tags:
 - hope
 - resilience
 - forgiveness
+- cynicism
 - inner voice
 heroImageAlt: A figure standing in soft light, holding two opposing feelings at once
-seoOptimizedAt: '2026-06-15'
+seoOptimizedAt: '2026-11-11'
 ---
 
 Two seemingly contradictory traits, sharing one body. This is for the version of me that holds both at once.
