@@ -11,9 +11,8 @@ tags:
 - ego
 - peace
 - mindfulness
-- reflective verse
 heroImageAlt: Soft light falling on a quiet open space, evoking calm and self-compassion
-seoOptimizedAt: '2026-06-17'
+seoOptimizedAt: '2026-11-13'
 ---
 
 A small one. Read it slowly.
