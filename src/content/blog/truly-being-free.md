@@ -1,5 +1,5 @@
 ---
-title: 'Truly Being Free: A Reflective Poem on Time and Purpose'
+title: 'Truly Being Free: A Poem on Time and Purpose'
 description: A reflective poem on time, purpose, and freedom — asking the questions
   you usually save for milestone birthdays, through the candle and the hourglass.
 pubDate: 2021-02-22
@@ -11,10 +11,10 @@ tags:
 - time
 - purpose
 - self-growth
-- existential
+- existential poetry
 heroImageAlt: A lit candle beside a slowly draining hourglass, symbols of time passing
   and the question of how it is spent
-seoOptimizedAt: '2026-06-18'
+seoOptimizedAt: '2026-11-14'
 ---
 
 A long one. Asks the questions you usually save for milestone birthdays.
