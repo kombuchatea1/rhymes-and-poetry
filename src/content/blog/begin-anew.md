@@ -1,5 +1,5 @@
 ---
-title: 'Begin Anew: A Short Morning Poem in Four Lines'
+title: 'Begin Anew: A Short Morning Poem About Hope'
 description: A short morning poem in four lines — sunlight, love, fear, and the quiet
   moment when a new day finally feels like enough.
 pubDate: 2021-04-08
@@ -9,11 +9,11 @@ tags:
 - morning poem
 - short poem
 - hope
-- reflective verse
 - list poem
 - mindfulness
+- new beginnings
 heroImageAlt: Soft morning sunlight streaming through a window onto rumpled blankets
-seoOptimizedAt: '2026-06-21'
+seoOptimizedAt: '2026-11-17'
 ---
 
 A list. The shape of an actual quiet morning, in four words and four phrases.
