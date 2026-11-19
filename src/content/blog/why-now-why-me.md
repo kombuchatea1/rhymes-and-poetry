@@ -9,13 +9,13 @@ category: love-loss
 tags:
 - love poem
 - heartbreak
-- emotional walls
 - fear of love
+- emotional walls
 - healing
-- reflective verse
+- reflective poem
 heroImageAlt: A solitary figure standing in soft light, looking away — evoking guarded
   hope and the fear of being loved
-seoOptimizedAt: '2026-06-23'
+seoOptimizedAt: '2026-11-19'
 ---
 
 For the part of you that's been hurt enough times to have built a defense against being loved properly. The poem doesn't dismantle the defense. It just names it.
