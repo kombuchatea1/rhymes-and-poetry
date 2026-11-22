@@ -1,5 +1,5 @@
 ---
-title: 'Maybe, Somehow: A Poem on Almost and Letting Go'
+title: 'Maybe, Somehow: A Poem About Almost and Letting Go'
 description: A reflective poem on the grief of almost — the half-finished things,
   the ones that didn't quite, and the small stubborn root that won't let go.
 pubDate: 2021-06-04
@@ -10,11 +10,10 @@ tags:
 - grief
 - letting go
 - hope
-- almost
 - resilience
 heroImageAlt: A faded, half-open door in soft light — evoking the grief of unfinished
   things
-seoOptimizedAt: '2026-06-26'
+seoOptimizedAt: '2026-11-22'
 ---
 
 There's a particular grief reserved for the things that were *almost.* The ones that didn't quite. This poem is for them — and for the part underneath that won't quite let them go.
