@@ -1,5 +1,5 @@
 ---
-title: 'Awakening from Suffering: A Poem on Healing'
+title: 'Awakening from Suffering: A Healing Poem on Resilience'
 description: A reflective poem on healing and resilience — the slow climb out of suffering,
   and the hard-won lessons that make the struggle worth something.
 pubDate: 2021-06-12
@@ -11,9 +11,10 @@ tags:
 - suffering
 - hope
 - reflective poem
+- emotional wellness
 heroImageAlt: Soft morning light breaking through dark clouds, evoking awakening and
   healing after suffering
-seoOptimizedAt: '2026-06-27'
+seoOptimizedAt: '2026-11-24'
 ---
 
 For anyone who's spent time in their own version of the dark. The poem doesn't pretend it was easy. Just promises it was useful.
