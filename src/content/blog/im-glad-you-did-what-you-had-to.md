@@ -10,10 +10,10 @@ tags:
 - healing
 - reflective poem
 - inner voice
-- resilience
+- forgiveness
 heroImageAlt: Open journal resting on a worn wooden surface, soft natural light falling
   across blank pages
-seoOptimizedAt: '2026-06-28'
+seoOptimizedAt: '2026-11-25'
 ---
 
 The way you'd want to be talked to, looking back. The way it might be useful to start talking to your past self now.
