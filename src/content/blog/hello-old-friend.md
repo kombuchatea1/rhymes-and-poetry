@@ -1,7 +1,7 @@
 ---
-title: 'Hello Old Friend: A Poem on Rediscovering Yourself'
-description: A reflective poem on rediscovering yourself — the parts you thought were
-  gone, and the quiet joy of finding they were always still in there.
+title: 'Hello Old Friend: A Poem on Self-Discovery'
+description: A reflective poem on self-discovery — the parts of you that went quiet,
+  and the unexpected joy of finding they were always still in there.
 pubDate: 2021-08-04
 heroImage: /images/blog/hello-old-friend.jpg
 category: reflections
@@ -13,7 +13,7 @@ tags:
 - inner voice
 heroImageAlt: Soft light falling on a quiet, familiar corner — evoking the feeling
   of rediscovering a lost part of yourself
-seoOptimizedAt: '2026-06-30'
+seoOptimizedAt: '2026-11-27'
 ---
 
 This is for the version of you that you used to be. The one who's still in there, somewhere.
